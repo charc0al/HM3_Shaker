@@ -1,9 +1,12 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"id": "Charc0al.MartiniPuddle",
+	"name": "Martini Puddle",
+	"description": "Shaken, not... spilled? Throwing the martini shaker creates a water puddle now.",
+	"authors": ["Charc0al"],
+	"frameworkVersion": "2.25.1",
+	"contentFolders": [
+        "content"
+    ]
 }

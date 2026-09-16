@@ -248,7 +248,7 @@
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
-							"value": null,
+							"value": "3d3756eb84ad1b98",
 							"postInit": true
 						}
 					},
@@ -288,7 +288,7 @@
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
-							"value": null,
+							"value": "3d3756eb84ad1b98",
 							"postInit": true
 						}
 					},
@@ -361,11 +361,11 @@
 						"920014207": { "type": "float32", "value": -3.0 },
 						"m_rSpatial": {
 							"type": "SEntityTemplateReference",
-							"value": null,
+							"value": "3d3756eb84ad1b98",
 							"postInit": true
 						}
 					},
-					"events": { "Position": { "Value": [] } }
+					"events": { "Position": { "Value": ["cafeebe395a818ba"] } }
 				}
 			]
 		},
@@ -395,10 +395,34 @@
 					"properties": {
 						"m_Entity": {
 							"type": "SEntityTemplateReference",
-							"value": null,
+							"value": "cafe2a576dfb3613",
 							"postInit": true
 						}
 					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"28d18a7d4451db39",
+				{
+					"AddEventConnection": [
+						"ThrowImpact",
+						"Signal",
+						"cafec542f3450f3c"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"28d18a7d4451db39",
+				{
+					"AddEventConnection": [
+						"DeadlyThrowImpact",
+						"Signal",
+						"cafec542f3450f3c"
+					]
 				}
 			]
 		}
