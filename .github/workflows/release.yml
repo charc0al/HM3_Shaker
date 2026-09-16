@@ -43,19 +43,27 @@ jobs:
               with:
                   tag: "0.1.0"
 
-            - name: Create tag
+            - name: Create initial tag
               if: ${{ steps.checkTag.outputs.exists == 'false' }}
-              uses: tvdias/github-tagger@v0.0.2
-              with:
-                  repo-token: ${{ secrets.GITHUB_TOKEN }}
-                  tag: "0.1.0"
-                  commit-sha: ${{ steps.firstCommit.outputs.FIRST_COMMIT }}
+              env:
+                  TAG: "0.1.0"
+                  COMMIT_SHA: ${{ steps.firstCommit.outputs.FIRST_COMMIT }}
+              run: |
+                  git tag "$TAG" "$COMMIT_SHA"
+                  git push origin "refs/tags/$TAG"
 
             - name: Get new version
               id: newVersion
               run: npx --yes semantic-release@22 --branches main --dry-run
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Get latest framework version
+              id: latestFramework
+              uses: pozetroninc/github-action-get-latest-release@v0.7.0
+              with:
+                  repository: atampy25/simple-mod-framework
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Update manifest.json version
               if: ${{ steps.newVersion.outputs.new-release-version }}
@@ -64,6 +72,14 @@ jobs:
                   file: "manifest.json"
                   field: "version"
                   value: ${{ steps.newVersion.outputs.new-release-version }}
+
+            - name: Update manifest.json frameworkVersion
+              if: ${{ steps.newVersion.outputs.new-release-version }}
+              uses: jossef/action-set-json-field@v2
+              with:
+                  file: "manifest.json"
+                  field: "frameworkVersion"
+                  value: ${{ steps.latestFramework.outputs.release }}
 
             - name: Update manifest.json updateCheck
               if: ${{ steps.newVersion.outputs.new-release-version }}
