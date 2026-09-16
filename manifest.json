@@ -1,12 +1,15 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "Charc0al.MartiniPuddle",
-	"name": "Puddle Throwable Items",
-	"description": "Shaken, not... spilled? Throwing the martini shaker or snow globe creates a water puddle now.",
-	"authors": ["Charc0al"],
-	"frameworkVersion": "2.25.1",
-	"contentFolders": [
-        "content"
-    ]
+  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+  "version": "0.2.0",
+  "id": "Charc0al.MartiniPuddle",
+  "name": "Puddle Throwable Items",
+  "description": "Shaken, not... spilled? Throwing the martini shaker or snow globe creates a water puddle now.",
+  "authors": [
+    "Charc0al"
+  ],
+  "frameworkVersion": "2.33.42",
+  "contentFolders": [
+    "content"
+  ],
+  "updateCheck": "https://github.com/charc0al/HM3_Shaker/releases/latest/download/updates.json"
 }
