@@ -1,0 +1,504 @@
+{
+  "tempHash": "00049A3CB7A9FA37",
+  "tbluHash": "00615964D74E400A",
+  "rootEntity": "6a4154f52783fa51",
+  "entities": {
+    "afc76afb0b0eca78": {
+      "parent": "6a4154f52783fa51",
+      "name": "FX_PB_Impact_Debris",
+      "factory": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_ridDecalMaterial": {
+          "type": "ZRuntimeResourceID",
+          "value": {
+            "resource": "[assembly:/_pro/effects/materials/debris/fx_decal_debris_glass_4x4_01.mi].pc_mi",
+            "flag": "5F"
+          }
+        },
+        "m_fArrayIndexMax": {
+          "type": "float32",
+          "value": 15
+        },
+        "m_fRotationSpeedMin": {
+          "type": "float32",
+          "value": -10
+        },
+        "m_fParticleSizeMin": {
+          "type": "float32",
+          "value": 3
+        },
+        "m_fParticleSizeMax": {
+          "type": "float32",
+          "value": 15
+        },
+        "m_fTimeToLiveSecondsMin": {
+          "type": "float32",
+          "value": 1.0099999904632568
+        },
+        "m_fRotationSpeedMax": {
+          "type": "float32",
+          "value": 10
+        },
+        "m_ParticleColorRangeStart": {
+          "type": "SColorRGB",
+          "value": "#2f5e39"
+        },
+        "m_ParticleColorRangeEnd": {
+          "type": "SColorRGB",
+          "value": "#41593b"
+        },
+        "m_FixedAlpha": {
+          "type": "float32",
+          "value": 0.17000000178813934
+        }
+      }
+    },
+    "dcd8cd6ef662c9a9": {
+      "parent": "6a4154f52783fa51",
+      "name": "FX_PR_Smoke_Impact_4t_8x8_brc",
+      "factory": "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_4t_8x8_brc.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_4t_8x8_brc.entitytemplate].pc_entityblueprint"
+    },
+    "e8bdbe077e8c2857": {
+      "parent": "6a4154f52783fa51",
+      "name": "FX_PR_Debris_Glass_4x4_01",
+      "factory": "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entityblueprint"
+    },
+    "67f172b9f913ac16": {
+      "parent": "6a4154f52783fa51",
+      "name": "FX_PB_Impact_Debris_Cheap",
+      "factory": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris_cheap.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris_cheap.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_fArrayIndexMax": {
+          "type": "float32",
+          "value": 15
+        },
+        "m_fParticleSizeMin": {
+          "type": "float32",
+          "value": 1
+        },
+        "m_fParticleSizeMax": {
+          "type": "float32",
+          "value": 2
+        },
+        "m_fTimeToLiveSecondsMax": {
+          "type": "float32",
+          "value": 0.9300000071525574
+        },
+        "m_fTimeToLiveSecondsMin": {
+          "type": "float32",
+          "value": 0.6299999952316284
+        },
+        "m_ParticleColorRangeStart": {
+          "type": "SColorRGB",
+          "value": "#2f5e39"
+        },
+        "m_ParticleColorRangeEnd": {
+          "type": "SColorRGB",
+          "value": "#41593b"
+        },
+        "m_fMotionStretchFactor": {
+          "type": "float32",
+          "value": 0.17000000178813934
+        }
+      }
+    },
+    "db7bce7117fe1159": {
+      "parent": "6a4154f52783fa51",
+      "name": "FX_PB_Impact_Smoke",
+      "factory": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_smoke.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_smoke.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_ParticleColorRangeStart": {
+          "type": "SColorRGB",
+          "value": "#9e9e9e"
+        },
+        "m_ParticleColorRangeEnd": {
+          "type": "SColorRGB",
+          "value": "#636363"
+        },
+        "m_FixedAlpha": {
+          "type": "float32",
+          "value": 0.36000001430511475
+        }
+      }
+    },
+    "eefe01c006f9d3cc": {
+      "parent": "6a4154f52783fa51",
+      "name": "DestructionEffectSourcesProvider",
+      "factory": "[modules:/zdestructioneffectsourcesprovider.class].pc_entitytype",
+      "blueprint": "[modules:/zdestructioneffectsourcesprovider.class].pc_entityblueprint",
+      "events": {
+        "OnEffectActivated": {
+          "Activate": [
+            "b272d08144638a8e",
+            "c91ef5c77cad457a",
+            "6f9aaa1d5062b052"
+          ]
+        }
+      }
+    },
+    "c91ef5c77cad457a": {
+      "parent": "6a4154f52783fa51",
+      "name": "ParticleEmitterPoint_Debris_Glass_Small",
+      "factory": "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+      "blueprint": "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0.08522000163793564
+            }
+          }
+        },
+        "m_bEnabled": {
+          "type": "bool",
+          "value": false
+        },
+        "m_fFixedEmissionCount": {
+          "type": "float32",
+          "value": 100
+        },
+        "m_fEmissionCameraProximity": {
+          "type": "float32",
+          "value": 10
+        },
+        "m_fOuterConeAngle": {
+          "type": "float32",
+          "value": 180
+        },
+        "m_fSpeedMax": {
+          "type": "float32",
+          "value": 4
+        },
+        "m_fSpeedMin": {
+          "type": "float32",
+          "value": 0.20000000298023224
+        },
+        "m_ParticleController": {
+          "type": "SEntityTemplateReference",
+          "value": "67f172b9f913ac16"
+        },
+        "m_ParticleRender": {
+          "type": "SEntityTemplateReference",
+          "value": "e8bdbe077e8c2857"
+        },
+        "m_vGlobalSize": {
+          "type": "SVector3",
+          "value": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 0.30000001192092896
+          }
+        },
+        "m_eSpawnMode": {
+          "type": "eParticleEmitterBoxEntity_SpawnModes",
+          "value": "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+        },
+        "m_sourcesProvider": {
+          "type": "SEntityTemplateReference",
+          "value": "eefe01c006f9d3cc"
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": "6a4154f52783fa51",
+          "postInit": true
+        }
+      }
+    },
+    "b272d08144638a8e": {
+      "parent": "6a4154f52783fa51",
+      "name": "ParticleEmitterPoint_Debris_Glass",
+      "factory": "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+      "blueprint": "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0.11915100365877151
+            }
+          }
+        },
+        "m_bEnabled": {
+          "type": "bool",
+          "value": false
+        },
+        "m_fFixedEmissionCount": {
+          "type": "float32",
+          "value": 20
+        },
+        "m_fEmissionCameraProximity": {
+          "type": "float32",
+          "value": 20
+        },
+        "m_fOuterConeAngle": {
+          "type": "float32",
+          "value": 150
+        },
+        "m_fSpeedMax": {
+          "type": "float32",
+          "value": 4
+        },
+        "m_fSpeedMin": {
+          "type": "float32",
+          "value": 1
+        },
+        "m_ParticleController": {
+          "type": "SEntityTemplateReference",
+          "value": "afc76afb0b0eca78"
+        },
+        "m_ParticleRender": {
+          "type": "SEntityTemplateReference",
+          "value": "e8bdbe077e8c2857"
+        },
+        "m_fInnerConeAngle": {
+          "type": "float32",
+          "value": 15
+        },
+        "m_vGlobalSize": {
+          "type": "SVector3",
+          "value": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 0.30000001192092896
+          }
+        },
+        "m_eSpawnMode": {
+          "type": "eParticleEmitterBoxEntity_SpawnModes",
+          "value": "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+        },
+        "m_sourcesProvider": {
+          "type": "SEntityTemplateReference",
+          "value": "eefe01c006f9d3cc"
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": "6a4154f52783fa51",
+          "postInit": true
+        }
+      }
+    },
+    "6f9aaa1d5062b052": {
+      "parent": "6a4154f52783fa51",
+      "name": "ParticleEmitterPoint_Smoke",
+      "factory": "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+      "blueprint": "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0.09054400026798248
+            }
+          }
+        },
+        "m_bEnabled": {
+          "type": "bool",
+          "value": false
+        },
+        "m_fFixedEmissionCount": {
+          "type": "float32",
+          "value": 5
+        },
+        "m_fEmissionCameraProximity": {
+          "type": "float32",
+          "value": 20
+        },
+        "m_fOuterConeAngle": {
+          "type": "float32",
+          "value": 90
+        },
+        "m_fSpeedMax": {
+          "type": "float32",
+          "value": 3
+        },
+        "m_fSpeedMin": {
+          "type": "float32",
+          "value": 1
+        },
+        "m_ParticleController": {
+          "type": "SEntityTemplateReference",
+          "value": "db7bce7117fe1159"
+        },
+        "m_ParticleRender": {
+          "type": "SEntityTemplateReference",
+          "value": "dcd8cd6ef662c9a9"
+        },
+        "m_vGlobalSize": {
+          "type": "SVector3",
+          "value": {
+            "x": 0.10000000149011612,
+            "y": 0.10000000149011612,
+            "z": 0.30000001192092896
+          }
+        },
+        "m_eSpawnMode": {
+          "type": "eParticleEmitterBoxEntity_SpawnModes",
+          "value": "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+        },
+        "m_sourcesProvider": {
+          "type": "SEntityTemplateReference",
+          "value": "eefe01c006f9d3cc"
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": "6a4154f52783fa51",
+          "postInit": true
+        }
+      }
+    },
+    "6a4154f52783fa51": {
+      "parent": null,
+      "name": "FX_E_Shatter_Glass_RedWine_Bottle",
+      "factory": "[modules:/zcompositeentity.class].pc_entitytype",
+      "blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+      "properties": {
+        "m_eRoomBehaviour": {
+          "type": "ZSpatialEntity.ERoomBehaviour",
+          "value": "ROOM_STATIC"
+        },
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0.18363599479198456,
+              "y": 0.08898399770259857,
+              "z": 0.17106999456882477
+            }
+          }
+        },
+        "LiquidColorStart": {
+          "type": "SColorRGB",
+          "value": "#8f0015"
+        },
+        "LiquidColorEnd": {
+          "type": "SColorRGB",
+          "value": "#8f0015"
+        },
+        "GlassColorStart": {
+          "type": "SColorRGB",
+          "value": "#331a1a"
+        },
+        "GlassColorEnd": {
+          "type": "SColorRGB",
+          "value": "#080404"
+        },
+        "SmokeColorStart": {
+          "type": "SColorRGB",
+          "value": "#707070"
+        },
+        "SmokeColorEnd": {
+          "type": "SColorRGB",
+          "value": "#363636"
+        }
+      },
+      "inputCopying": {
+        "Activate": {
+          "Activate": [
+            "b272d08144638a8e",
+            "c91ef5c77cad457a",
+            "6f9aaa1d5062b052"
+          ]
+        }
+      },
+      "propertyAliases": {
+        "GlassColorEnd": [
+          {
+            "originalProperty": "m_ParticleColorRangeEnd",
+            "originalEntity": "afc76afb0b0eca78"
+          },
+          {
+            "originalProperty": "m_ParticleColorRangeEnd",
+            "originalEntity": "67f172b9f913ac16"
+          }
+        ],
+        "GlassColorStart": [
+          {
+            "originalProperty": "m_ParticleColorRangeStart",
+            "originalEntity": "afc76afb0b0eca78"
+          },
+          {
+            "originalProperty": "m_ParticleColorRangeStart",
+            "originalEntity": "67f172b9f913ac16"
+          }
+        ],
+        "LiquidColorEnd": [],
+        "LiquidColorStart": [],
+        "LiquidMaxSize": [],
+        "LiquidMinSize": [],
+        "LiquidSizeMax": [],
+        "LiquidSizeMin": [],
+        "SmokeColorEnd": [
+          {
+            "originalProperty": "m_ParticleColorRangeEnd",
+            "originalEntity": "db7bce7117fe1159"
+          }
+        ],
+        "SmokeColorStart": [
+          {
+            "originalProperty": "m_ParticleColorRangeStart",
+            "originalEntity": "db7bce7117fe1159"
+          }
+        ],
+        "m_vGlobalSize": [
+          {
+            "originalProperty": "m_vGlobalSize",
+            "originalEntity": "b272d08144638a8e"
+          },
+          {
+            "originalProperty": "m_vGlobalSize",
+            "originalEntity": "c91ef5c77cad457a"
+          },
+          {
+            "originalProperty": "m_vGlobalSize",
+            "originalEntity": "6f9aaa1d5062b052"
+          }
+        ]
+      },
+      "exposedInterfaces": {
+        "IDestructionEffectInterface": "eefe01c006f9d3cc"
+      }
+    }
+  },
+  "propertyOverrides": [],
+  "overrideDeletes": [],
+  "pinConnectionOverrides": [],
+  "pinConnectionOverrideDeletes": [],
+  "externalScenes": [],
+  "subType": "template",
+  "quickEntityVersion": 3.1,
+  "extraFactoryDependencies": [],
+  "extraBlueprintDependencies": [],
+  "comments": []
+}
