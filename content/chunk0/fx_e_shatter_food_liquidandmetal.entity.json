@@ -86,8 +86,6 @@
       "events": {
         "OnEffectActivated": {
           "Activate": [
-            "b36eb5e6b6d2620b",
-            "f820780423c938ab",
             "df6671c38db58fe2"
           ]
         }
@@ -196,7 +194,7 @@
         },
         "m_fFixedEmissionCount": {
           "type": "float32",
-          "value": 20
+          "value": 0
         },
         "m_fEmissionCameraProximity": {
           "type": "float32",
@@ -276,7 +274,7 @@
         },
         "m_fFixedEmissionCount": {
           "type": "float32",
-          "value": 100
+          "value": 0
         },
         "m_fEmissionCameraProximity": {
           "type": "float32",
@@ -394,8 +392,6 @@
       "inputCopying": {
         "Activate": {
           "Activate": [
-            "b36eb5e6b6d2620b",
-            "f820780423c938ab",
             "df6671c38db58fe2"
           ]
         }
