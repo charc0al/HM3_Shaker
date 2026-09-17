@@ -139,10 +139,46 @@
       ]
     },
     {
-      "RemoveExtraFactoryDependency": {
-        "resource": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_glass_water.entitytemplate].pc_entitytemplate",
-        "flag": "5F"
-      }
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "RemoveEventConnection": ["DeadlyThrowImpact", "BreakAll", "9555c52ff22bbd03"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "RemoveEventConnection": ["ImpactBack", "BreakAll", "9555c52ff22bbd03"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "RemoveEventConnection": ["ImpactFrontSide", "BreakAll", "9555c52ff22bbd03"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "AddEventConnection": ["DeadlyThrowImpact", "Signal", "cafec542f3450f3c"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "AddEventConnection": ["ImpactBack", "Signal", "cafec542f3450f3c"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "9b87841618fa15c7",
+        { "AddEventConnection": ["ImpactFrontSide", "Signal", "cafec542f3450f3c"] }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "cafeebe395a818ba",
+        { "AddEventConnection": ["Done", "DestroyItem", "9b87841618fa15c7"] }
+      ]
     }
   ],
   "patchVersion": 6
