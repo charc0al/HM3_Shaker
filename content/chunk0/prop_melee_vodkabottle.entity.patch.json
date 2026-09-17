@@ -8,7 +8,8 @@
       "inputCopying": { "Activate": {
         "MakeVisible": ["cafea7b8c9d0e1f2"],
         "SetInPhysicsWorld": [{ "ref": "cafea7b8c9d0e1f2", "value": { "type": "bool", "value": true } }, { "ref": "cafe112233445566", "value": { "type": "bool", "value": true } }],
-        "Activate": ["cafea7b8c9d0e1f2", "cafe112233445566"]
+        "Activate": ["cafea7b8c9d0e1f2", "cafe112233445566"],
+        "In": ["cafe55aa66bb77cc"]
       } }
     }] },
     { "AddEntity": ["cafea7b8c9d0e1f2", {
@@ -31,11 +32,28 @@
         "m_eidParent": { "type": "SEntityTemplateReference", "value": null }
       }
     }] },
+    { "AddEntity": ["cafe33aa44bb55cc", {
+      "parent": "cafea1d2e3f40506", "name": "FX_E_Fire_Toward_Center",
+      "factory": "[assembly:/_pro/effects/templates/fire/fx_fire.template?/fx_e_fire_toward_center.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/effects/templates/fire/fx_fire.template?/fx_e_fire_toward_center.entitytemplate].pc_entityblueprint",
+      "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0.0, "y": 0.0, "z": 0.0 }, "position": { "x": 0.0, "y": 0.0, "z": 0.04899999871850014 } } }, "m_vGlobalSize": { "type": "SVector3", "value": { "x": 1.2000000476837158, "y": 1.2000000476837158, "z": 0.0 } }, "m_fParticlesPerSecond": { "type": "float32", "value": 50.0 }, "m_fParticlesPerSecondMax": { "type": "float32", "value": 50.0 }, "m_fSpeedMin": { "type": "float32", "value": 0.5 }, "m_fSpeedMax": { "type": "float32", "value": 2.0 }, "m_bEnabled": { "type": "bool", "value": false }, "m_eidParent": { "type": "SEntityTemplateReference", "value": null } }
+    }] },
+    { "AddEntity": ["cafe44aa55bb66cc", {
+      "parent": "6db1e53b7ddb9be2", "name": "OilPuddleOnFirePoll",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+      "properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": { "ref": "cafe112233445566", "externalScene": null, "exposedEntity": "m_bHasExploded" } } },
+      "events": { "PollTrue": { "Activate": ["cafe33aa44bb55cc"] }, "PollFalse": { "In": ["cafe55aa66bb77cc"] } }
+    }] },
+    { "AddEntity": ["cafe55aa66bb77cc", {
+      "parent": "6db1e53b7ddb9be2", "name": "OilPuddleIgnitionPollTimer",
+      "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+      "properties": { "Delay time (ms)": { "type": "int32", "value": 200 } }, "events": { "Out": { "Poll": ["cafe44aa55bb66cc"] } }
+    }] },
     { "AddEntity": ["cafef1029384756a", { "parent": "6db1e53b7ddb9be2", "name": "VoidSignalOnce_Simple", "factory": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entityblueprint", "events": { "Out": { "Get": ["cafe1234567890ab"], "Detach": ["cafea1d2e3f40506"] } } }] },
     { "AddEntity": ["cafe1234567890ab", { "parent": "6db1e53b7ddb9be2", "name": "GetGroundPosition", "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype", "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint", "properties": { "498320989": { "type": "float32", "value": 0.30000001192092896 }, "920014207": { "type": "float32", "value": -3.0 }, "m_rSpatial": { "type": "SEntityTemplateReference", "value": "a29ac386904647b3", "postInit": true } }, "events": { "Position": { "Value": ["cafebcdef0123456"] } } }] },
-    { "AddEntity": ["cafebcdef0123456", { "parent": "6db1e53b7ddb9be2", "name": "Vector3_Debuffer", "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint", "events": { "Value": { "Position": ["cafe67890abcdef1","cafe0a0b0c0d0e0f"] }, "Done": { "Activate": ["cafea1d2e3f40506"] } } }] },
+    { "AddEntity": ["cafebcdef0123456", { "parent": "6db1e53b7ddb9be2", "name": "Vector3_Debuffer", "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint", "events": { "Value": { "Position": ["cafe67890abcdef1","cafe0a0b0c0d0e0f","cafe66aa77bb88cc"] }, "Done": { "Activate": ["cafea1d2e3f40506"] } } }] },
     { "AddEntity": ["cafe67890abcdef1", { "parent": "6db1e53b7ddb9be2", "name": "SetWaterVisualPosition", "factory": "[modules:/zsetpositionentity.class].pc_entitytype", "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint", "properties": { "m_Entity": { "type": "SEntityTemplateReference", "value": "cafea7b8c9d0e1f2", "postInit": true } } }] },
     { "AddEntity": ["cafe0a0b0c0d0e0f", { "parent": "6db1e53b7ddb9be2", "name": "SetFireTrapPosition", "factory": "[modules:/zsetpositionentity.class].pc_entitytype", "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint", "properties": { "m_Entity": { "type": "SEntityTemplateReference", "value": "cafe112233445566", "postInit": true } } }] },
+    { "AddEntity": ["cafe66aa77bb88cc", { "parent": "6db1e53b7ddb9be2", "name": "SetFlamePosition", "factory": "[modules:/zsetpositionentity.class].pc_entitytype", "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint", "properties": { "m_Entity": { "type": "SEntityTemplateReference", "value": "cafe33aa44bb55cc", "postInit": true } } }] },
     { "SubEntityOperation": ["a29ac386904647b3", { "AddEventConnection": ["OnInitialFracture", "Signal", "cafef1029384756a"] }] }
   ], "patchVersion": 6
 }
