@@ -1,30 +1,27 @@
 {
-  "tempHash": "0063409F83D00CB7",
-  "tbluHash": "0008204ADA1FAC0C",
+  "tempHash": "00F3AEBE0D2ED8D2",
+  "tbluHash": "00D03AEEFC4483F7",
   "patch": [
     {
       "AddEntity": [
-        "cafeb19e70f0dfab",
+        "cafea1d2e3f40506",
         {
-          "parent": "d8c42e2965caa26a",
-          "name": "EvergreenWaterPuddleKey",
+          "parent": "6db1e53b7ddb9be2",
+          "name": "EvergreenOilPuddleKey",
           "factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
           "blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
           "properties": {
-            "m_RepositoryId": {
-              "type": "ZGuid",
-              "value": "85623a9b-fa48-4206-8251-b4341a9472c7"
-            }
+            "m_RepositoryId": { "type": "ZGuid", "value": "47aa826f-aa36-49ae-9766-7878c12f5680" }
           }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafe47a5d8c4f101",
+        "cafea7b8c9d0e1f2",
         {
-          "parent": "d8c42e2965caa26a",
-          "name": "EvergreenWaterPuddleSpawner",
+          "parent": "6db1e53b7ddb9be2",
+          "name": "EvergreenOilPuddleSpawner",
           "factory": "[modules:/zitemspawner.class].pc_entitytype",
           "blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
           "properties": {
@@ -35,114 +32,86 @@
                 "position": { "x": 0.0, "y": 0.0, "z": 0.0 }
               }
             },
-            "m_eidParent": {
-              "type": "SEntityTemplateReference",
-              "value": null,
-              "postInit": true
-            },
+            "m_eidParent": { "type": "SEntityTemplateReference", "value": null, "postInit": true },
             "m_bSpawnOnStart": { "type": "bool", "value": false },
             "m_bUsePlacementAttach": { "type": "bool", "value": false },
             "m_ePhysicsMode": { "type": "ZItemSpawner.EPhysicsMode", "value": "EPM_KINEMATIC" },
             "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" },
-            "m_rMainItemKey": {
-              "type": "SEntityTemplateReference",
-              "value": "cafeb19e70f0dfab",
-              "postInit": true
-            }
+            "m_rMainItemKey": { "type": "SEntityTemplateReference", "value": "cafea1d2e3f40506", "postInit": true }
           },
           "events": {
-            "ItemReady": { "Detach": ["cafe47a5d8c4f101"] }
+            "ItemReady": { "Detach": ["cafea7b8c9d0e1f2"] }
           }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafec542f3450f3c",
+        "cafef1029384756a",
         {
-          "parent": "d8c42e2965caa26a",
+          "parent": "6db1e53b7ddb9be2",
           "name": "VoidSignalOnce_Simple",
           "factory": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entityblueprint",
           "events": {
-            "Out": {
-              "Get": ["cafed28ff1b32fa5"]
-            }
+            "Out": { "Get": ["cafe1234567890ab"] }
           }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafed28ff1b32fa5",
+        "cafe1234567890ab",
         {
-          "parent": "d8c42e2965caa26a",
+          "parent": "6db1e53b7ddb9be2",
           "name": "GetGroundPosition",
           "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
           "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
           "properties": {
             "498320989": { "type": "float32", "value": 0.30000001192092896 },
             "920014207": { "type": "float32", "value": -3.0 },
-            "m_rSpatial": {
-              "type": "SEntityTemplateReference",
-              "value": "9555c52ff22bbd03",
-              "postInit": true
-            }
+            "m_rSpatial": { "type": "SEntityTemplateReference", "value": "a29ac386904647b3", "postInit": true }
           },
-          "events": { "Position": { "Value": ["cafeebe395a818ba"] } }
+          "events": { "Position": { "Value": ["cafebcdef0123456"] } }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafeebe395a818ba",
+        "cafebcdef0123456",
         {
-          "parent": "d8c42e2965caa26a",
+          "parent": "6db1e53b7ddb9be2",
           "name": "Vector3_Debuffer",
           "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
           "events": {
-            "Value": { "Position": ["cafe7fe5afc05243"] },
-            "Done": { "SpawnItem": ["cafe47a5d8c4f101"] }
+            "Value": { "Position": ["cafe67890abcdef1"] },
+            "Done": { "SpawnItem": ["cafea7b8c9d0e1f2"] }
           }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafe7fe5afc05243",
+        "cafe67890abcdef1",
         {
-          "parent": "d8c42e2965caa26a",
+          "parent": "6db1e53b7ddb9be2",
           "name": "SetPuddleSpawnerPosition",
           "factory": "[modules:/zsetpositionentity.class].pc_entitytype",
           "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
           "properties": {
-            "m_Entity": {
-              "type": "SEntityTemplateReference",
-              "value": "cafe47a5d8c4f101",
-              "postInit": true
-            }
+            "m_Entity": { "type": "SEntityTemplateReference", "value": "cafea7b8c9d0e1f2", "postInit": true }
           }
         }
       ]
     },
     {
       "SubEntityOperation": [
-        "9555c52ff22bbd03",
+        "a29ac386904647b3",
         {
-          "AddEventConnection": [
-            "OnInitialFracture",
-            "Signal",
-            "cafec542f3450f3c"
-          ]
+          "AddEventConnection": ["OnInitialFracture", "Signal", "cafef1029384756a"]
         }
       ]
-    },
-    {
-      "RemoveExtraFactoryDependency": {
-        "resource": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_glass_water.entitytemplate].pc_entitytemplate",
-        "flag": "5F"
-      }
     }
   ],
   "patchVersion": 6
