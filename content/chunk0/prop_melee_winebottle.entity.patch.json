@@ -4,101 +4,12 @@
   "patch": [
     {
       "AddEntity": [
-        "cafe5b10f65d3bcd",
-        {
-          "parent": "cafe454b1fbb40eb",
-          "name": "FX_Decal_Liquid_Water_Leaking",
-          "factory": "[assembly:/_pro/effects/materials/liquid/fx_decal_liquid_water_leaking.mi].pc_entitytype",
-          "blueprint": "[assembly:/_pro/effects/materials/liquid/fx_decal_liquid_water_leaking.mi].pc_entityblueprint",
-          "properties": {
-            "ConstantVector1D_06_Value": {
-              "type": "float32",
-              "value": 0.30000001192092896
-            },
-            "FlowTexCoords_01_FlowSpeed_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eLeave"
-            },
-            "Lerp_02_a_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "FlowTexCoords_01_FlowContribution_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eLeave"
-            },
-            "Active": {
-              "type": "bool",
-              "value": true
-            },
-            "ConstantVector1D_05_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "ConstantVector1D_06_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "Lerp_02_b_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "Lerp_02_b": {
-              "type": "float32",
-              "value": 0.5
-            },
-            "ConstantColorRGB_01_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "ConstantColorRGB_01_Value": {
-              "type": "SColorRGB",
-              "value": "#8f0015"
-            },
-            "ConstantVector1D_04_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "ConstantVector1D_11_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "ConstantVector1D_11_Value": {
-              "type": "float32",
-              "value": 0.6600000262260437
-            },
-            "ConstantVector1D_05_Value": {
-              "type": "float32",
-              "value": 0.029999999329447743
-            },
-            "ConstantVector1D_20_Value_op": {
-              "type": "IRenderMaterialEntity.EModifierOperation",
-              "value": "eReplace"
-            },
-            "Clients": {
-              "type": "TArray<SEntityTemplateReference>",
-              "value": [
-                "cafe454b1fbb40eb"
-              ],
-              "postInit": true
-            },
-            "m_eidParent": {
-              "type": "SEntityTemplateReference",
-              "value": "cafe454b1fbb40eb",
-              "postInit": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
         "cafe454b1fbb40eb",
         {
           "parent": "cafe2a576dfb3613",
           "name": "FX_Water_Leak_3x3m_A",
-          "factory": "00E5D93F6F0292EE",
-          "blueprint": "00BD9C82981E01F6",
+          "factory": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
           "properties": {
             "m_PrimitiveScale": {
               "type": "SVector3",
@@ -150,6 +61,14 @@
             "m_bEnableRayCollision": {
               "type": "bool",
               "value": false
+            },
+            "LeakSpeed": {
+              "type": "float32",
+              "value": 0.20000000298023224
+            },
+            "ConstantColorRGB_01_Value": {
+              "type": "SColorRGB",
+              "value": "#8f0015"
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
@@ -327,6 +246,7 @@
                 "cafe454b1fbb40eb"
               ],
               "Activate": [
+                "cafe454b1fbb40eb",
                 "cafedf0494f286ed"
               ],
               "SetInPhysicsWorld": [
