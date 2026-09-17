@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
   "version": "0.2.0",
   "id": "Charc0al.MartiniPuddle",
-  "name": "Puddle Throwable Items",
-  "description": "Shaken, not... spilled? Throwing the martini shaker or snow globe creates a water puddle now.",
+  "name": "Puddles!",
+  "description": "Shaken, not... spilled? Adds water puddles to several thrown items. Martini shaker, snow globe, water and wine bottles, soda can.",
   "authors": [
     "Charc0al"
   ],
