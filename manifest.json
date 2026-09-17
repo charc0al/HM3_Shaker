@@ -16,6 +16,7 @@
 		"group": "Main",
 		"type": "checkbox",
 		"enabledByDefault": true,
+		"image": "smf/water.webp",
 		"contentFolders": ["content/water"]
 	},
 	{
@@ -24,6 +25,7 @@
 		"group": "Main",
 		"type": "checkbox",
 		"enabledByDefault": true,
+		"image": "smf/vodka.webp",
 		"contentFolders": ["content/vodka"]
 	},
 	{
@@ -32,6 +34,7 @@
 		"group": "Main",
 		"type": "checkbox",
 		"enabledByDefault": true,
+		"image": "smf/wine.webp",
 		"contentFolders": ["content/wine"]
 	},
 	{
@@ -40,6 +43,7 @@
 		"group": "Main",
 		"type": "checkbox",
 		"enabledByDefault": true,
+		"image": "smf/soda.webp",
 		"contentFolders": ["content/soda"]
 	},
 	{
@@ -48,6 +52,7 @@
 		"group": "Main",
 		"type": "checkbox",
 		"enabledByDefault": true,
+		"image": "smf/unlocks.webp",
 		"contentFolders": ["content/unlocks"]
 	}
   ]
