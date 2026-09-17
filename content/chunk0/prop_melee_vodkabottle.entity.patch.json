@@ -41,12 +41,17 @@
       "parent": "6db1e53b7ddb9be2", "name": "OilPuddleOnFirePoll",
       "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
       "properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": { "ref": "cafe112233445566", "externalScene": null, "exposedEntity": "m_bHasExploded" } } },
-      "events": { "PollTrue": { "Activate": ["cafe33aa44bb55cc"] }, "PollFalse": { "In": ["cafe55aa66bb77cc"] } }
+      "events": { "PollTrue": { "Activate": ["cafe33aa44bb55cc"], "In": ["cafe77aa88bb99cc"] }, "PollFalse": { "In": ["cafe55aa66bb77cc"] } }
     }] },
     { "AddEntity": ["cafe55aa66bb77cc", {
       "parent": "6db1e53b7ddb9be2", "name": "OilPuddleIgnitionPollTimer",
       "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
       "properties": { "Delay time (ms)": { "type": "int32", "value": 200 } }, "events": { "Out": { "Poll": ["cafe44aa55bb66cc"] } }
+    }] },
+    { "AddEntity": ["cafe77aa88bb99cc", {
+      "parent": "6db1e53b7ddb9be2", "name": "FlameVisualLifetime",
+      "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+      "properties": { "Delay time (ms)": { "type": "int32", "value": 5000 } }, "events": { "Out": { "Deactivate": ["cafe33aa44bb55cc"] } }
     }] },
     { "AddEntity": ["cafef1029384756a", { "parent": "6db1e53b7ddb9be2", "name": "VoidSignalOnce_Simple", "factory": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entityblueprint", "events": { "Out": { "Get": ["cafe1234567890ab"], "Detach": ["cafea1d2e3f40506"] } } }] },
     { "AddEntity": ["cafe1234567890ab", { "parent": "6db1e53b7ddb9be2", "name": "GetGroundPosition", "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype", "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint", "properties": { "498320989": { "type": "float32", "value": 0.30000001192092896 }, "920014207": { "type": "float32", "value": -3.0 }, "m_rSpatial": { "type": "SEntityTemplateReference", "value": "a29ac386904647b3", "postInit": true } }, "events": { "Position": { "Value": ["cafebcdef0123456"] } } }] },
