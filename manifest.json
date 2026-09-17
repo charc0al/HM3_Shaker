@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "id": "Charc0al.MartiniPuddle",
   "name": "Puddles!",
   "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), vodka (flammable) and soda (slippery).",
@@ -10,50 +10,60 @@
   "frameworkVersion": "2.33.42",
   "updateCheck": "https://github.com/charc0al/HM3_Shaker/releases/latest/download/updates.json",
   "options": [
-	{
-		"name": "Water",
-		"tooltip": "Water pools from Atlantide bottle, martini shaker, and snow globe",
-		"group": "Main",
-		"type": "checkbox",
-		"enabledByDefault": true,
-		"image": "smf/water.webp",
-		"contentFolders": ["content/water"]
-	},
-	{
-		"name": "Vodka",
-		"tooltip": "Throwing the vodka bottle creates a flammable pool of vodka",
-		"group": "Main",
-		"type": "checkbox",
-		"enabledByDefault": true,
-		"image": "smf/vodka.webp",
-		"contentFolders": ["content/vodka"]
-	},
-	{
-		"name": "Wine",
-		"tooltip": "Throwing wine bottles creates pools of wine that can electrocute like water",
-		"group": "Main",
-		"type": "checkbox",
-		"enabledByDefault": true,
-		"image": "smf/wine.webp",
-		"contentFolders": ["content/wine"]
-	},
-	{
-		"name": "Soda",
-		"tooltip": "Throwing soda cans creates slippery puddles of soda",
-		"group": "Main",
-		"type": "checkbox",
-		"enabledByDefault": true,
-		"image": "smf/soda.webp",
-		"contentFolders": ["content/soda"]
-	},
-	{
-		"name": "Unlockables",
-		"tooltip": "Adds Atlantide water bottle, soda can and vodka bottles to loadout screen",
-		"group": "Main",
-		"type": "checkbox",
-		"enabledByDefault": true,
-		"image": "smf/unlocks.webp",
-		"contentFolders": ["content/unlocks"]
-	}
+    {
+      "name": "Water",
+      "tooltip": "Water pools from Atlantide bottle, martini shaker, and snow globe",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/water.webp",
+      "contentFolders": [
+        "content/water"
+      ]
+    },
+    {
+      "name": "Vodka",
+      "tooltip": "Throwing the vodka bottle creates a flammable pool of vodka",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/vodka.webp",
+      "contentFolders": [
+        "content/vodka"
+      ]
+    },
+    {
+      "name": "Wine",
+      "tooltip": "Throwing wine bottles creates pools of wine that can electrocute like water",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/wine.webp",
+      "contentFolders": [
+        "content/wine"
+      ]
+    },
+    {
+      "name": "Soda",
+      "tooltip": "Throwing soda cans creates slippery puddles of soda",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/soda.webp",
+      "contentFolders": [
+        "content/soda"
+      ]
+    },
+    {
+      "name": "Unlockables",
+      "tooltip": "Adds Atlantide water bottle, soda can and vodka bottles to loadout screen",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": [
+        "content/unlocks"
+      ]
+    }
   ]
 }
