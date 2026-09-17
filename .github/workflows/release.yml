@@ -168,7 +168,7 @@ jobs:
               run: |
                   mkdir $TARGETDIR
                   for file in *;do test "$file" != "$TARGETDIR" && cp -r "$file" "$TARGETDIR/";done
-                  rm -rf "$TARGETDIR/node_modules"
+                  rm -rf "$TARGETDIR/node_modules" "$TARGETDIR/src"
                   rm "$TARGETDIR/package.json" "$TARGETDIR/package-lock.json" "$TARGETDIR/README.md"
 
             - name: Create ZIP
