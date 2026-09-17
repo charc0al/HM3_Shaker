@@ -64,11 +64,11 @@
             },
             "LeakSpeed": {
               "type": "float32",
-              "value": 0.20000000298023224
+              "value": 0.60
             },
             "ConstantColorRGB_01_Value": {
               "type": "SColorRGB",
-              "value": "#8f0015"
+              "value": "#65000f"
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
