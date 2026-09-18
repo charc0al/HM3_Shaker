@@ -1,0 +1,1041 @@
+{
+    "tempHash":  "0068D6B3D2E5121C",
+    "tbluHash":  "009774846CC9E742",
+    "rootEntity":  "6db1e53b7ddb9be2",
+    "entities":  {
+                     "8420af3c0be74b04":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "KeywordEntity_DIALOGUE_FALLBACK",
+                                              "factory":  "[assembly:/_pro/design/gamecore/keywords/keywordaidialogue.template?/keywordentity_dialogue_fallback.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/keywords/keywordaidialogue.template?/keywordentity_dialogue_fallback.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aHolders":  {
+                                                                                    "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                    "value":  [
+                                                                                                  "a29ac386904647b3"
+                                                                                              ],
+                                                                                    "postInit":  true
+                                                                                }
+                                                             }
+                                          },
+                     "57ecb2c22de6045e":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "HM5ItemInteractionEventConsumer",
+                                              "factory":  "[modules:/zhm5iteminteractioneventconsumer.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zhm5iteminteractioneventconsumer.class].pc_entityblueprint",
+                                              "events":  {
+                                                             "ItemImpactBack":  {
+                                                                                    "Impact_Back":  [
+                                                                                                        "e7cb467c5751f1a8"
+                                                                                                    ]
+                                                                                },
+                                                             "ItemImpactFront":  {
+                                                                                     "Impact":  [
+                                                                                                    "e7cb467c5751f1a8"
+                                                                                                ]
+                                                                                 },
+                                                             "ItemImpactLow":  {
+                                                                                   "ItemImpactLow":  [
+                                                                                                         "e7cb467c5751f1a8"
+                                                                                                     ]
+                                                                               }
+                                                         }
+                                          },
+                     "d3446de237cbdb7f":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "Keyword_WEAPON_MEDIUM",
+                                              "factory":  "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_medium.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_medium.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aHolders":  {
+                                                                                    "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                    "value":  [
+                                                                                                  "a29ac386904647b3"
+                                                                                              ],
+                                                                                    "postInit":  true
+                                                                                }
+                                                             }
+                                          },
+                     "b4fb70203d1b2509":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "EventConsumerCollection",
+                                              "factory":  "[modules:/zeventconsumercollection.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zeventconsumercollection.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_BaseEventConsumers":  {
+                                                                                              "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                              "value":  [
+                                                                                                            "57ecb2c22de6045e"
+                                                                                                        ]
+                                                                                          }
+                                                             }
+                                          },
+                     "e7cb467c5751f1a8":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "SoundSetup_Item",
+                                              "factory":  "[assembly:/templates/itemtemplates/item_soundsetup.template?/soundsetup_item.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/templates/itemtemplates/item_soundsetup.template?/soundsetup_item.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "CloseCombatImpact_Sound":  {
+                                                                                                 "type":  "ZRuntimeResourceID",
+                                                                                                 "value":  {
+                                                                                                               "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_policebaton/play_policebaton_closecombat_impact.wwiseevent].pc_wwisebank",
+                                                                                                               "flag":  "5F"
+                                                                                                           }
+                                                                                             },
+                                                                 "PropEquipped_Sound":  {
+                                                                                            "type":  "ZRuntimeResourceID",
+                                                                                            "value":  {
+                                                                                                          "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_equip_unequip/equip/play_fol_item_equip_glass.wwiseevent].pc_wwisebank",
+                                                                                                          "flag":  "5F"
+                                                                                                      }
+                                                                                        },
+                                                                 "Equipped_Foley_Keyword":  {
+                                                                                                "type":  "ZString",
+                                                                                                "value":  "FOLEY_ITEM_NO_SOUND"
+                                                                                            },
+                                                                 "PropUnEquipped_Sound":  {
+                                                                                              "type":  "ZRuntimeResourceID",
+                                                                                              "value":  {
+                                                                                                            "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_equip_unequip/unequip/play_fol_item_unequip_glass.wwiseevent].pc_wwisebank",
+                                                                                                            "flag":  "5F"
+                                                                                                        }
+                                                                                          },
+                                                                 "Prop_Placed_Sound":  {
+                                                                                           "type":  "ZRuntimeResourceID",
+                                                                                           "value":  {
+                                                                                                         "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_policebaton/play_foley_policebaton_placed.wwiseevent].pc_wwisebank",
+                                                                                                         "flag":  "5F"
+                                                                                                     }
+                                                                                       },
+                                                                 "DeadlyThrowImpact_Sound":  {
+                                                                                                 "type":  "ZRuntimeResourceID",
+                                                                                                 "value":  {
+                                                                                                               "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_policebaton/play_fol_item_policebaton_deadlythrow.wwiseevent].pc_wwisebank",
+                                                                                                               "flag":  "5F"
+                                                                                                           }
+                                                                                             },
+                                                                 "Bloody_Equip_Toggle":  {
+                                                                                             "type":  "bool",
+                                                                                             "value":  false
+                                                                                         },
+                                                                 "Close_Comba_Impact_Back_Soundt":  {
+                                                                                                        "type":  "ZRuntimeResourceID",
+                                                                                                        "value":  {
+                                                                                                                      "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_policebaton/play_policebaton_closecombat_impact_back.wwiseevent].pc_wwisebank",
+                                                                                                                      "flag":  "5F"
+                                                                                                                  }
+                                                                                                    },
+                                                                 "ItemImpactLow":  {
+                                                                                       "type":  "ZRuntimeResourceID",
+                                                                                       "value":  {
+                                                                                                     "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_policebaton/play_policebaton_closecombat_impact_back.wwiseevent].pc_wwisebank",
+                                                                                                     "flag":  "5F"
+                                                                                                 }
+                                                                                   },
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0.0,
+                                                                                                                     "y":  0.0,
+                                                                                                                     "z":  -0.01976704358638215
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0.0,
+                                                                                                                     "y":  0.0,
+                                                                                                                     "z":  -0.08530300110578537
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "SoundEmitter_Transform":  {
+                                                                                                "type":  "SMatrix43",
+                                                                                                "value":  {
+                                                                                                              "rotation":  {
+                                                                                                                               "x":  0.0,
+                                                                                                                               "y":  0.0,
+                                                                                                                               "z":  0.0
+                                                                                                                           },
+                                                                                                              "position":  {
+                                                                                                                               "x":  0.0,
+                                                                                                                               "y":  0.0,
+                                                                                                                               "z":  -0.08500000089406967
+                                                                                                                           }
+                                                                                                          }
+                                                                                            },
+                                                                 "ThrowMaterial_Sweetener":  {
+                                                                                                 "type":  "ZRuntimeResourceID",
+                                                                                                 "value":  {
+                                                                                                               "resource":  "[assembly:/sound/wwise/exportedwwisedata/events/item_events/item_bottle_redwine/play_sfx_item_bottle_redwine_break.wwiseevent].pc_wwisebank",
+                                                                                                               "flag":  "5F"
+                                                                                                           }
+                                                                                             },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "a29ac386904647b3",
+                                                                                     "postInit":  true
+                                                                                 },
+                                                                 "m_rHolder":  {
+                                                                                   "type":  "SEntityTemplateReference",
+                                                                                   "value":  "a29ac386904647b3",
+                                                                                   "postInit":  true
+                                                                               },
+                                                                 "m_eidParent1":  {
+                                                                                      "type":  "SEntityTemplateReference",
+                                                                                      "value":  "a29ac386904647b3",
+                                                                                      "postInit":  true
+                                                                                  },
+                                                                 "m_ObstructionShapeRoot":  {
+                                                                                                "type":  "SEntityTemplateReference",
+                                                                                                "value":  "a29ac386904647b3",
+                                                                                                "postInit":  true
+                                                                                            }
+                                                             },
+                                              "subsets":  {
+                                                              "AudioEmitters":  [
+                                                                                    "6db1e53b7ddb9be2"
+                                                                                ]
+                                                          }
+                                          },
+                     "7ef7ccb936e1654e":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "Keyword_WEAPON_MELEE",
+                                              "factory":  "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_melee.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/keywords/keywordweapondescriptors.template?/keyword_weapon_melee.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aHolders":  {
+                                                                                    "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                    "value":  [
+                                                                                                  "a29ac386904647b3"
+                                                                                              ],
+                                                                                    "postInit":  true
+                                                                                }
+                                                             }
+                                          },
+                     "077b2082c2cc5187":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "ItemHelpers_GripPose_1H_Stick",
+                                              "factory":  "[assembly:/_pro/design/gamecore/itemhelpers_grippose.template?/itemhelpers_grippose_1h_stick.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemhelpers_grippose.template?/itemhelpers_grippose_1h_stick.entitytemplate].pc_entityblueprint"
+                                          },
+                     "dbf520529d8f33c2":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "ChildNetwork",
+                                              "factory":  "[modules:/zchildnetworkentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zchildnetworkentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_RuntimeNetworkResourceID":  {
+                                                                                                    "type":  "ZRuntimeResourceID",
+                                                                                                    "value":  {
+                                                                                                                  "resource":  "[assembly:/animationnetworks/hitman01/idles/default_item_idle.aln].pc_rtn",
+                                                                                                                  "flag":  "9F"
+                                                                                                              }
+                                                                                                }
+                                                             }
+                                          },
+                     "1a460929060e1fb7":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "keyword_ITEMRULE_LEGAL",
+                                              "factory":  "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/keywords/keyworditems.template?/keyword_itemrule_legal.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aHolders":  {
+                                                                                    "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                    "value":  [
+                                                                                                  "a29ac386904647b3"
+                                                                                              ],
+                                                                                    "postInit":  true
+                                                                                }
+                                                             }
+                                          },
+                     "78330651c7f3ffc0":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "VR_CloseCombat_SoundSetup",
+                                              "factory":  "[assembly:/templates/sound/vr_audio.template?/vr_closecombat_soundsetup.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/templates/sound/vr_audio.template?/vr_closecombat_soundsetup.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "a29ac386904647b3",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             },
+                                              "events":  {
+                                                             "ImpactFront":  {
+                                                                                 "Impact":  [
+                                                                                                "e7cb467c5751f1a8"
+                                                                                            ]
+                                                                             },
+                                                             "ImpactBack":  {
+                                                                                "Impact_Back":  [
+                                                                                                    "e7cb467c5751f1a8"
+                                                                                                ]
+                                                                            },
+                                                             "Unholster":  {
+                                                                               "Item_UnEquipped":  [
+                                                                                                       "e7cb467c5751f1a8"
+                                                                                                   ]
+                                                                           }
+                                                         },
+                                              "subsets":  {
+                                                              "AudioEmitters":  [
+                                                                                    "6db1e53b7ddb9be2"
+                                                                                ]
+                                                          }
+                                          },
+                     "a29ac386904647b3":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "ItemArt_Vodka_Bottle_A_00",
+                                              "factory":  "[assembly:/_pro/items/templates/traps/bottles_a.template?/itemart_vodka_bottle_a_00.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/items/templates/traps/bottles_a.template?/itemart_vodka_bottle_a_00.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0.0,
+                                                                                                                     "y":  0.0,
+                                                                                                                     "z":  0.0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  -4.075890064239502,
+                                                                                                                     "y":  -4.702899932861328,
+                                                                                                                     "z":  0.0002859999949578196
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "CapVisible":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  true
+                                                                                },
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_DYNAMIC"
+                                                                                      },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null,
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             },
+                                              "events":  {
+                                                             "OnInitialFracture":  {
+                                                                                       "OnThrown":  [
+                                                                                                        "e7cb467c5751f1a8"
+                                                                                                    ],
+                                                                                       "Signal":  [
+                                                                                                      "cafef1029384756a"
+                                                                                                  ]
+                                                                                   },
+                                                             "OnInitialDetach":  {
+                                                                                     "DestroyItem":  [
+                                                                                                         "9c3bb41240ad4886"
+                                                                                                     ]
+                                                                                 },
+                                                             "OnFirstShatter":  {
+                                                                                    "Signal":  [
+                                                                                                   "cafef1029384756a"
+                                                                                               ],
+                                                                                    "DestroyItem":  [
+                                                                                                        "9c3bb41240ad4886"
+                                                                                                    ]
+                                                                                }
+                                                         },
+                                              "subsets":  {
+                                                              "AudioEmitters":  [
+                                                                                    "6db1e53b7ddb9be2"
+                                                                                ]
+                                                          }
+                                          },
+                     "d9c5b26dd08a0083":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "CCEffect_Blunt02",
+                                              "factory":  "[modules:/zcceffectsetentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zcceffectsetentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eEmitterEffect":  {
+                                                                                          "type":  "ECCEmitterEffect",
+                                                                                          "value":  "eCCEmitterEffect_Blunt1H"
+                                                                                      },
+                                                                 "m_eDecalEffect":  {
+                                                                                        "type":  "ECCDecalEffect",
+                                                                                        "value":  "eCCDecalEffect_None"
+                                                                                    },
+                                                                 "m_nEvent":  {
+                                                                                  "type":  "uint32",
+                                                                                  "value":  732
+                                                                              }
+                                                             }
+                                          },
+                     "c86203cf5d98e112":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "CCEffect_Blunt01",
+                                              "factory":  "[modules:/zcceffectsetentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zcceffectsetentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eEmitterEffect":  {
+                                                                                          "type":  "ECCEmitterEffect",
+                                                                                          "value":  "eCCEmitterEffect_None"
+                                                                                      },
+                                                                 "m_eDecalEffect":  {
+                                                                                        "type":  "ECCDecalEffect",
+                                                                                        "value":  "eCCDecalEffect_None"
+                                                                                    },
+                                                                 "m_nEvent":  {
+                                                                                  "type":  "uint32",
+                                                                                  "value":  731
+                                                                              }
+                                                             }
+                                          },
+                     "66464cc6872b0537":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "CCEffect_Blunt",
+                                              "factory":  "[modules:/zcceffectsetentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zcceffectsetentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eEmitterEffect":  {
+                                                                                          "type":  "ECCEmitterEffect",
+                                                                                          "value":  "eCCEmitterEffect_Blunt1H"
+                                                                                      },
+                                                                 "m_eDecalEffect":  {
+                                                                                        "type":  "ECCDecalEffect",
+                                                                                        "value":  "eCCDecalEffect_Blunt1H"
+                                                                                    }
+                                                             }
+                                          },
+                     "9c3bb41240ad4886":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "CCWeaponCoreNoPhys",
+                                              "factory":  "[assembly:/_pro/design/gamecore/itemcore.template?/ccweaponcorenophys.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemcore.template?/ccweaponcorenophys.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rGeomentity":  {
+                                                                                       "type":  "SEntityTemplateReference",
+                                                                                       "value":  "a29ac386904647b3"
+                                                                                   },
+                                                                 "m_eAnimSetFrontSide":  {
+                                                                                             "type":  "ECCWeaponAnimSet",
+                                                                                             "value":  "AS_SWING_1H"
+                                                                                         },
+                                                                 "m_eAnimSetBack":  {
+                                                                                        "type":  "ECCWeaponAnimSet",
+                                                                                        "value":  "AS_SWING_1H"
+                                                                                    },
+                                                                 "m_pVariationResource":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "077b2082c2cc5187"
+                                                                                          },
+                                                                 "m_aEffectSetsFrontSide":  {
+                                                                                                "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                                "value":  [
+                                                                                                              "66464cc6872b0537",
+                                                                                                              "c86203cf5d98e112",
+                                                                                                              "d9c5b26dd08a0083"
+                                                                                                          ]
+                                                                                            },
+                                                                 "m_aEffectSetsBack":  {
+                                                                                           "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                           "value":  [
+                                                                                                         "66464cc6872b0537",
+                                                                                                         "c86203cf5d98e112",
+                                                                                                         "d9c5b26dd08a0083"
+                                                                                                     ]
+                                                                                       },
+                                                                 "m_eDeathSpeakBack":  {
+                                                                                           "type":  "EActorSoundDefs",
+                                                                                           "value":  "Dth_Hrt"
+                                                                                       },
+                                                                 "m_PosHandAttach":  {
+                                                                                         "type":  "SEntityTemplateReference",
+                                                                                         "value":  {
+                                                                                                       "ref":  "a29ac386904647b3",
+                                                                                                       "externalScene":  null,
+                                                                                                       "exposedEntity":  "HandAttacherSpatial"
+                                                                                                   }
+                                                                                     },
+                                                                 "m_eDeathTypeFront":  {
+                                                                                           "type":  "EDeathType",
+                                                                                           "value":  "eDT_PACIFY"
+                                                                                       },
+                                                                 "m_eDeathTypeBack":  {
+                                                                                          "type":  "EDeathType",
+                                                                                          "value":  "eDT_PACIFY"
+                                                                                      },
+                                                                 "m_PosPlacementAttach":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  {
+                                                                                                            "ref":  "a29ac386904647b3",
+                                                                                                            "externalScene":  null,
+                                                                                                            "exposedEntity":  "PropHelper_Item_Placement"
+                                                                                                        }
+                                                                                          },
+                                                                 "m_EventConsumerCollection":  {
+                                                                                                   "type":  "SEntityTemplateReference",
+                                                                                                   "value":  "b4fb70203d1b2509"
+                                                                                               },
+                                                                 "m_bKinematic":  {
+                                                                                      "type":  "bool",
+                                                                                      "value":  true
+                                                                                  },
+                                                                 "m_PlacementVolume":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  {
+                                                                                                         "ref":  "a29ac386904647b3",
+                                                                                                         "externalScene":  null,
+                                                                                                         "exposedEntity":  "PlacementVolume"
+                                                                                                     }
+                                                                                       },
+                                                                 "m_pIdleAnimNetworkEntity":  {
+                                                                                                  "type":  "SEntityTemplateReference",
+                                                                                                  "value":  "dbf520529d8f33c2"
+                                                                                              }
+                                                             },
+                                              "events":  {
+                                                             "WeaponPlayerEquipped":  {
+                                                                                          "Item_Equipped":  [
+                                                                                                                "e7cb467c5751f1a8"
+                                                                                                            ]
+                                                                                      },
+                                                             "WeaponPlayerUnEquipped":  {
+                                                                                            "Item_UnEquipped":  [
+                                                                                                                    "e7cb467c5751f1a8"
+                                                                                                                ]
+                                                                                        },
+                                                             "DeadlyThrowImpact":  {
+                                                                                       "DeadlyThrowImpact":  [
+                                                                                                                 "e7cb467c5751f1a8"
+                                                                                                             ],
+                                                                                       "BreakAll":  [
+                                                                                                        "a29ac386904647b3"
+                                                                                                    ]
+                                                                                   },
+                                                             "OnPlaced":  {
+                                                                              "ItemPlaced":  [
+                                                                                                 "e7cb467c5751f1a8"
+                                                                                             ]
+                                                                          },
+                                                             "OnPutInContainer":  {
+                                                                                      "ItemPlaced":  [
+                                                                                                         "e7cb467c5751f1a8"
+                                                                                                     ]
+                                                                                  },
+                                                             "OnDrop":  {
+                                                                            "OnDrop_MixingEvent":  [
+                                                                                                       "e7cb467c5751f1a8"
+                                                                                                   ]
+                                                                        },
+                                                             "OnThrown":  {
+                                                                              "OnThrown_MixingEvent":  [
+                                                                                                           "e7cb467c5751f1a8"
+                                                                                                       ]
+                                                                          },
+                                                             "ImpactBack":  {
+                                                                                "BreakAll":  [
+                                                                                                 "a29ac386904647b3"
+                                                                                             ],
+                                                                                "ImpactBack":  [
+                                                                                                   "78330651c7f3ffc0"
+                                                                                               ]
+                                                                            },
+                                                             "ImpactFrontSide":  {
+                                                                                     "BreakAll":  [
+                                                                                                      "a29ac386904647b3"
+                                                                                                  ],
+                                                                                     "ImpactFront":  [
+                                                                                                         "78330651c7f3ffc0"
+                                                                                                     ]
+                                                                                 },
+                                                             "OnStartPriming":  {
+                                                                                    "PrimeStartFloat":  [
+                                                                                                            "78330651c7f3ffc0"
+                                                                                                        ]
+                                                                                },
+                                                             "OnItemPrimed":  {
+                                                                                  "PrimeStart":  [
+                                                                                                     "78330651c7f3ffc0"
+                                                                                                 ]
+                                                                              },
+                                                             "OnStopPriming":  {
+                                                                                   "PrimeStop":  [
+                                                                                                     "78330651c7f3ffc0"
+                                                                                                 ]
+                                                                               }
+                                                         },
+                                              "subsets":  {
+                                                              "Replicable":  [
+                                                                                 "6db1e53b7ddb9be2"
+                                                                             ]
+                                                          }
+                                          },
+                     "6db1e53b7ddb9be2":  {
+                                              "parent":  null,
+                                              "name":  "Prop_QuestItem_Tutorial_VodkaBottle_Melee",
+                                              "factory":  "[modules:/zentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0.0,
+                                                                                                                     "y":  0.0,
+                                                                                                                     "z":  89.99994270422063
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  1.1643530130386353,
+                                                                                                                     "y":  -1.6639339923858645,
+                                                                                                                     "z":  0.0
+                                                                                                                 }
+                                                                                                }
+                                                                                  }
+                                                             },
+                                              "propertyAliases":  {
+                                                                      "Kinematic":  [
+                                                                                        {
+                                                                                            "originalProperty":  "Kinematic",
+                                                                                            "originalEntity":  "9c3bb41240ad4886"
+                                                                                        }
+                                                                                    ],
+                                                                      "m_bStartKinematic":  [
+                                                                                                {
+                                                                                                    "originalProperty":  "m_bStartKinematic",
+                                                                                                    "originalEntity":  "9c3bb41240ad4886"
+                                                                                                }
+                                                                                            ],
+                                                                      "m_bStartPhysical":  [
+                                                                                               {
+                                                                                                   "originalProperty":  "m_bStartPhysical",
+                                                                                                   "originalEntity":  "9c3bb41240ad4886"
+                                                                                               }
+                                                                                           ],
+                                                                      "m_bStartVisible":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_bStartVisible",
+                                                                                                  "originalEntity":  "9c3bb41240ad4886"
+                                                                                              }
+                                                                                          ],
+                                                                      "m_eidParent":  [
+                                                                                          {
+                                                                                              "originalProperty":  "m_eidParent",
+                                                                                              "originalEntity":  "a29ac386904647b3"
+                                                                                          }
+                                                                                      ],
+                                                                      "m_mTransform":  [
+                                                                                           {
+                                                                                               "originalProperty":  "m_mTransform",
+                                                                                               "originalEntity":  "a29ac386904647b3"
+                                                                                           }
+                                                                                       ]
+                                                                  },
+                                              "exposedInterfaces":  {
+                                                                        "ZSpatialEntity":  "a29ac386904647b3",
+                                                                        "ZGeomEntity":  "a29ac386904647b3",
+                                                                        "IItemWeapon":  "9c3bb41240ad4886",
+                                                                        "IItem":  "9c3bb41240ad4886",
+                                                                        "ZHM5ItemCCWeapon":  "9c3bb41240ad4886",
+                                                                        "ZHM5Item":  "9c3bb41240ad4886",
+                                                                        "IItemBase":  "9c3bb41240ad4886",
+                                                                        "IDynamicPhysics":  "a29ac386904647b3",
+                                                                        "IPhysicsAccessor":  "a29ac386904647b3"
+                                                                    }
+                                          },
+                     "cafea1d2e3f40506":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "FlammableVodkaPuddle",
+                                              "factory":  "[modules:/zentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zentity.class].pc_entityblueprint",
+                                              "inputCopying":  {
+                                                                   "Activate":  {
+                                                                                    "MakeVisible":  [
+                                                                                                        "cafea7b8c9d0e1f2"
+                                                                                                    ],
+                                                                                    "SetInPhysicsWorld":  [
+                                                                                                              {
+                                                                                                                  "ref":  "cafea7b8c9d0e1f2",
+                                                                                                                  "value":  {
+                                                                                                                                "type":  "bool",
+                                                                                                                                "value":  true
+                                                                                                                            }
+                                                                                                              },
+                                                                                                              {
+                                                                                                                  "ref":  "cafe112233445566",
+                                                                                                                  "value":  {
+                                                                                                                                "type":  "bool",
+                                                                                                                                "value":  true
+                                                                                                                            }
+                                                                                                              }
+                                                                                                          ],
+                                                                                    "Activate":  [
+                                                                                                     "cafea7b8c9d0e1f2",
+                                                                                                     "cafe112233445566"
+                                                                                                 ],
+                                                                                    "In":  [
+                                                                                               "cafe55aa66bb77cc"
+                                                                                           ]
+                                                                                }
+                                                               }
+                                          },
+                     "cafea7b8c9d0e1f2":  {
+                                              "parent":  "cafea1d2e3f40506",
+                                              "name":  "FX_Water_Leak_3x3m_A",
+                                              "factory":  "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_PrimitiveScale":  {
+                                                                                          "type":  "SVector3",
+                                                                                          "value":  {
+                                                                                                        "x":  0.5,
+                                                                                                        "y":  0.5,
+                                                                                                        "z":  0.5
+                                                                                                    }
+                                                                                      },
+                                                                 "m_bVisible":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_bKinematic":  {
+                                                                                      "type":  "bool",
+                                                                                      "value":  true
+                                                                                  },
+                                                                 "m_bRemovePhysics":  {
+                                                                                          "type":  "bool",
+                                                                                          "value":  true
+                                                                                      },
+                                                                 "m_eLayer":  {
+                                                                                  "type":  "ECollidableLayer",
+                                                                                  "value":  "eCollLayer_SHOT_ONLY_COLLISION"
+                                                                              },
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_DYNAMIC"
+                                                                                      },
+                                                                 "LeakSpeed":  {
+                                                                                   "type":  "float32",
+                                                                                   "value":  0.4
+                                                                               },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null
+                                                                                 }
+                                                             }
+                                          },
+                     "cafe112233445566":  {
+                                              "parent":  "cafea1d2e3f40506",
+                                              "name":  "PropHelper_OilSpill_Burning_Small",
+                                              "factory":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_sId":  {
+                                                                               "type":  "ZGuid",
+                                                                               "value":  "7f86dc61-b7c9-4730-9ced-cc1bebcad06a"
+                                                                           },
+                                                                 "m_bVisible":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_DYNAMIC"
+                                                                                      },
+                                                                 "LeakSpeed":  {
+                                                                                   "type":  "float32",
+                                                                                   "value":  0.2
+                                                                               },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null
+                                                                                 }
+                                                             }
+                                          },
+                     "cafe33aa44bb55cc":  {
+                                              "parent":  "cafea1d2e3f40506",
+                                              "name":  "FX_E_Fire_Toward_Center",
+                                              "factory":  "[assembly:/_pro/effects/templates/fire/fx_fire.template?/fx_e_fire_toward_center.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/fire/fx_fire.template?/fx_e_fire_toward_center.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.049
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  1.2,
+                                                                                                     "y":  1.2,
+                                                                                                     "z":  0
+                                                                                                 }
+                                                                                   },
+                                                                 "m_fParticlesPerSecond":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  50
+                                                                                           },
+                                                                 "m_fParticlesPerSecondMax":  {
+                                                                                                  "type":  "float32",
+                                                                                                  "value":  50
+                                                                                              },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  0.5
+                                                                                 },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  2
+                                                                                 },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null
+                                                                                 }
+                                                             }
+                                          },
+                     "cafe44aa55bb66cc":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "OilPuddleOnFirePoll",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rValueEntity":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  {
+                                                                                                      "ref":  "cafe112233445566",
+                                                                                                      "externalScene":  null,
+                                                                                                      "exposedEntity":  "m_bHasExploded"
+                                                                                                  }
+                                                                                    }
+                                                             },
+                                              "events":  {
+                                                             "PollTrue":  {
+                                                                              "Activate":  [
+                                                                                               "cafe33aa44bb55cc"
+                                                                                           ],
+                                                                              "In":  [
+                                                                                         "cafe77aa88bb99cc"
+                                                                                     ]
+                                                                          },
+                                                             "PollFalse":  {
+                                                                               "In":  [
+                                                                                          "cafe55aa66bb77cc"
+                                                                                      ]
+                                                                           }
+                                                         }
+                                          },
+                     "cafe55aa66bb77cc":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "OilPuddleIgnitionPollTimer",
+                                              "factory":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "Delay time (ms)":  {
+                                                                                         "type":  "int32",
+                                                                                         "value":  200
+                                                                                     }
+                                                             },
+                                              "events":  {
+                                                             "Out":  {
+                                                                         "Poll":  [
+                                                                                      "cafe44aa55bb66cc"
+                                                                                  ]
+                                                                     }
+                                                         }
+                                          },
+                     "cafe77aa88bb99cc":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "FlameVisualLifetime",
+                                              "factory":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "Delay time (ms)":  {
+                                                                                         "type":  "int32",
+                                                                                         "value":  5000
+                                                                                     }
+                                                             },
+                                              "events":  {
+                                                             "Out":  {
+                                                                         "Deactivate":  [
+                                                                                            "cafe33aa44bb55cc"
+                                                                                        ]
+                                                                     }
+                                                         }
+                                          },
+                     "cafef1029384756a":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "VoidSignalOnce_Simple",
+                                              "factory":  "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/signalpipes.template?/voidsignalonce_simple.entitytemplate].pc_entityblueprint",
+                                              "events":  {
+                                                             "Out":  {
+                                                                         "Get":  [
+                                                                                     "cafe1234567890ab"
+                                                                                 ],
+                                                                         "Detach":  [
+                                                                                        "cafea1d2e3f40506"
+                                                                                    ]
+                                                                     }
+                                                         }
+                                          },
+                     "cafe1234567890ab":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "GetGroundPosition",
+                                              "factory":  "[modules:/zgetgroundpositionentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "498320989":  {
+                                                                                   "type":  "float32",
+                                                                                   "value":  0.3
+                                                                               },
+                                                                 "920014207":  {
+                                                                                   "type":  "float32",
+                                                                                   "value":  -3
+                                                                               },
+                                                                 "m_rSpatial":  {
+                                                                                    "type":  "SEntityTemplateReference",
+                                                                                    "value":  "a29ac386904647b3",
+                                                                                    "postInit":  true
+                                                                                }
+                                                             },
+                                              "events":  {
+                                                             "Position":  {
+                                                                              "Value":  [
+                                                                                            "cafebcdef0123456"
+                                                                                        ]
+                                                                          }
+                                                         }
+                                          },
+                     "cafebcdef0123456":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "Vector3_Debuffer",
+                                              "factory":  "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
+                                              "events":  {
+                                                             "Value":  {
+                                                                           "Position":  [
+                                                                                            "cafe67890abcdef1",
+                                                                                            "cafe0a0b0c0d0e0f",
+                                                                                            "cafe66aa77bb88cc"
+                                                                                        ]
+                                                                       },
+                                                             "Done":  {
+                                                                          "Activate":  [
+                                                                                           "cafea1d2e3f40506"
+                                                                                       ]
+                                                                      }
+                                                         }
+                                          },
+                     "cafe67890abcdef1":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "SetWaterVisualPosition",
+                                              "factory":  "[modules:/zsetpositionentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsetpositionentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_Entity":  {
+                                                                                  "type":  "SEntityTemplateReference",
+                                                                                  "value":  "cafea7b8c9d0e1f2",
+                                                                                  "postInit":  true
+                                                                              }
+                                                             }
+                                          },
+                     "cafe0a0b0c0d0e0f":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "SetFireTrapPosition",
+                                              "factory":  "[modules:/zsetpositionentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsetpositionentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_Entity":  {
+                                                                                  "type":  "SEntityTemplateReference",
+                                                                                  "value":  "cafe112233445566",
+                                                                                  "postInit":  true
+                                                                              }
+                                                             }
+                                          },
+                     "cafe66aa77bb88cc":  {
+                                              "parent":  "6db1e53b7ddb9be2",
+                                              "name":  "SetFlamePosition",
+                                              "factory":  "[modules:/zsetpositionentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsetpositionentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_Entity":  {
+                                                                                  "type":  "SEntityTemplateReference",
+                                                                                  "value":  "cafe33aa44bb55cc",
+                                                                                  "postInit":  true
+                                                                              }
+                                                             }
+                                          }
+                 },
+    "propertyOverrides":  [
+
+                          ],
+    "overrideDeletes":  [
+
+                        ],
+    "pinConnectionOverrides":  [
+
+                               ],
+    "pinConnectionOverrideDeletes":  [
+
+                                     ],
+    "externalScenes":  [
+
+                       ],
+    "subType":  "template",
+    "quickEntityVersion":  3.1,
+    "extraFactoryDependencies":  [
+                                     {
+                                         "resource":  "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_glass_whiteliquid.entitytemplate].pc_entitytemplate",
+                                         "flag":  "5F"
+                                     },
+                                     {
+                                         "resource":  "[assembly:/_pro/effects/templates/shatter/fx_destructionmaterials.template?/destructionmaterial_item_melee.entitytemplate].pc_entitytemplate",
+                                         "flag":  "5F"
+                                     }
+                                 ],
+    "extraBlueprintDependencies":  [
+
+                                   ],
+    "comments":  [
+
+                 ]
+}
