@@ -1,0 +1,48 @@
+{
+    "2df10c6c-7ac5-4fe3-9971-946083401d28": {
+        "AdditionalKeywords": [
+            "INVENTORY_SIZE_MEDIUM",
+            "VR_CONCEALED_WEAPON"
+        ],
+        "CanBeDropped": true,
+        "CarryAnimSetType": "EAST_CARRY_LEAD_PIPES",
+        "EquipAbility": "EA_EQUIP_IN_HANDS",
+        "GripAnimType": "IGT_Melee_1H_Knife",
+        "GripAnimTypeVR": "IGT_VR_Default",
+        "HolsterAbility": "eHolsteringAllowed",
+        "InventoryCategoryIcon": "melee",
+        "InventoryCategoryName": "melee",
+        "MainAnimSetType": "EAST_CARRY_LEAD_PIPES",
+        "MugshotIsTransparent": false,
+        "OnlineTraits": [
+            "melee_nonlethal",
+            "throw_nonlethal_deprecated"
+        ],
+        "PlaceableType": "PLACEABLE_SLEEP_PHYSICS",
+        "ThrowType": "THROW_PACIFY_LIGHT",
+        "TokenID": "PROP_MELEE_VODKABOTTLE2"
+    },
+	"195dcd6b-6663-4768-9e0a-c94e244cbea4": {
+        "AdditionalKeywords": [
+            "INVENTORY_SIZE_MEDIUM",
+            "VR_CONCEALED_WEAPON"
+        ],
+        "CanBeDropped": true,
+        "CarryAnimSetType": "EAST_CARRY_LEAD_PIPES",
+        "EquipAbility": "EA_EQUIP_IN_HANDS",
+        "GripAnimType": "IGT_Melee_1H_Knife",
+        "GripAnimTypeVR": "IGT_VR_Default",
+        "HolsterAbility": "eHolsteringAllowed",
+        "InventoryCategoryIcon": "melee",
+        "InventoryCategoryName": "melee",
+        "MainAnimSetType": "EAST_CARRY_LEAD_PIPES",
+        "MugshotIsTransparent": false,
+        "OnlineTraits": [
+            "melee_nonlethal",
+            "throw_nonlethal_deprecated"
+        ],
+        "PlaceableType": "PLACEABLE_SLEEP_PHYSICS",
+        "ThrowType": "THROW_PACIFY_LIGHT",
+        "TokenID": "PROP_MELEE_VODKABOTTLE3"
+    }
+}
