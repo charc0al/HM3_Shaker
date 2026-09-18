@@ -14,10 +14,7 @@
     { "SubEntityOperation": ["9555c52ff22bbd03", { "AddEventConnection": ["OnInitialFracture", "Signal", "cafec542f3450f3c"] }] },
     { "SubEntityOperation": ["9b87841618fa15c7", { "RemoveEventConnection": ["DeadlyThrowImpact", "BreakAll", "9555c52ff22bbd03"] }] },
     { "SubEntityOperation": ["9b87841618fa15c7", { "RemoveEventConnection": ["ImpactBack", "BreakAll", "9555c52ff22bbd03"] }] },
-    { "SubEntityOperation": ["9b87841618fa15c7", { "RemoveEventConnection": ["ImpactFrontSide", "BreakAll", "9555c52ff22bbd03"] }] },
-    { "SubEntityOperation": ["9b87841618fa15c7", { "AddEventConnection": ["DeadlyThrowImpact", "Signal", "cafec542f3450f3c"] }] },
-    { "SubEntityOperation": ["9b87841618fa15c7", { "AddEventConnection": ["ImpactBack", "Signal", "cafec542f3450f3c"] }] },
-    { "SubEntityOperation": ["9b87841618fa15c7", { "AddEventConnection": ["ImpactFrontSide", "Signal", "cafec542f3450f3c"] }] }
+    { "SubEntityOperation": ["9b87841618fa15c7", { "RemoveEventConnection": ["ImpactFrontSide", "BreakAll", "9555c52ff22bbd03"] }] }
   ],
   "patchVersion": 6
 }
