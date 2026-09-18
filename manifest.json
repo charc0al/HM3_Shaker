@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "id": "Charc0al.MartiniPuddle",
   "name": "Puddles!",
-  "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), vodka (flammable) and soda (slippery).",
+  "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), alcohol (flammable) and soda (slippery).",
   "authors": [
     "Charc0al"
   ],
@@ -23,13 +23,24 @@
     },
     {
       "name": "Vodka",
-      "tooltip": "Throwing the vodka bottle creates a flammable pool of vodka",
+      "tooltip": "Makes vodka and whiskey bottles spill flammable alcohol",
       "group": "Main",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/vodka.webp",
       "contentFolders": [
         "content/vodka"
+      ]
+    },
+	{
+      "name": "Vodka (Quest items)",
+      "tooltip": "Makes quest item vodka bottles throwable and create flammable puddles. Buggy, free throwing and dropping don't work properly atm.",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "image": "smf/vodka.webp",
+      "contentFolders": [
+        "content/vodka_quest"
       ]
     },
     {
