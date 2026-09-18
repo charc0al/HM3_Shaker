@@ -34,7 +34,7 @@
     },
     {
       "name": "Vodka (Quest items)",
-      "tooltip": "Makes quest item vodka bottles throwable and create flammable puddles. Buggy, free throwing and dropping don't work properly atm.",
+      "tooltip": "Makes quest item vodka bottles throwable and create flammable puddles. Slightly bugged still - the bottles will become invisible when placed with their quest prompts, but still function for the quest poisonings.",
       "group": "Main",
       "type": "checkbox",
       "enabledByDefault": false,
