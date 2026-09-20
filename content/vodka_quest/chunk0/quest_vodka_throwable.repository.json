@@ -10,17 +10,15 @@
         "GripAnimType": "IGT_Melee_1H_Knife",
         "GripAnimTypeVR": "IGT_VR_Default",
         "HolsterAbility": "eHolsteringAllowed",
-        "InventoryCategoryIcon": "melee",
-        "InventoryCategoryName": "melee",
         "MainAnimSetType": "EAST_CARRY_LEAD_PIPES",
         "MugshotIsTransparent": false,
         "OnlineTraits": [
             "melee_nonlethal",
             "throw_nonlethal_deprecated"
         ],
+		"RagdollImpactForce": 80,
         "PlaceableType": "PLACEABLE_SLEEP_PHYSICS",
-        "ThrowType": "THROW_PACIFY_LIGHT",
-        "TokenID": "PROP_MELEE_VODKABOTTLE2"
+        "ThrowType": "THROW_PACIFY_LIGHT"
     },
 	"195dcd6b-6663-4768-9e0a-c94e244cbea4": {
         "AdditionalKeywords": [
@@ -33,8 +31,6 @@
         "GripAnimType": "IGT_Melee_1H_Knife",
         "GripAnimTypeVR": "IGT_VR_Default",
         "HolsterAbility": "eHolsteringAllowed",
-        "InventoryCategoryIcon": "melee",
-        "InventoryCategoryName": "melee",
         "MainAnimSetType": "EAST_CARRY_LEAD_PIPES",
         "MugshotIsTransparent": false,
         "OnlineTraits": [
@@ -42,7 +38,7 @@
             "throw_nonlethal_deprecated"
         ],
         "PlaceableType": "PLACEABLE_SLEEP_PHYSICS",
-        "ThrowType": "THROW_PACIFY_LIGHT",
-        "TokenID": "PROP_MELEE_VODKABOTTLE3"
+		"RagdollImpactForce": 80,
+        "ThrowType": "THROW_PACIFY_LIGHT"
     }
 }
