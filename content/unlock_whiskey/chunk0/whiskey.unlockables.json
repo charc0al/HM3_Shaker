@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["MELEE_WHISKEY"] } },
+  "MELEE_WHISKEY": {
+    "Id": "MELEE_WHISKEY", "Guid": "0a3c47b7-51ce-4b25-b5c5-40216d4318de", "Type": "gear", "Subtype": "melee", "ImageId": "", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": true, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": { "range": 1, "damage": 1, "clipsize": 1, "rateoffire": 1 }, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "3a359494-ee05-4fea-beac-8726233a55bf", "UnlockOrder": 5 }, "Rarity": "common"
+  }
+}

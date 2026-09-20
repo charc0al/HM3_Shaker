@@ -66,15 +66,112 @@
       ]
     },
     {
-      "name": "Unlockables",
-      "tooltip": "Adds Atlantide water bottle, soda can and vodka bottles to loadout screen",
-      "group": "Main",
+      "name": "Safehouse: Atlantide",
+      "tooltip": "Adds the Atlantide water bottle to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/water.webp",
+      "contentFolders": ["content/safehouse_atlantide"]
+    },
+    {
+      "name": "Safehouse: Vodka",
+      "tooltip": "Adds the regular vodka bottle to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/vodka.webp",
+      "contentFolders": ["content/safehouse_vodka"]
+    },
+    {
+      "name": "Safehouse: Raccoon Vodka",
+      "tooltip": "Adds the Raccoon vodka bottle to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "image": "smf/vodka.webp",
+      "contentFolders": ["content/safehouse_vodka_raccoon"]
+    },
+    {
+      "name": "Safehouse: Tutorial Vodka",
+      "tooltip": "Adds the tutorial vodka bottle to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "image": "smf/vodka.webp",
+      "contentFolders": ["content/safehouse_vodka_tutorial"]
+    },
+    {
+      "name": "Safehouse: Martini Shaker",
+      "tooltip": "Adds the martini shaker to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/water.webp",
+      "contentFolders": ["content/safehouse_shaker"]
+    },
+    {
+      "name": "Safehouse: Whiskey",
+      "tooltip": "Adds the whiskey bottle to the safehouse",
+      "group": "Safehouse",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/vodka.webp",
+      "contentFolders": ["content/safehouse_whiskey"]
+    },
+    {
+      "name": "Unlock: Vodka",
+      "tooltip": "Adds the regular vodka bottle to the loadout",
+      "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks.webp",
-      "contentFolders": [
-        "content/unlocks"
-      ]
+      "contentFolders": ["content/unlock_vodka"]
+    },
+    {
+      "name": "Unlock: Atlantide",
+      "tooltip": "Adds the Atlantide water bottle to the loadout",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/unlock_atlantide"]
+    },
+    {
+      "name": "Unlock: Soda",
+      "tooltip": "Adds the soda can to the loadout",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/unlock_soda"]
+    },
+    {
+      "name": "Unlock: Raccoon Vodka",
+      "tooltip": "Adds the Raccoon vodka bottle to the loadout",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/unlock_vodka_raccoon"]
+    },
+    {
+      "name": "Unlock: Tutorial Vodka",
+      "tooltip": "Adds the tutorial vodka bottle to the loadout",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/unlock_vodka_tutorial"]
+    },
+    {
+      "name": "Unlock: Whiskey",
+      "tooltip": "Adds the whiskey bottle to the loadout",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/unlock_whiskey"]
     }
   ]
 }

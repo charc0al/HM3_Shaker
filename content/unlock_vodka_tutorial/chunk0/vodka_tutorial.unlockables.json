@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["VODKA_TUTORIAL"] } },
+  "VODKA_TUTORIAL": {
+    "Id": "VODKA_TUTORIAL", "Guid": "f2d2cf42-edb1-41f2-8bdc-cb75e7e38657", "Type": "weapon", "Subtype": "melee", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": false, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": {}, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "195dcd6b-6663-4768-9e0a-c94e244cbea4" }, "Rarity": "common"
+  }
+}

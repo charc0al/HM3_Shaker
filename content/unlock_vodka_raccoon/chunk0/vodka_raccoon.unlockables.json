@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["VODKA_RACCOON"] } },
+  "VODKA_RACCOON": {
+    "Id": "VODKA_RACCOON", "Guid": "956b9f76-b9b5-4476-9ac4-cb1742047cef", "Type": "gear", "Subtype": "melee", "ImageId": "", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": true, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": { "range": 1, "damage": 1, "clipsize": 1, "rateoffire": 1 }, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "2df10c6c-7ac5-4fe3-9971-946083401d28", "UnlockOrder": 5 }, "Rarity": "common"
+  }
+}

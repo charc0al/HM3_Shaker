@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["MELEE_VODKA"] } },
+  "MELEE_VODKA": {
+    "Id": "MELEE_VODKA", "Guid": "55e352ec-a749-43bd-b9ba-0233c94a534c", "Type": "gear", "Subtype": "melee", "ImageId": "", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": true, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": { "range": 1, "damage": 1, "clipsize": 1, "rateoffire": 1 }, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "1050c8d3-43d6-4bcf-a5d3-0ca994121871", "UnlockOrder": 5 }, "Rarity": "common"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "tempHash": "00A9B93A825F5BDC",
+  "tbluHash": "005BA5CA6AC00627",
+  "patch": [{ "AddEntity": ["cafe8c35cf0a30b1", { "parent": "bdd2f3ef19f86bbb", "name": "Item_Shaker", "factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": -0.0, "y": -0.0, "z": 40.0 }, "position": { "x": 29.5, "y": -183.55, "z": -9.95 } } }, "repositoryId": { "type": "ZGuid", "value": "8f6d512c-6c20-42c9-a58b-b7405247d46c" }, "m_bSpawnOnStart": { "type": "bool", "value": true }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "fffffffffffffffe", "postInit": true } } }] }],
+  "patchVersion": 6
+}

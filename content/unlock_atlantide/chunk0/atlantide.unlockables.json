@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["MELEE_ATLANTIDE"] } },
+  "MELEE_ATLANTIDE": {
+    "Id": "MELEE_ATLANTIDE", "Guid": "629d6e33-921c-4f57-a012-bec1ef8bcd2c", "Type": "weapon", "Subtype": "melee", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": false, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": {}, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "0b97c464-7df0-421e-844f-df08ad563d7f" }, "Rarity": "common"
+  }
+}
