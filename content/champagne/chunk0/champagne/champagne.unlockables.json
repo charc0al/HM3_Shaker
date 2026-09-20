@@ -1,0 +1,30 @@
+{
+  "PACKAGE_STARTING_PACKAGE": {
+    "Properties": {
+      "Unlocks": [
+        "PROP_GLASS_CHAMPAGNE"
+      ]
+    }
+  },
+  "PROP_GLASS_CHAMPAGNE": {
+    "Id": "PROP_GLASS_CHAMPAGNE",
+    "Guid": "84ec0fef-f030-4dc4-8e71-f94ba2c6a36e",
+    "Type": "weapon",
+    "Subtype": "melee",
+    "RMTPrice": -1,
+    "GamePrice": -1,
+    "IsPurchasable": false,
+    "IsPublished": true,
+    "IsDroppable": false,
+    "Capabilities": [],
+    "Qualities": {},
+    "Properties": {
+      "Gameplay": {},
+      "Quality": 4,
+      "Rarity": "common",
+      "LoadoutSlot": "gear",
+      "RepositoryId": "34d7bfbe-18a7-47f8-89e2-44f23f1482dc"
+    },
+    "Rarity": "common"
+  }
+}

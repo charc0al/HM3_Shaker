@@ -2,6 +2,6 @@
   "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["MELEE_SODA"] } },
   "MELEE_SODA": {
     "Id": "MELEE_SODA", "Guid": "1a7e5c60-9493-425a-9a8b-7d0518645d35", "Type": "weapon", "Subtype": "melee", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": false, "Capabilities": [], "Qualities": {},
-    "Properties": { "Gameplay": {}, "Quality": 4, "Rarity": "common", "GameAssets": ["PROP_MELEE_SHURIKEN_BAT_X", "PROP_MELEE_SHURIKEN_BAT_X"], "LoadoutSlot": "gear", "RepositoryId": "004ecac9-6aee-4b30-a073-4399a94535d8", "RepositoryAssets": ["004ecac9-6aee-4b30-a073-4399a94535d8", "004ecac9-6aee-4b30-a073-4399a94535d8", "004ecac9-6aee-4b30-a073-4399a94535d8"] }, "Rarity": "common"
+    "Properties": { "Gameplay": {}, "Quality": 4, "Rarity": "common", "GameAssets": ["PROP_MELEE_FULL_SODACAN", "PROP_MELEE_FULL_SODACAN"], "LoadoutSlot": "gear", "RepositoryId": "004ecac9-6aee-4b30-a073-4399a94535d8", "RepositoryAssets": ["004ecac9-6aee-4b30-a073-4399a94535d8", "004ecac9-6aee-4b30-a073-4399a94535d8", "004ecac9-6aee-4b30-a073-4399a94535d8"] }, "Rarity": "common"
   }
 }

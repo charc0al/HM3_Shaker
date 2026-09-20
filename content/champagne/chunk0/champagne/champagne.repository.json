@@ -1,0 +1,24 @@
+{
+    "34d7bfbe-18a7-47f8-89e2-44f23f1482dc": {
+        "EnablePickUpOnRelease": true,
+        "Evergreen_CapacityCost": 3,
+        "HolsterAbility": "eHolsteringAllowed",
+        "ItemHandsIdle": "IH_ONEHANDED",
+        "ItemHandsUse": "IH_ONEHANDED",
+        "OnlineTraits": [
+            "melee_nonlethal",
+            "throw_nonlethal_deprecated"
+        ],
+        "ThrowType": "THROW_PACIFY_LIGHT"
+    },
+    "cd0769a7-ff21-450c-8fcc-91ac5982b036": {
+        "EnablePickUpOnRelease": true,
+        "Evergreen_CapacityCost": 3,
+        "HolsterAbility": "eHolsteringAllowed",
+        "OnlineTraits": [
+            "melee_nonlethal",
+            "throw_nonlethal_deprecated"
+        ],
+        "ThrowType": "THROW_PACIFY_LIGHT"
+    }
+}

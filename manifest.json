@@ -22,7 +22,7 @@
       ]
     },
     {
-      "name": "Vodka",
+      "name": "Alcohol",
       "tooltip": "Makes vodka and whiskey bottles spill flammable alcohol",
       "group": "Main",
       "type": "checkbox",
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "name": "Vodka (Quest items)",
+      "name": "Alcohol (Quest items)",
       "tooltip": "Makes quest item vodka bottles throwable and create flammable puddles. Slightly bugged still - the bottles will become invisible when placed with their quest prompts, but still function for the quest poisonings.",
       "group": "Main",
       "type": "checkbox",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "name": "Safehouse: Atlantide",
+      "name": "Safehouse | Atlantide",
       "tooltip": "Adds the Atlantide water bottle to the safehouse",
       "group": "Safehouse",
       "type": "checkbox",
@@ -75,7 +75,7 @@
       "contentFolders": ["content/safehouse_atlantide"]
     },
     {
-      "name": "Safehouse: Vodka",
+      "name": "Safehouse | Vodka",
       "tooltip": "Adds the regular vodka bottle to the safehouse",
       "group": "Safehouse",
       "type": "checkbox",
@@ -84,8 +84,8 @@
       "contentFolders": ["content/safehouse_vodka"]
     },
     {
-      "name": "Safehouse: Raccoon Vodka",
-      "tooltip": "Adds the Raccoon vodka bottle to the safehouse",
+      "name": "Safehouse | New York Vodka",
+      "tooltip": "Adds the New York vodka bottle to the safehouse. ONLY USE IF YOU HAVE QUEST VODKA TURNED ON!",
       "group": "Safehouse",
       "type": "checkbox",
       "enabledByDefault": false,
@@ -93,8 +93,8 @@
       "contentFolders": ["content/safehouse_vodka_raccoon"]
     },
     {
-      "name": "Safehouse: Tutorial Vodka",
-      "tooltip": "Adds the tutorial vodka bottle to the safehouse",
+      "name": "Safehouse | Jasper Knight Vodka",
+      "tooltip": "Adds the vodka bottle from the tutorial mission to the safehouse. ONLY USE IF YOU HAVE QUEST VODKA TURNED ON!",
       "group": "Safehouse",
       "type": "checkbox",
       "enabledByDefault": false,
@@ -102,7 +102,7 @@
       "contentFolders": ["content/safehouse_vodka_tutorial"]
     },
     {
-      "name": "Safehouse: Martini Shaker",
+      "name": "Safehouse | Martini Shaker",
       "tooltip": "Adds the martini shaker to the safehouse",
       "group": "Safehouse",
       "type": "checkbox",
@@ -111,7 +111,7 @@
       "contentFolders": ["content/safehouse_shaker"]
     },
     {
-      "name": "Safehouse: Whiskey",
+      "name": "Safehouse | Whiskey",
       "tooltip": "Adds the whiskey bottle to the safehouse",
       "group": "Safehouse",
       "type": "checkbox",
@@ -120,7 +120,7 @@
       "contentFolders": ["content/safehouse_whiskey"]
     },
     {
-      "name": "Unlock: Vodka",
+      "name": "Unlock | Vodka",
       "tooltip": "Adds the regular vodka bottle to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
@@ -129,7 +129,7 @@
       "contentFolders": ["content/unlock_vodka"]
     },
     {
-      "name": "Unlock: Atlantide",
+      "name": "Unlock | Atlantide",
       "tooltip": "Adds the Atlantide water bottle to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
@@ -138,7 +138,7 @@
       "contentFolders": ["content/unlock_atlantide"]
     },
     {
-      "name": "Unlock: Soda",
+      "name": "Unlock | Soda",
       "tooltip": "Adds the soda can to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
@@ -147,7 +147,7 @@
       "contentFolders": ["content/unlock_soda"]
     },
     {
-      "name": "Unlock: Raccoon Vodka",
+      "name": "Unlock | Raccoon Vodka",
       "tooltip": "Adds the Raccoon vodka bottle to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
@@ -156,7 +156,7 @@
       "contentFolders": ["content/unlock_vodka_raccoon"]
     },
     {
-      "name": "Unlock: Tutorial Vodka",
+      "name": "Unlock | Tutorial Vodka",
       "tooltip": "Adds the tutorial vodka bottle to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
@@ -165,13 +165,22 @@
       "contentFolders": ["content/unlock_vodka_tutorial"]
     },
     {
-      "name": "Unlock: Whiskey",
+      "name": "Unlock | Whiskey",
       "tooltip": "Adds the whiskey bottle to the loadout",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks.webp",
       "contentFolders": ["content/unlock_whiskey"]
+    },
+	{
+      "name": "Champagne",
+      "tooltip": "Adds throwable champagne glass",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/champagne"]
     }
   ]
 }
