@@ -1,0 +1,12 @@
+{
+    "cd0769a7-ff21-450c-8fcc-91ac5982b036": {
+        "EnablePickUpOnRelease": true,
+        "Evergreen_CapacityCost": 3,
+        "HolsterAbility": "eHolsteringAllowed",
+        "OnlineTraits": [
+            "melee_nonlethal",
+            "throw_nonlethal_deprecated"
+        ],
+        "ThrowType": "THROW_PACIFY_LIGHT"
+    }
+}

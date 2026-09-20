@@ -181,6 +181,15 @@
       "enabledByDefault": true,
       "image": "smf/unlocks.webp",
       "contentFolders": ["content/champagne"]
+    },
+	{
+      "name": "Whiskey Glass",
+      "tooltip": "Adds throwable whiskey glass",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks.webp",
+      "contentFolders": ["content/whiskeyglass"]
     }
   ]
 }
