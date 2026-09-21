@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "id": "Charc0al.MartiniPuddle",
   "name": "Puddles!",
   "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), alcohol (flammable) and soda (slippery).",
@@ -72,7 +72,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-atlantide.webp",
-      "contentFolders": ["content/safehouse_atlantide"]
+      "contentFolders": [
+        "content/safehouse_atlantide"
+      ]
     },
     {
       "name": "Safehouse | Vodka",
@@ -81,7 +83,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-vodka.webp",
-      "contentFolders": ["content/safehouse_vodka"]
+      "contentFolders": [
+        "content/safehouse_vodka"
+      ]
     },
     {
       "name": "Safehouse | New York Vodka",
@@ -90,7 +94,9 @@
       "type": "checkbox",
       "enabledByDefault": false,
       "image": "smf/unlocks-vodka3.webp",
-      "contentFolders": ["content/safehouse_vodka_raccoon"]
+      "contentFolders": [
+        "content/safehouse_vodka_raccoon"
+      ]
     },
     {
       "name": "Safehouse | Jasper Knight Vodka",
@@ -99,7 +105,9 @@
       "type": "checkbox",
       "enabledByDefault": false,
       "image": "smf/unlocks-vodka2.webp",
-      "contentFolders": ["content/safehouse_vodka_tutorial"]
+      "contentFolders": [
+        "content/safehouse_vodka_tutorial"
+      ]
     },
     {
       "name": "Safehouse | Martini Shaker",
@@ -108,7 +116,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/water.webp",
-      "contentFolders": ["content/safehouse_shaker"]
+      "contentFolders": [
+        "content/safehouse_shaker"
+      ]
     },
     {
       "name": "Safehouse | Whiskey",
@@ -117,7 +127,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-whiskey.webp",
-      "contentFolders": ["content/safehouse_whiskey"]
+      "contentFolders": [
+        "content/safehouse_whiskey"
+      ]
     },
     {
       "name": "Unlock | Vodka",
@@ -126,7 +138,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-vodka.webp",
-      "contentFolders": ["content/unlock_vodka"]
+      "contentFolders": [
+        "content/unlock_vodka"
+      ]
     },
     {
       "name": "Unlock | Atlantide",
@@ -135,7 +149,9 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-atlantide.webp",
-      "contentFolders": ["content/unlock_atlantide"]
+      "contentFolders": [
+        "content/unlock_atlantide"
+      ]
     },
     {
       "name": "Unlock | Soda",
@@ -143,7 +159,9 @@
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
-      "contentFolders": ["content/unlock_soda"]
+      "contentFolders": [
+        "content/unlock_soda"
+      ]
     },
     {
       "name": "Unlock | New York Vodka",
@@ -152,7 +170,9 @@
       "type": "checkbox",
       "enabledByDefault": false,
       "image": "smf/unlocks-vodka3.webp",
-      "contentFolders": ["content/unlock_vodka_raccoon"]
+      "contentFolders": [
+        "content/unlock_vodka_raccoon"
+      ]
     },
     {
       "name": "Unlock | Jasper Knight Vodka",
@@ -161,7 +181,9 @@
       "type": "checkbox",
       "enabledByDefault": false,
       "image": "smf/unlocks-vodka2.webp",
-      "contentFolders": ["content/unlock_vodka_tutorial"]
+      "contentFolders": [
+        "content/unlock_vodka_tutorial"
+      ]
     },
     {
       "name": "Unlock | Whiskey",
@@ -170,25 +192,31 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-whiskey.webp",
-      "contentFolders": ["content/unlock_whiskey"]
+      "contentFolders": [
+        "content/unlock_whiskey"
+      ]
     },
-	{
+    {
       "name": "(WIP) Champagne Glass",
       "tooltip": "Adds throwable champagne glass which also works as a melee weapon. Creates slippery puddle when thrown or dropped. Work in progress, may be buggy.",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-champagne.webp",
-      "contentFolders": ["content/champagne"]
+      "contentFolders": [
+        "content/champagne"
+      ]
     },
-	{
+    {
       "name": "(WIP) Whiskey Glass",
       "tooltip": "Adds throwable whiskey glass which creates a slippery puddle. Throwable only right now, eventually will add melee",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-whiskeyglass.webp",
-      "contentFolders": ["content/whiskeyglass"],
+      "contentFolders": [
+        "content/whiskeyglass"
+      ],
       "localisation": {
         "english": {
           "ui_prop_melee_whiskey_glass_name": "Whiskey Glass",
