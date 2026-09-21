@@ -189,7 +189,45 @@
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks.webp",
-      "contentFolders": ["content/whiskeyglass"]
+      "contentFolders": ["content/whiskeyglass"],
+      "localisation": {
+        "english": {
+          "ui_prop_melee_whiskey_glass_name": "Whiskey Glass",
+          "ui_prop_melee_whiskey_glass_desc": "A sturdy whiskey glass. Break it to create a slippery puddle."
+        },
+        "french": {
+          "ui_prop_melee_whiskey_glass_name": "Verre à whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un solide verre à whisky. Brisez-le pour créer une flaque glissante."
+        },
+        "italian": {
+          "ui_prop_melee_whiskey_glass_name": "Bicchiere da whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un robusto bicchiere da whisky. Rompilo per creare una pozza scivolosa."
+        },
+        "german": {
+          "ui_prop_melee_whiskey_glass_name": "Whiskyglas",
+          "ui_prop_melee_whiskey_glass_desc": "Ein stabiles Whiskyglas. Zerbrich es, um eine rutschige Pfütze zu erzeugen."
+        },
+        "spanish": {
+          "ui_prop_melee_whiskey_glass_name": "Vaso de whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un resistente vaso de whisky. Rómpelo para crear un charco resbaladizo."
+        },
+        "russian": {
+          "ui_prop_melee_whiskey_glass_name": "Стакан для виски",
+          "ui_prop_melee_whiskey_glass_desc": "Прочный стакан для виски. Разбейте его, чтобы создать скользкую лужу."
+        },
+        "chineseSimplified": {
+          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
+          "ui_prop_melee_whiskey_glass_desc": "一个结实的威士忌酒杯。打碎它会形成一滩湿滑的液体。"
+        },
+        "chineseTraditional": {
+          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
+          "ui_prop_melee_whiskey_glass_desc": "一個結實的威士忌酒杯。打碎它會形成一灘濕滑的液體。"
+        },
+        "japanese": {
+          "ui_prop_melee_whiskey_glass_name": "ウイスキーグラス",
+          "ui_prop_melee_whiskey_glass_desc": "丈夫なウイスキーグラス。割ると滑りやすい水たまりができる。"
+        }
+      }
     }
   ]
 }
