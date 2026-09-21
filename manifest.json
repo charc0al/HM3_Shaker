@@ -66,6 +66,16 @@
       ]
     },
     {
+      "name": "NPC Drinking Glasses",
+      "tooltip": "Martini, vodka, champagne, and wine glasses create slippery puddles when they shatter",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "contentFolders": [
+        "content/drinking_glasses"
+      ]
+    },
+    {
       "name": "Safehouse | Atlantide",
       "tooltip": "Adds the Atlantide water bottle to the kitchen",
       "group": "Safehouse",
