@@ -1,0 +1,21 @@
+{
+  "tempHash": "001E72272F756051",
+  "tbluHash": "004934496D06DF51",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "a6c49c72625d5b41",
+        {
+          "AddProperty": [
+            "m_fMass",
+            {
+              "type": "float32",
+              "value": 5.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}
