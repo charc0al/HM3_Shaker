@@ -201,7 +201,7 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "f9eb9406e658a0f6",
+              "value": null,
               "postInit": true
             }
           },
@@ -250,7 +250,7 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "f9eb9406e658a0f6",
+              "value": null,
               "postInit": true
             }
           },
@@ -311,9 +311,6 @@
             "Out": {
               "Get": [
                 "cafed28ff1b32fa5"
-              ],
-              "Detach": [
-                "cafe2a576dfb3613"
               ]
             }
           }
