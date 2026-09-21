@@ -1,0 +1,678 @@
+{
+  "tempHash": "00B3E38AB827686D",
+  "tbluHash": "009DD12E6E543150",
+  "rootEntity": "cf955f3484914d3d",
+  "entities": {
+    "2be8df0d7940a338": {
+      "parent": "cf955f3484914d3d",
+      "name": "DropCup",
+      "factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+      "blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+      "events": {
+        "Out01": {
+          "Drop": [
+            "c6f26a837daf9c79"
+          ]
+        },
+        "Out02": {
+          "ForgetItem": [
+            "c6f26a837daf9c79"
+          ]
+        }
+      }
+    },
+    "9bbc01c3af38eb18": {
+      "parent": "cf955f3484914d3d",
+      "name": "Bool_ShouldConsume",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_bValue": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    "1fdc3f1e750cd06b": {
+      "parent": "cf955f3484914d3d",
+      "name": "ValueBool_Poll01",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rValueEntity": {
+          "type": "SEntityTemplateReference",
+          "value": "9bbc01c3af38eb18"
+        }
+      },
+      "events": {
+        "PollTrue": {
+          "DetachAndReleaseItem": [
+            "c6f26a837daf9c79"
+          ]
+        },
+        "PollFalse": {
+          "Detach": [
+            "c6f26a837daf9c79"
+          ]
+        }
+      }
+    },
+    "03798a3e66e60eeb": {
+      "parent": "cf955f3484914d3d",
+      "name": "SignalFork_Void",
+      "factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+      "blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+      "events": {
+        "Out02": {
+          "GetItemUsed": [
+            "c6f26a837daf9c79"
+          ]
+        },
+        "Out03": {
+          "GetSetpieceUsed": [
+            "c6f26a837daf9c79"
+          ]
+        },
+        "Out01": {
+          "Poll": [
+            "6a87e1ad7e35157b"
+          ]
+        }
+      }
+    },
+    "2b7aebb3888117b4": {
+      "parent": "cf955f3484914d3d",
+      "name": "ItemGrabber01",
+      "factory": "[modules:/zitemgrabber.class].pc_entitytype",
+      "blueprint": "[modules:/zitemgrabber.class].pc_entityblueprint",
+      "properties": {
+        "m_rKeywordsToFind": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_rRepositoryKeyToFind": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_rSearchVolume": {
+          "type": "SEntityTemplateReference",
+          "value": "d9f69779bf3ad5e1",
+          "postInit": true
+        }
+      },
+      "events": {
+        "OnItemGrabbed": {
+          "SetTrue": [
+            "2e56998efb579e74"
+          ]
+        },
+        "OnNoItem": {
+          "SetFalse": [
+            "2e56998efb579e74"
+          ]
+        },
+        "Item": {
+          "SetItem": [
+            "2175337df1009290",
+            "c6f26a837daf9c79",
+            "e02171a33d32ac0e"
+          ]
+        }
+      },
+      "outputCopying": {
+        "Item": {
+          "Item": [
+            "cf955f3484914d3d"
+          ]
+        },
+        "OnNoItem": {
+          "OnNoItem": [
+            "cf955f3484914d3d"
+          ]
+        }
+      }
+    },
+    "11179388ea8b127a": {
+      "parent": "cf955f3484914d3d",
+      "name": "ActStateCondition",
+      "factory": "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+      "blueprint": "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+      "properties": {
+        "m_rActBehavior": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_bIsEntering": {
+          "type": "bool",
+          "value": true
+        },
+        "m_bIsPlaying": {
+          "type": "bool",
+          "value": true
+        },
+        "m_bIsComplete": {
+          "type": "bool",
+          "value": false
+        },
+        "m_bIsTimedOut": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    "2175337df1009290": {
+      "parent": "cf955f3484914d3d",
+      "name": "ActHelper_PoisonItem",
+      "factory": "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_poisonitem.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_poisonitem.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "FastIncubationTime": {
+          "type": "float32",
+          "value": 0.009999999776482582
+        }
+      },
+      "events": {
+        "Poisoned": {
+          "In": [
+            "2be8df0d7940a338"
+          ]
+        }
+      },
+      "outputCopying": {
+        "PoisonDetected": {
+          "Poisoned": [
+            "cf955f3484914d3d"
+          ]
+        }
+      }
+    },
+    "d3d3841c3a7e8da8": {
+      "parent": "cf955f3484914d3d",
+      "name": "UseLeftHand",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_bValue": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    "6a87e1ad7e35157b": {
+      "parent": "cf955f3484914d3d",
+      "name": "PollWhichHandToUse",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rValueEntity": {
+          "type": "SEntityTemplateReference",
+          "value": "d3d3841c3a7e8da8"
+        }
+      },
+      "events": {
+        "PollFalse": {
+          "AttachRightHand": [
+            "c6f26a837daf9c79"
+          ]
+        },
+        "PollTrue": {
+          "AttachLeftHand": [
+            "c6f26a837daf9c79"
+          ]
+        }
+      }
+    },
+    "7c8bfe77a569aa48": {
+      "parent": "cf955f3484914d3d",
+      "name": "IsNPCAboutToDrink",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_eEvaluation": {
+          "type": "ZValueBool_Operation_Signal.EEvaluationType",
+          "value": "ANY"
+        },
+        "m_aValues": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": [
+            "11179388ea8b127a",
+            "e174cd7e3dec9e05"
+          ],
+          "postInit": true
+        }
+      },
+      "events": {
+        "OnTrue": {
+          "GetKeyword": [
+            "040ee837d1088854"
+          ]
+        },
+        "OnFalse": {
+          "GetKeyword2": [
+            "040ee837d1088854"
+          ]
+        }
+      }
+    },
+    "d9f69779bf3ad5e1": {
+      "parent": "cf955f3484914d3d",
+      "name": "VolumeBox03",
+      "factory": "[modules:/zboxvolumeentity.class].pc_entitytype",
+      "blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        "m_vGlobalSize": {
+          "type": "SVector3",
+          "value": {
+            "x": 0.30000001192092896,
+            "y": 0.30000001192092896,
+            "z": 0.30000001192092896
+          }
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": "e52fd48342ba709f",
+          "postInit": true
+        }
+      }
+    },
+    "040ee837d1088854": {
+      "parent": "cf955f3484914d3d",
+      "name": "Keyword_STATE_ITEM_OWNED_BY_ACT",
+      "factory": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_item_owned_by_act.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_item_owned_by_act.entitytemplate].pc_entityblueprint",
+      "events": {
+        "Keyword": {
+          "AddKeyword": [
+            "e02171a33d32ac0e"
+          ]
+        },
+        "Keyword2": {
+          "RemoveKeyword": [
+            "e02171a33d32ac0e"
+          ]
+        }
+      }
+    },
+    "e174cd7e3dec9e05": {
+      "parent": "cf955f3484914d3d",
+      "name": "ActApproachDistanceCondition",
+      "factory": "[modules:/zactbehaviorapproachdistancestatecondition.class].pc_entitytype",
+      "blueprint": "[modules:/zactbehaviorapproachdistancestatecondition.class].pc_entityblueprint",
+      "properties": {
+        "m_rActBehavior": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_fConditionValidDistance": {
+          "type": "float32",
+          "value": 3.5
+        }
+      }
+    },
+    "2e56998efb579e74": {
+      "parent": "cf955f3484914d3d",
+      "name": "VBB_ItemPresent",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_bValue": {
+          "type": "bool",
+          "value": false
+        }
+      }
+    },
+    "3e2fd8eeb7238dc6": {
+      "parent": "cf955f3484914d3d",
+      "name": "DoWeAlreadyHaveItem",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rValueEntity": {
+          "type": "SEntityTemplateReference",
+          "value": "2e56998efb579e74"
+        }
+      },
+      "events": {
+        "PollFalse": {
+          "Grab": [
+            "2b7aebb3888117b4"
+          ]
+        },
+        "PollTrue": {
+          "Grab": [
+            "2b7aebb3888117b4"
+          ],
+          "GetCurrent": [
+            "2b7aebb3888117b4"
+          ]
+        }
+      }
+    },
+    "a49258cc9bf63248": {
+      "parent": "cf955f3484914d3d",
+      "name": "DebugBox",
+      "factory": "[modules:/zdebugboxentity.class].pc_entitytype",
+      "blueprint": "[modules:/zdebugboxentity.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0.4302540123462677,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        "m_rBoxVolume": {
+          "type": "SEntityTemplateReference",
+          "value": "d9f69779bf3ad5e1"
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": "d9f69779bf3ad5e1"
+        },
+        "m_Color": {
+          "type": "SColorRGBA",
+          "value": "#13eb86ff"
+        },
+        "m_bVisible": {
+          "type": "bool",
+          "value": true
+        }
+      }
+    },
+    "e52fd48342ba709f": {
+      "parent": "cf955f3484914d3d",
+      "name": "ItemSpawner02",
+      "factory": "[modules:/zitemspawner.class].pc_entitytype",
+      "blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+      "properties": {
+        "m_mTransform": {
+          "type": "SMatrix43",
+          "value": {
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        },
+        "m_bSpawnOnStart": {
+          "type": "bool",
+          "value": true
+        },
+        "m_bUsePlacementAttach": {
+          "type": "bool",
+          "value": true
+        },
+        "m_eidParent": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_rMainItemKey": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_bVisible": {
+          "type": "bool",
+          "value": true
+        }
+      },
+      "events": {
+        "ItemReady": {
+          "SetTrue": [
+            "2e56998efb579e74"
+          ]
+        },
+        "OnItemDestroyed": {
+          "SetFalse": [
+            "2e56998efb579e74"
+          ]
+        },
+        "Item": {
+          "SetItem": [
+            "c6f26a837daf9c79"
+          ]
+        }
+      },
+      "outputCopying": {
+        "Item": {
+          "Item": [
+            "cf955f3484914d3d"
+          ]
+        }
+      }
+    },
+    "e02171a33d32ac0e": {
+      "parent": "cf955f3484914d3d",
+      "name": "ItemKeywordProxy",
+      "factory": "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+      "blueprint": "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint"
+    },
+    "c6f26a837daf9c79": {
+      "parent": "cf955f3484914d3d",
+      "name": "ActorItemAction",
+      "factory": "[modules:/zactoritemaction.class].pc_entitytype",
+      "blueprint": "[modules:/zactoritemaction.class].pc_entityblueprint",
+      "properties": {
+        "m_pDetachPoint": {
+          "type": "SEntityTemplateReference",
+          "value": "e52fd48342ba709f"
+        },
+        "m_eMaxTension": {
+          "type": "EGameTension",
+          "value": "EGT_Ambient"
+        }
+      },
+      "events": {
+        "ReleasedItem": {
+          "Consume": [
+            "dde077e8f410aec0"
+          ]
+        },
+        "OnGetItemUsed": {
+          "SetItemUsed": [
+            "2175337df1009290"
+          ]
+        },
+        "OnGetSetpieceUsed": {
+          "SetSetpieceUsed": [
+            "2175337df1009290"
+          ]
+        }
+      }
+    },
+    "cf955f3484914d3d": {
+      "parent": null,
+      "name": "ActHelper_ItemInteract_Default",
+      "factory": "[modules:/zentity.class].pc_entitytype",
+      "blueprint": "[modules:/zentity.class].pc_entityblueprint",
+      "inputCopying": {
+        "SetIActor": {
+          "SetIActor": [
+            "2175337df1009290",
+            "c6f26a837daf9c79"
+          ]
+        },
+        "Attach": {
+          "In": [
+            "03798a3e66e60eeb"
+          ]
+        },
+        "Drinking": {
+          "TestPoison": [
+            "2175337df1009290"
+          ]
+        },
+        "DetachItem": {
+          "Poll": [
+            "1fdc3f1e750cd06b"
+          ]
+        },
+        "TestIfItemPresent": {
+          "Poll": [
+            "3e2fd8eeb7238dc6"
+          ]
+        },
+        "SpawnItem": {
+          "SpawnItem": [
+            "e52fd48342ba709f"
+          ]
+        },
+      "DetachAndReleaseItem": {
+        "DetachAndReleaseItem": [
+          "c6f26a837daf9c79"
+        ]
+      },
+      "DropItem": {
+        "In": [
+          "2be8df0d7940a338"
+        ]
+      }
+      },
+      "propertyAliases": {
+        "FastIncubationTime": [
+          {
+            "originalProperty": "FastIncubationTime",
+            "originalEntity": "2175337df1009290"
+          }
+        ],
+        "ItemPosition": [
+          {
+            "originalProperty": "m_eidParent",
+            "originalEntity": "e52fd48342ba709f"
+          }
+        ],
+        "OverrideDetachPoint": [
+          {
+            "originalProperty": "m_pDetachPoint",
+            "originalEntity": "c6f26a837daf9c79"
+          }
+        ],
+        "UseLeftHand": [
+          {
+            "originalProperty": "m_bValue",
+            "originalEntity": "d3d3841c3a7e8da8"
+          }
+        ],
+        "debugBoxVisible": [
+          {
+            "originalProperty": "m_bVisible",
+            "originalEntity": "a49258cc9bf63248"
+          }
+        ],
+        "itemVisible": [
+          {
+            "originalProperty": "m_bVisible",
+            "originalEntity": "e52fd48342ba709f"
+          }
+        ],
+        "m_bSpawnOnStart": [
+          {
+            "originalProperty": "m_bSpawnOnStart",
+            "originalEntity": "e52fd48342ba709f"
+          }
+        ],
+        "m_bValueshouldconsume": [
+          {
+            "originalProperty": "m_bValue",
+            "originalEntity": "9bbc01c3af38eb18"
+          }
+        ],
+        "m_eMaxTension": [
+          {
+            "originalProperty": "m_eMaxTension",
+            "originalEntity": "c6f26a837daf9c79"
+          }
+        ],
+        "m_mTransform": [
+          {
+            "originalProperty": "m_mTransform",
+            "originalEntity": "e52fd48342ba709f"
+          }
+        ],
+        "m_rActBehavior": [
+          {
+            "originalProperty": "m_rActBehavior",
+            "originalEntity": "11179388ea8b127a"
+          },
+          {
+            "originalProperty": "m_rActBehavior",
+            "originalEntity": "e174cd7e3dec9e05"
+          }
+        ],
+        "m_rItemKeywords": [
+          {
+            "originalProperty": "m_rKeywordsToFind",
+            "originalEntity": "2b7aebb3888117b4"
+          },
+          {
+            "originalProperty": "m_rRepositoryKeyToFind",
+            "originalEntity": "2b7aebb3888117b4"
+          }
+        ],
+        "m_rRepositoryKeyToFind": [
+          {
+            "originalProperty": "m_rMainItemKey",
+            "originalEntity": "e52fd48342ba709f"
+          }
+        ]
+      },
+      "exposedEntities": {
+        "ItemIsReady": {
+          "isArray": false,
+          "refersTo": [
+            "2e56998efb579e74"
+          ]
+        }
+      }
+    },
+    "dde077e8f410aec0": {
+      "parent": "cf955f3484914d3d",
+      "name": "ItemConsumer",
+      "factory": "[modules:/zitemconsumer.class].pc_entitytype",
+      "blueprint": "[modules:/zitemconsumer.class].pc_entityblueprint"
+    }
+  },
+  "propertyOverrides": [],
+  "overrideDeletes": [],
+  "pinConnectionOverrides": [],
+  "pinConnectionOverrideDeletes": [],
+  "externalScenes": [],
+  "subType": "template",
+  "quickEntityVersion": 3.1,
+  "extraFactoryDependencies": [
+    {
+      "resource": "[assembly:/geometry/g2/gizmos.wl2?/gizmo_trigger_01.prim].pc_prim",
+      "flag": "5F"
+    }
+  ],
+  "extraBlueprintDependencies": [],
+  "comments": []
+}
