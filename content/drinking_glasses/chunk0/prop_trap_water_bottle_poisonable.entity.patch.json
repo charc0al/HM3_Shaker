@@ -496,6 +496,18 @@
           ]
         }
       ]
+    },
+    {
+      "SubEntityOperation": [
+        "f98520083b0b353b",
+        {
+          "AddEventConnection": [
+            "OnImpact",
+            "ShatterComplete",
+            "1cdf41ea26e0cc4c"
+          ]
+        }
+      ]
     }
   ],
   "patchVersion": 6
