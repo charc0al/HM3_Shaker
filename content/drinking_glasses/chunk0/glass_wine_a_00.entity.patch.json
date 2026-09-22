@@ -8,7 +8,7 @@
         {
           "SetPropertyValue": {
             "property_name": "m_fMass",
-            "value": 5.0
+            "value": 2.0
           }
         }
       ]

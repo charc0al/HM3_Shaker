@@ -21,6 +21,20 @@
           ]
         }
       ]
+    },
+    {
+      "SubEntityOperation": [
+        "87ca29f3101d18e3",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_mTransform",
+            "value": {
+              "rotation": { "x": 0, "y": 0, "z": 180 },
+              "position": { "x": -0.0430000014603138, "y": -0.6699999988079071, "z": 1 }
+            }
+          }
+        }
+      ]
     }
   ],
   "patchVersion": 6
