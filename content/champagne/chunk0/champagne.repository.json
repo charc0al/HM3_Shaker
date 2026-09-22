@@ -9,6 +9,6 @@
             "melee_nonlethal",
             "throw_nonlethal_deprecated"
         ],
-        "ThrowType": "THROW_PACIFY_LIGHT"
+        "ThrowType": "THROW_KNOCKDOWN_LIGHT"
     }
 }

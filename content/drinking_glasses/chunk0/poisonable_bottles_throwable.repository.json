@@ -1,0 +1,38 @@
+{
+  "89785a8e-b2eb-45aa-961c-dbfbfefed962": {
+    "EnablePickUpOnRelease": true,
+    "Evergreen_CapacityCost": 3,
+    "RagdollImpactForce": 80,
+    "GripAnimType": "IGT_Melee_1H_Rock",
+    "HolsterAbility": "eHolsteringAllowed",
+    "OnlineTraits": [
+      "melee_nonlethal",
+      "throw_nonlethal_deprecated"
+    ],
+    "ThrowType": "THROW_PACIFY_LIGHT"
+  },
+  "6a1ba1bf-8a02-4c08-84c9-4de26bc54944": {
+    "EnablePickUpOnRelease": true,
+    "Evergreen_CapacityCost": 3,
+    "RagdollImpactForce": 80,
+    "GripAnimType": "IGT_Melee_1H_Rock",
+    "HolsterAbility": "eHolsteringAllowed",
+    "OnlineTraits": [
+      "melee_nonlethal",
+      "throw_nonlethal_deprecated"
+    ],
+    "ThrowType": "THROW_PACIFY_LIGHT"
+  },
+  "9526229d-b205-42ee-a754-c135adf09750": {
+    "EnablePickUpOnRelease": true,
+    "Evergreen_CapacityCost": 3,
+    "RagdollImpactForce": 80,
+    "GripAnimType": "IGT_Melee_1H_Rock",
+    "HolsterAbility": "eHolsteringAllowed",
+    "OnlineTraits": [
+      "melee_nonlethal",
+      "throw_nonlethal_deprecated"
+    ],
+    "ThrowType": "THROW_PACIFY_LIGHT"
+  }
+}
