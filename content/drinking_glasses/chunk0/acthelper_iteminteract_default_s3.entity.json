@@ -1,0 +1,880 @@
+{
+    "tempHash":  "00F0F58E674E390B",
+    "tbluHash":  "0029F3813A09A3E7",
+    "rootEntity":  "dba1795fb0545a6b",
+    "entities":  {
+                     "659b9b1ec025a276":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "SignalFork_Void_01",
+                                              "factory":  "[modules:/zsignalforkentity_void.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+                                              "events":  {
+                                                             "Out01":  {
+                                                                           "SpawnItem":  [
+                                                                                             "f8bb74e29b7f92b8"
+                                                                                         ]
+                                                                       }
+                                                         }
+                                          },
+                     "6d89f95118177b86":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ItemGrabber01",
+                                              "factory":  "[modules:/zitemgrabber.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zitemgrabber.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rKeywordsToFind":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  null
+                                                                                       },
+                                                                 "m_rRepositoryKeyToFind":  {
+                                                                                                "type":  "SEntityTemplateReference",
+                                                                                                "value":  null
+                                                                                            },
+                                                                 "m_rSearchVolume":  {
+                                                                                         "type":  "SEntityTemplateReference",
+                                                                                         "value":  "907a6a5b6d73511c",
+                                                                                         "postInit":  true
+                                                                                     }
+                                                             },
+                                              "events":  {
+                                                             "OnItemGrabbed":  {
+                                                                                   "In":  [
+                                                                                              "6e6d532e9f112a81"
+                                                                                          ]
+                                                                               },
+                                                             "OnNoItem":  {
+                                                                              "In":  [
+                                                                                         "659b9b1ec025a276"
+                                                                                     ]
+                                                                          },
+                                                             "Item":  {
+                                                                          "SetItem":  [
+                                                                                          "63ebd054ca275192"
+                                                                                      ]
+                                                                      }
+                                                         }
+                                          },
+                     "07cd3c2e02b46f65":  {
+                                              "parent":  "907a6a5b6d73511c",
+                                              "name":  "DebugBox",
+                                              "factory":  "[modules:/zdebugboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zdebugboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0.4302540123462677,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_Color":  {
+                                                                                 "type":  "SColorRGBA",
+                                                                                 "value":  "#13eb86ff"
+                                                                             },
+                                                                 "m_bVisible":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  true
+                                                                                },
+                                                                 "m_rBoxVolume":  {
+                                                                                      "type":  "SEntityTemplateReference",
+                                                                                      "value":  "907a6a5b6d73511c",
+                                                                                      "postInit":  true
+                                                                                  },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "907a6a5b6d73511c",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "79b6f369334decf4":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActStateCondition",
+                                              "factory":  "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rActBehavior":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  null
+                                                                                    },
+                                                                 "m_bIsEntering":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  true
+                                                                                   },
+                                                                 "m_bIsPlaying":  {
+                                                                                      "type":  "bool",
+                                                                                      "value":  true
+                                                                                  },
+                                                                 "m_bIsComplete":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_bIsTimedOut":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   }
+                                                             }
+                                          },
+                     "7056beef6bc720e4":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "DropCup",
+                                              "factory":  "[modules:/zsignalforkentity_void.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+                                              "events":  {
+                                                             "Out01":  {
+                                                                           "Drop":  [
+                                                                                        "63ebd054ca275192"
+                                                                                    ]
+                                                                       },
+                                                             "Out02":  {
+                                                                           "ForgetItem":  [
+                                                                                              "63ebd054ca275192"
+                                                                                          ]
+                                                                       }
+                                                         }
+                                          },
+                     "959ac764855a6125":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "TimerSimple 2",
+                                              "factory":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "Delay time (ms)":  {
+                                                                                         "type":  "int32",
+                                                                                         "value":  100
+                                                                                     }
+                                                             },
+                                              "events":  {
+                                                             "Out":  {
+                                                                         "Disable":  [
+                                                                                         "5ddb75a786723f11"
+                                                                                     ]
+                                                                     }
+                                                         }
+                                          },
+                     "6e6d532e9f112a81":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "SignalFork_Void",
+                                              "factory":  "[modules:/zsignalforkentity_void.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+                                              "events":  {
+                                                             "Out02":  {
+                                                                           "GetItemUsed":  [
+                                                                                               "63ebd054ca275192"
+                                                                                           ]
+                                                                       },
+                                                             "Out03":  {
+                                                                           "GetSetpieceUsed":  [
+                                                                                                   "63ebd054ca275192"
+                                                                                               ]
+                                                                       },
+                                                             "Out01":  {
+                                                                           "Poll":  [
+                                                                                        "188b9205e31ada81"
+                                                                                    ]
+                                                                       }
+                                                         }
+                                          },
+                     "5ddb75a786723f11":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "TriggerSphere",
+                                              "factory":  "[assembly:/templates/markup/volumetrigger.template?/triggersphere.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/templates/markup/volumetrigger.template?/triggersphere.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.36873599886894226
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_bTestHitman":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_fRadius":  {
+                                                                                   "type":  "float32",
+                                                                                   "value":  0.5
+                                                                               },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null,
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             },
+                                              "events":  {
+                                                             "OnLeave":  {
+                                                                             "Detach":  [
+                                                                                            "63ebd054ca275192"
+                                                                                        ],
+                                                                             "In":  [
+                                                                                        "959ac764855a6125"
+                                                                                    ]
+                                                                         }
+                                                         }
+                                          },
+                     "7b97a96fe51554d8":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActApproachDistanceCondition",
+                                              "factory":  "[modules:/zactbehaviorapproachdistancestatecondition.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zactbehaviorapproachdistancestatecondition.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rActBehavior":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  null
+                                                                                    },
+                                                                 "m_fConditionValidDistance":  {
+                                                                                                   "type":  "float32",
+                                                                                                   "value":  3.5
+                                                                                               }
+                                                             }
+                                          },
+                     "bb35b20e2dbd1a7f":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "Bool_ShouldConsume",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_bValue":  {
+                                                                                  "type":  "bool",
+                                                                                  "value":  false
+                                                                              }
+                                                             }
+                                          },
+                     "cea2e7d27e502422":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "UseLeftHand",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_bValue":  {
+                                                                                  "type":  "bool",
+                                                                                  "value":  false
+                                                                              }
+                                                             }
+                                          },
+                     "0512c0caea92cc93":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActStateCondition 3",
+                                              "factory":  "[modules:/zactbehaviorstatecondition.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zactbehaviorstatecondition.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rActBehavior":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  null
+                                                                                    },
+                                                                 "m_bIsEntering":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_bIsPlaying":  {
+                                                                                      "type":  "bool",
+                                                                                      "value":  false
+                                                                                  },
+                                                                 "m_bIsComplete":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_bIsTimedOut":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_bIsMoving":  {
+                                                                                     "type":  "bool",
+                                                                                     "value":  false
+                                                                                 },
+                                                                 "m_bIsUnpaused":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  true
+                                                                                   },
+                                                                 "m_bIsPaused":  {
+                                                                                     "type":  "bool",
+                                                                                     "value":  true
+                                                                                 },
+                                                                 "m_bIsIdle":  {
+                                                                                   "type":  "bool",
+                                                                                   "value":  true
+                                                                               }
+                                                             }
+                                          },
+                     "188b9205e31ada81":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "PollWhichHandToUse",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rValueEntity":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  "cea2e7d27e502422"
+                                                                                    }
+                                                             },
+                                              "events":  {
+                                                             "PollFalse":  {
+                                                                               "AttachRightHand":  [
+                                                                                                       "63ebd054ca275192"
+                                                                                                   ]
+                                                                           },
+                                                             "PollTrue":  {
+                                                                              "AttachLeftHand":  [
+                                                                                                     "63ebd054ca275192"
+                                                                                                 ]
+                                                                          }
+                                                         }
+                                          },
+                     "bdea70f457daa002":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "IsNPCAboutToDrink",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aValues":  {
+                                                                                   "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                   "value":  [
+                                                                                                 "79b6f369334decf4",
+                                                                                                 "7b97a96fe51554d8"
+                                                                                             ]
+                                                                               },
+                                                                 "m_eEvaluation":  {
+                                                                                       "type":  "ZValueBool_Operation_Signal.EEvaluationType",
+                                                                                       "value":  "ANY"
+                                                                                   }
+                                                             },
+                                              "events":  {
+                                                             "OnTrue":  {
+                                                                            "GetKeyword":  [
+                                                                                               "8bc2a8d8cc0f64a2"
+                                                                                           ]
+                                                                        },
+                                                             "OnFalse":  {
+                                                                             "GetKeyword2":  [
+                                                                                                 "8bc2a8d8cc0f64a2"
+                                                                                             ]
+                                                                         }
+                                                         }
+                                          },
+                     "140ce3fc1448cab8":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ItemKeywordProxy",
+                                              "factory":  "[modules:/zitemkeywordproxyentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zitemkeywordproxyentity.class].pc_entityblueprint"
+                                          },
+                     "3b36c41c8afb6417":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ValueBool_Operation_01",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_aValues":  {
+                                                                                   "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                   "value":  [
+                                                                                                 "0512c0caea92cc93",
+                                                                                                 "9f4344355a944e49"
+                                                                                             ],
+                                                                                   "postInit":  true
+                                                                               }
+                                                             },
+                                              "events":  {
+                                                             "OnTrue":  {
+                                                                            "Enable":  [
+                                                                                           "5ddb75a786723f11"
+                                                                                       ]
+                                                                        }
+                                                         }
+                                          },
+                     "8bc2a8d8cc0f64a2":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "Keyword_STATE_ITEM_OWNED_BY_ACT",
+                                              "factory":  "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_item_owned_by_act.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/keywords/keywordstates.template?/keyword_state_item_owned_by_act.entitytemplate].pc_entityblueprint",
+                                              "events":  {
+                                                             "Keyword":  {
+                                                                             "AddKeyword":  [
+                                                                                                "140ce3fc1448cab8"
+                                                                                            ]
+                                                                         },
+                                                             "Keyword2":  {
+                                                                              "RemoveKeyword":  [
+                                                                                                    "140ce3fc1448cab8"
+                                                                                                ]
+                                                                          }
+                                                         }
+                                          },
+                     "f8bb74e29b7f92b8":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ItemSpawner02",
+                                              "factory":  "[modules:/zitemspawner.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zitemspawner.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bSpawnOnStart":  {
+                                                                                         "type":  "bool",
+                                                                                         "value":  true
+                                                                                     },
+                                                                 "m_bUsePlacementAttach":  {
+                                                                                               "type":  "bool",
+                                                                                               "value":  true
+                                                                                           },
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_STATIC"
+                                                                                      },
+                                                                 "m_bForceVisible":  {
+                                                                                         "type":  "bool",
+                                                                                         "value":  false
+                                                                                     },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  null
+                                                                                 },
+                                                                 "m_rMainItemKey":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  null
+                                                                                    },
+                                                                 "m_rInventoryItems":  {
+                                                                                           "type":  "TArray\u003cSEntityTemplateReference\u003e",
+                                                                                           "value":  [
+
+                                                                                                     ]
+                                                                                       },
+                                                                 "m_bVisible":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  true
+                                                                                }
+                                                             },
+                                              "events":  {
+                                                             "Item":  {
+                                                                          "SetItem":  [
+                                                                                          "63ebd054ca275192",
+                                                                                          "140ce3fc1448cab8",
+                                                                                          "760cf7392e79e573"
+                                                                                      ]
+                                                                      },
+                                                             "ItemReady":  {
+                                                                               "In":  [
+                                                                                          "6e6d532e9f112a81"
+                                                                                      ]
+                                                                           }
+                                                         },
+                                              "outputCopying":  {
+                                                                    "Item":  {
+                                                                                 "Item":  [
+                                                                                              "dba1795fb0545a6b"
+                                                                                          ]
+                                                                             }
+                                                                }
+                                          },
+                     "760cf7392e79e573":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActHelper_PoisonItem",
+                                              "factory":  "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_poisonitem.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_poisonitem.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "FastIncubationTime":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  0.009999999776482582
+                                                                                        }
+                                                             },
+                                              "events":  {
+                                                             "Poisoned":  {
+                                                                              "In":  [
+                                                                                         "7056beef6bc720e4"
+                                                                                     ]
+                                                                          }
+                                                         },
+                                              "outputCopying":  {
+                                                                    "PoisonDetected":  {
+                                                                                           "Poisoned":  [
+                                                                                                            "dba1795fb0545a6b"
+                                                                                                        ]
+                                                                                       },
+                                                                    "Sick_Poison_SEQ":  {
+                                                                                            "Sick_Poison_SEQ":  [
+                                                                                                                    "dba1795fb0545a6b"
+                                                                                                                ]
+                                                                                        },
+                                                                    "Slow_Poison_SEQ":  {
+                                                                                            "Slow_Poison_SEQ":  [
+                                                                                                                    "dba1795fb0545a6b"
+                                                                                                                ]
+                                                                                        },
+                                                                    "Fast_Poison_SEQ":  {
+                                                                                            "Fast_Poison_SEQ":  [
+                                                                                                                    "dba1795fb0545a6b"
+                                                                                                                ]
+                                                                                        }
+                                                                }
+                                          },
+                     "9f4344355a944e49":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActorHasItem",
+                                              "factory":  "[modules:/zactoritemcondition.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zactoritemcondition.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_bSubscribe":  {
+                                                                                      "type":  "bool",
+                                                                                      "value":  true
+                                                                                  },
+                                                                 "m_rRepositoryKeyToFind":  {
+                                                                                                "type":  "SEntityTemplateReference",
+                                                                                                "value":  null
+                                                                                            }
+                                                             }
+                                          },
+                     "4f1ce6e4540e498a":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ValueBool_Poll",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rValueEntity":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  "9f4344355a944e49"
+                                                                                    }
+                                                             },
+                                              "events":  {
+                                                             "PollFalse":  {
+                                                                               "Grab":  [
+                                                                                            "6d89f95118177b86"
+                                                                                        ]
+                                                                           }
+                                                         }
+                                          },
+                     "63ebd054ca275192":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ActorItemAction",
+                                              "factory":  "[modules:/zactoritemaction.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zactoritemaction.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_pDetachPoint":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  "f8bb74e29b7f92b8"
+                                                                                    },
+                                                                 "m_eMaxTension":  {
+                                                                                       "type":  "EGameTension",
+                                                                                       "value":  "EGT_AlertedLow"
+                                                                                   }
+                                                             },
+                                              "events":  {
+                                                             "OnGetItemUsed":  {
+                                                                                   "SetItemUsed":  [
+                                                                                                       "760cf7392e79e573"
+                                                                                                   ]
+                                                                               },
+                                                             "OnGetSetpieceUsed":  {
+                                                                                       "SetSetpieceUsed":  [
+                                                                                                               "760cf7392e79e573"
+                                                                                                           ]
+                                                                                   },
+                                                             "ReleasedItem":  {
+                                                                                  "Consume":  [
+                                                                                                  "d36ac00b7f8b7acd"
+                                                                                              ]
+                                                                              }
+                                                         }
+                                          },
+                     "d36ac00b7f8b7acd":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ItemConsumer",
+                                              "factory":  "[modules:/zitemconsumer.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zitemconsumer.class].pc_entityblueprint"
+                                          },
+                     "a797c0b195a634b0":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "ValueBool_Poll01",
+                                              "factory":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_rValueEntity":  {
+                                                                                        "type":  "SEntityTemplateReference",
+                                                                                        "value":  "bb35b20e2dbd1a7f"
+                                                                                    }
+                                                             },
+                                              "events":  {
+                                                             "PollTrue":  {
+                                                                              "DetachAndReleaseItem":  [
+                                                                                                           "63ebd054ca275192"
+                                                                                                       ]
+                                                                          },
+                                                             "PollFalse":  {
+                                                                               "Detach":  [
+                                                                                              "63ebd054ca275192"
+                                                                                          ]
+                                                                           }
+                                                         }
+                                          },
+                     "907a6a5b6d73511c":  {
+                                              "parent":  "dba1795fb0545a6b",
+                                              "name":  "VolumeBox03",
+                                              "factory":  "[modules:/zboxvolumeentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0.30000001192092896,
+                                                                                                     "y":  0.30000001192092896,
+                                                                                                     "z":  0.30000001192092896
+                                                                                                 }
+                                                                                   },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "f8bb74e29b7f92b8"
+                                                                                 },
+                                                                 "debugBoxVisible":  {
+                                                                                         "type":  "bool",
+                                                                                         "value":  true
+                                                                                     }
+                                                             },
+                                              "propertyAliases":  {
+                                                                      "debugBoxVisible":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_bVisible",
+                                                                                                  "originalEntity":  "07cd3c2e02b46f65"
+                                                                                              }
+                                                                                          ]
+                                                                  }
+                                          },
+                     "dba1795fb0545a6b":  {
+                                              "parent":  null,
+                                              "name":  "ActHelper_ItemInteract_Default_S3",
+                                              "factory":  "[modules:/zentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zentity.class].pc_entityblueprint",
+                                              "inputCopying":  {
+                                                                   "SetIActor":  {
+                                                                                     "SetIActor":  [
+                                                                                                       "760cf7392e79e573",
+                                                                                                       "63ebd054ca275192",
+                                                                                                       "9f4344355a944e49"
+                                                                                                   ]
+                                                                                 },
+                                                                   "Drinking":  {
+                                                                                    "TestPoison":  [
+                                                                                                       "760cf7392e79e573"
+                                                                                                   ]
+                                                                                },
+                                                                   "DetachItem":  {
+                                                                                      "Poll":  [
+                                                                                                   "a797c0b195a634b0"
+                                                                                               ]
+                                                                                  },
+                                                                   "DropItem":  {
+                                                                                   "In":  [
+                                                                                              "7056beef6bc720e4"
+                                                                                          ]
+                                                                               },
+                                                                   "DetachAndReleaseItem":  {
+                                                                                                "DetachAndReleaseItem":  [
+                                                                                                                             "63ebd054ca275192"
+                                                                                                                         ]
+                                                                                            },
+                                                                   "Attach":  {
+                                                                                  "Poll":  [
+                                                                                               "4f1ce6e4540e498a"
+                                                                                           ]
+                                                                              },
+                                                                   "On_No_Item":  {
+                                                                                      "In":  [
+                                                                                                 "659b9b1ec025a276"
+                                                                                             ]
+                                                                                  },
+                                                                   "SetVisible":  {
+                                                                                      "SetVisible":  [
+                                                                                                         "f8bb74e29b7f92b8"
+                                                                                                     ]
+                                                                                  }
+                                                               },
+                                              "propertyAliases":  {
+                                                                      "FastIncubationTime":  [
+                                                                                                 {
+                                                                                                     "originalProperty":  "FastIncubationTime",
+                                                                                                     "originalEntity":  "760cf7392e79e573"
+                                                                                                 }
+                                                                                             ],
+                                                                      "Grab_BOX_POS":  [
+                                                                                           {
+                                                                                               "originalProperty":  "m_mTransform",
+                                                                                               "originalEntity":  "907a6a5b6d73511c"
+                                                                                           }
+                                                                                       ],
+                                                                      "ItemPosition":  [
+                                                                                           {
+                                                                                               "originalProperty":  "m_eidParent",
+                                                                                               "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                           }
+                                                                                       ],
+                                                                      "Move_TriggerSphere":  [
+                                                                                                 {
+                                                                                                     "originalProperty":  "m_eidParent",
+                                                                                                     "originalEntity":  "5ddb75a786723f11"
+                                                                                                 }
+                                                                                             ],
+                                                                      "OverrideDetachPoint":  [
+                                                                                                  {
+                                                                                                      "originalProperty":  "m_pDetachPoint",
+                                                                                                      "originalEntity":  "63ebd054ca275192"
+                                                                                                  }
+                                                                                              ],
+                                                                      "UseLeftHand":  [
+                                                                                          {
+                                                                                              "originalProperty":  "m_bValue",
+                                                                                              "originalEntity":  "cea2e7d27e502422"
+                                                                                          }
+                                                                                      ],
+                                                                      "debugBoxVisible":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "debugBoxVisible",
+                                                                                                  "originalEntity":  "907a6a5b6d73511c"
+                                                                                              }
+                                                                                          ],
+                                                                      "itemVisible":  [
+                                                                                          {
+                                                                                              "originalProperty":  "m_bVisible",
+                                                                                              "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                          }
+                                                                                      ],
+                                                                      "m_bSpawnOnStart":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_bSpawnOnStart",
+                                                                                                  "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                              }
+                                                                                          ],
+                                                                      "m_bValueshouldconsume":  [
+                                                                                                    {
+                                                                                                        "originalProperty":  "m_bValue",
+                                                                                                        "originalEntity":  "bb35b20e2dbd1a7f"
+                                                                                                    }
+                                                                                                ],
+                                                                      "m_eMaxTension":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_eMaxTension",
+                                                                                                "originalEntity":  "63ebd054ca275192"
+                                                                                            }
+                                                                                        ],
+                                                                      "m_mTransform":  [
+                                                                                           {
+                                                                                               "originalProperty":  "m_mTransform",
+                                                                                               "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                           }
+                                                                                       ],
+                                                                      "m_rActBehavior":  [
+                                                                                             {
+                                                                                                 "originalProperty":  "m_rActBehavior",
+                                                                                                 "originalEntity":  "79b6f369334decf4"
+                                                                                             },
+                                                                                             {
+                                                                                                 "originalProperty":  "m_rActBehavior",
+                                                                                                 "originalEntity":  "7b97a96fe51554d8"
+                                                                                             },
+                                                                                             {
+                                                                                                 "originalProperty":  "m_rActBehavior",
+                                                                                                 "originalEntity":  "0512c0caea92cc93"
+                                                                                             }
+                                                                                         ],
+                                                                      "m_rInventoryItems":  [
+                                                                                                {
+                                                                                                    "originalProperty":  "m_rInventoryItems",
+                                                                                                    "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                                }
+                                                                                            ],
+                                                                      "m_rItemKeywords":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_rKeywordsToFind",
+                                                                                                  "originalEntity":  "6d89f95118177b86"
+                                                                                              },
+                                                                                              {
+                                                                                                  "originalProperty":  "m_rRepositoryKeyToFind",
+                                                                                                  "originalEntity":  "6d89f95118177b86"
+                                                                                              }
+                                                                                          ],
+                                                                      "m_rRepositoryKeyToFind":  [
+                                                                                                     {
+                                                                                                         "originalProperty":  "m_rMainItemKey",
+                                                                                                         "originalEntity":  "f8bb74e29b7f92b8"
+                                                                                                     },
+                                                                                                     {
+                                                                                                         "originalProperty":  "m_rRepositoryKeyToFind",
+                                                                                                         "originalEntity":  "9f4344355a944e49"
+                                                                                                     }
+                                                                                                 ]
+                                                                  }
+                                          }
+                 },
+    "propertyOverrides":  [
+
+                          ],
+    "overrideDeletes":  [
+
+                        ],
+    "pinConnectionOverrides":  [
+
+                               ],
+    "pinConnectionOverrideDeletes":  [
+
+                                     ],
+    "externalScenes":  [
+
+                       ],
+    "subType":  "template",
+    "quickEntityVersion":  3.1,
+    "extraFactoryDependencies":  [
+                                     {
+                                         "resource":  "[assembly:/geometry/g2/gizmos.wl2?/gizmo_trigger_01.prim].pc_prim",
+                                         "flag":  "5F"
+                                     }
+                                 ],
+    "extraBlueprintDependencies":  [
+
+                                   ],
+    "comments":  [
+
+                 ]
+}

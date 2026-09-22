@@ -3,7 +3,6 @@
     "EnablePickUpOnRelease": true,
     "Evergreen_CapacityCost": 3,
     "RagdollImpactForce": 80,
-    "GripAnimType": "IGT_Melee_1H_Rock",
     "HolsterAbility": "eHolsteringAllowed",
     "OnlineTraits": [
       "melee_nonlethal",
@@ -15,7 +14,6 @@
     "EnablePickUpOnRelease": true,
     "Evergreen_CapacityCost": 3,
     "RagdollImpactForce": 80,
-    "GripAnimType": "IGT_Melee_1H_Rock",
     "HolsterAbility": "eHolsteringAllowed",
     "OnlineTraits": [
       "melee_nonlethal",
@@ -24,11 +22,12 @@
     "ThrowType": "THROW_PACIFY_LIGHT"
   },
   "9526229d-b205-42ee-a754-c135adf09750": {
-    "EnablePickUpOnRelease": true,
     "Evergreen_CapacityCost": 3,
     "RagdollImpactForce": 80,
-    "GripAnimType": "IGT_Melee_1H_Rock",
     "HolsterAbility": "eHolsteringAllowed",
+	"ItemHandsCoverAnimLayer": "IH_ONEHANDED",
+    "ItemHandsIdle": "IH_ONEHANDED",
+    "ItemHandsUse": "IH_ONEHANDED",
     "OnlineTraits": [
       "melee_nonlethal",
       "throw_nonlethal_deprecated"

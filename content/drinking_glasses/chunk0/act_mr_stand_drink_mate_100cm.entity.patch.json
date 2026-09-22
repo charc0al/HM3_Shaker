@@ -1,0 +1,27 @@
+{
+  "tempHash": "00586831B8C6C3B3",
+  "tbluHash": "002AFD3221C04BA0",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "e5370ee1ae3031a5",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnInterrupted"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "e5370ee1ae3031a5",
+        {
+          "AddEventConnection": [
+            "OnInterrupted",
+            "DropItem",
+            "24e38c2e5c56b183"
+          ]
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}
