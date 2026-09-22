@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
   "version": "1.2.0",
   "id": "Charc0al.MartiniPuddle",
-  "name": "Puddles!",
+  "name": "Drinks & Liquids",
   "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), alcohol (flammable) and soda (slippery).",
   "authors": [
     "Charc0al"
@@ -66,13 +66,13 @@
       ]
     },
     {
-      "name": "NPC Drinking Glasses",
-      "tooltip": "Martini, vodka, champagne, and wine glasses create slippery puddles when they shatter",
+      "name": "NPC Drinks",
+      "tooltip": "When NPCs drop their drinks, they will create slippery puddles. Made more NPCs drop drinks instead of teleporting them back to starting positions. Let me know if you find any NPCs doing magic drink teleporting and I'll try to patch them.",
       "group": "Main",
       "type": "checkbox",
       "enabledByDefault": true,
       "contentFolders": [
-        "content/drinking_glasses"
+        "content/npc_drinks"
       ]
     },
     {
