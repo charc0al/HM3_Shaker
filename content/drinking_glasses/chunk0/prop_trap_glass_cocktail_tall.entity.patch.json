@@ -3,6 +3,20 @@
   "tbluHash": "005AD45B9312048A",
   "patch": [
     {
+      "SubEntityOperation": [
+        "83a120edd08229b3",
+        {
+          "AddProperty": [
+            "m_fMass",
+            {
+              "type": "float32",
+              "value": 5.0
+            }
+          ]
+        }
+      ]
+    },
+    {
       "AddEntity": [
         "d1a7000000000001",
         {
