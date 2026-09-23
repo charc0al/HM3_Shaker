@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "id": "Charc0al.MartiniPuddle",
   "name": "Drinks & Liquids",
   "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), alcohol (flammable) and soda (slippery).",
@@ -75,7 +75,7 @@
         "content/npc_drinks"
       ]
     },
-	{
+    {
       "name": "BONUS | Overpowered Water Canister",
       "tooltip": "So it's not a usless item with all the liquid throwables, this makes the water canister MUCH stronger. Experiment and find out :) (try shooting it)",
       "group": "Main",
@@ -216,7 +216,7 @@
         "content/unlock_whiskey"
       ]
     },
-	{
+    {
       "name": "Unlock | Water Canister",
       "tooltip": "Adds the water canister to the mission planning loadout.",
       "group": "Unlockables",
