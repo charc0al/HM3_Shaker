@@ -251,7 +251,7 @@
           "factory": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entityblueprint",
           "properties": {
-            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": -90, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
             "m_fParticleSizeMin": { "type": "float32", "value": 20 },
             "m_fSpeedMin": { "type": "float32", "value": 1 },
             "m_fSpeedMax": { "type": "float32", "value": 1 },
