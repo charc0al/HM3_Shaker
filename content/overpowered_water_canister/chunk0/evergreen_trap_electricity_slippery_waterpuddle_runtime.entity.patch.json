@@ -1,0 +1,32 @@
+{
+  "tempHash": "0081806AF37D43DB",
+  "tbluHash": "00AD78A949F3EDD9",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "45a838c4454c7a88",
+        {
+          "AddProperty": [
+            "m_PrimitiveScale",
+            {
+              "type": "SVector3",
+              "value": { "x": 2.0, "y": 2.0, "z": 1.0 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "dbc101917b6c0c62",
+        {
+          "SetPropertyValue": {
+            "property_name": "NPCKillVolumem_vGlobalSize",
+            "value": { "x": 4.0, "y": 4.0, "z": 0.550000011920929 }
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}

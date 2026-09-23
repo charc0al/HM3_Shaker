@@ -22,6 +22,16 @@
       ]
     },
     {
+      "name": "Overpowered Water Canister",
+      "tooltip": "Doubles the water canister puddle footprint and pours it twice as fast.",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/overpowered_water_canister"
+      ]
+    },
+    {
       "name": "Alcohol",
       "tooltip": "Makes vodka and whiskey bottles spill flammable alcohol",
       "group": "Main",
