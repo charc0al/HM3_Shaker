@@ -5,4 +5,4 @@ Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (el
 
 ---
 
-`Charc0al.MartiniPuddle` v1.4.0, by Charc0al. This README was automatically generated from the mod's manifest.
+`Charc0al.MartiniPuddle` v1.4.1, by Charc0al. This README was automatically generated from the mod's manifest.
