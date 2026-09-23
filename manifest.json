@@ -22,36 +22,6 @@
       ]
     },
     {
-      "name": "Overpowered Water Canister",
-      "tooltip": "Doubles the water canister puddle footprint and pours it twice as fast.",
-      "group": "Main",
-      "type": "checkbox",
-      "enabledByDefault": false,
-      "contentFolders": [
-        "content/overpowered_water_canister"
-      ]
-    },
-    {
-      "name": "Overpowered Oil Canister",
-      "tooltip": "Enlarges the oil canister puddle, enables pouring anywhere, and makes gunshots create an oil spill instead of exploding the canister.",
-      "group": "Main",
-      "type": "checkbox",
-      "enabledByDefault": false,
-      "contentFolders": [
-        "content/overpowered_oil_canister"
-      ]
-    },
-    {
-      "name": "Unlock | Water Canister",
-      "tooltip": "Adds the water canister to the mission planning loadout.",
-      "group": "Unlockables",
-      "type": "checkbox",
-      "enabledByDefault": false,
-      "contentFolders": [
-        "content/unlock_water_canister"
-      ]
-    },
-    {
       "name": "Alcohol",
       "tooltip": "Makes vodka and whiskey bottles spill flammable alcohol",
       "group": "Main",
@@ -103,6 +73,16 @@
       "enabledByDefault": true,
       "contentFolders": [
         "content/npc_drinks"
+      ]
+    },
+	{
+      "name": "BONUS | Overpowered Water Canister",
+      "tooltip": "So it's not a usless item with all the liquid throwables, this makes the water canister MUCH stronger. Experiment and find out :) (try shooting it)",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/overpowered_water_canister"
       ]
     },
     {
@@ -234,6 +214,26 @@
       "image": "smf/unlocks-whiskey.webp",
       "contentFolders": [
         "content/unlock_whiskey"
+      ]
+    },
+	{
+      "name": "Unlock | Water Canister",
+      "tooltip": "Adds the water canister to the mission planning loadout.",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/unlock_water_canister"
+      ]
+    },
+    {
+      "name": "(WIP) Overpowered Oil Canister",
+      "tooltip": "Work in progress, makes the oil canister far more powerful by [REDACTED]",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/overpowered_oil_canister"
       ]
     },
     {

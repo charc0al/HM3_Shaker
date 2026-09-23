@@ -3,20 +3,34 @@
   "tbluHash": "00BCFBADD535704A",
   "patch": [
     {
-      "SubEntityOperation": [
-        "eb0c15564983cb51",
+      "AddEntity": [
+        "cafe7a11c0ffee40",
         {
-          "SetPropertyValue": {
-            "property_name": "m_mTransform",
-            "value": {
-              "rotation": { "x": 0, "y": 0, "z": 0 },
-              "position": { "x": 0, "y": 0, "z": 0 },
-              "scale": { "x": 2.0, "y": 2.0, "z": 1.0 }
-            }
+          "parent": "97a3c598e3638a13",
+          "name": "FX_OilLeak_3x3m_A",
+          "factory": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+            "m_PrimitiveScale": { "type": "SVector3", "value": { "x": 2.0, "y": 2.0, "z": 1.0 } },
+            "m_bVisible": { "type": "bool", "value": false },
+            "m_bKinematic": { "type": "bool", "value": true },
+            "m_bRemovePhysics": { "type": "bool", "value": true },
+            "m_bCastShadows": { "type": "bool", "value": false },
+            "m_eLayer": { "type": "ECollidableLayer", "value": "eCollLayer_SHOT_ONLY_COLLISION" },
+            "m_bEnableRayCollision": { "type": "bool", "value": false },
+            "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" },
+            "LeakSpeed": { "type": "float32", "value": 0.2 },
+            "m_MaterialID": { "type": "ZRuntimeResourceID", "value": { "resource": "[assembly:/_pro/effects/materials/liquid/fx_decal_liquid_oil_leaking.mi].pc_mi", "flag": "5F" } },
+            "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true }
           }
         }
       ]
     },
+    { "AddEntity": ["cafe7a11c0ffee51", { "parent": "97a3c598e3638a13", "name": "OilSpillFireZone_North", "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 1.25, "z": 0 } } }, "m_sId": { "type": "ZGuid", "value": "5a6ad990-b7d7-4e04-b563-0b635058df58" }, "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" }, "LeakSpeed": { "type": "float32", "value": 0.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee52", { "parent": "97a3c598e3638a13", "name": "OilSpillFireZone_South", "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": -1.25, "z": 0 } } }, "m_sId": { "type": "ZGuid", "value": "3b2dcb7f-258a-46be-b045-d2d697c6bd60" }, "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" }, "LeakSpeed": { "type": "float32", "value": 0.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee53", { "parent": "97a3c598e3638a13", "name": "OilSpillFireZone_East", "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 1.25, "y": 0, "z": 0 } } }, "m_sId": { "type": "ZGuid", "value": "3553bff8-0ec4-43d5-98de-5c0c1fca7e93" }, "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" }, "LeakSpeed": { "type": "float32", "value": 0.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee54", { "parent": "97a3c598e3638a13", "name": "OilSpillFireZone_West", "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_oilspill_burning_small.entitytemplate].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": -1.25, "y": 0, "z": 0 } } }, "m_sId": { "type": "ZGuid", "value": "ba36d225-a227-4419-a36f-2bb04cdaa772" }, "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" }, "LeakSpeed": { "type": "float32", "value": 0.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
     { "AddEntity": ["cafe7a11c0ffee41", { "parent": "97a3c598e3638a13", "name": "OilPuddleSlipVolume_01", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 1.4 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
     { "AddEntity": ["cafe7a11c0ffee42", { "parent": "97a3c598e3638a13", "name": "ItemHelper_Logic_BananaSlip_01", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "c22109c1-9a7f-4b16-bb7a-bb9a3fce6801" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee41"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "dacb9c108b781af3", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "eb0c15564983cb51", "externalScene": null, "exposedEntity": "EffectSpatial" } } } }] },
     { "AddEntity": ["cafe7a11c0ffee43", { "parent": "97a3c598e3638a13", "name": "OilPuddleSlipVolume_02", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 1.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
@@ -25,7 +39,13 @@
     { "AddEntity": ["cafe7a11c0ffee46", { "parent": "97a3c598e3638a13", "name": "ItemHelper_Logic_BananaSlip_03", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "a6a9d8dc-4429-4d3b-a12b-53f3ca7f6c79" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee45"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "dacb9c108b781af3", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "eb0c15564983cb51", "externalScene": null, "exposedEntity": "EffectSpatial" } } } }] },
     { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee42"] }] },
     { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee44"] }] },
-    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee46"] }] }
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee46"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "MakeVisible", "cafe7a11c0ffee40"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Activate", "cafe7a11c0ffee40"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Activate", "cafe7a11c0ffee51"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Activate", "cafe7a11c0ffee52"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Activate", "cafe7a11c0ffee53"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Activate", "cafe7a11c0ffee54"] }] }
   ],
   "patchVersion": 6
 }
