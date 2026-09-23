@@ -1,0 +1,98 @@
+{
+  "tempHash": "000F9AF24932924D",
+  "tbluHash": "004F7402639FE77B",
+  "patch": [
+    { "SubEntityOperation": ["2fff60bac6a5ffe8", { "SetPropertyValue": { "property_name": "m_ConditionList_Usable", "value": [] } }] },
+    { "SubEntityOperation": ["798ad96ef6575c55", { "SetPropertyValue": { "property_name": "m_ConditionList_Usable", "value": [] } }] },
+    { "SubEntityOperation": ["d77567ec612494e0", { "RemoveEventConnection": ["OnShot", "In", "fbb12c3777571a1b"] }] },
+    { "SubEntityOperation": ["d77567ec612494e0", { "AddEventConnection": ["OnShot", "Disable", "d77567ec612494e0"] }] },
+    { "SubEntityOperation": ["d77567ec612494e0", { "AddEventConnection": ["OnShot", "Get", "cafe7a11c0ffee34"] }] },
+    {
+      "AddEntity": [
+        "cafe7a11c0ffee32",
+        {
+          "parent": "858e07956d7aebd0",
+          "name": "ShotOilPuddleSpawner",
+          "factory": "[modules:/zitemspawner.class].pc_entitytype",
+          "blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+            "m_eidParent": { "type": "SEntityTemplateReference", "value": "cafe7a11c0ffee33", "postInit": true },
+            "m_bSpawnOnStart": { "type": "bool", "value": false },
+            "m_bUsePlacementAttach": { "type": "bool", "value": false },
+            "m_ePhysicsMode": { "type": "ZItemSpawner.EPhysicsMode", "value": "EPM_KINEMATIC" },
+            "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" },
+            "m_rMainItemKey": { "type": "SEntityTemplateReference", "value": "0dd063dff1a7815f", "postInit": true }
+          },
+          "events": { "ItemReady": { "Detach": ["cafe7a11c0ffee32"] } }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe7a11c0ffee33",
+        {
+          "parent": "858e07956d7aebd0",
+          "name": "ShotOilPuddleFlatAnchor",
+          "factory": "[modules:/zcompositeentity.class].pc_entitytype",
+          "blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+            "m_eidParent": { "type": "SEntityTemplateReference", "value": null, "postInit": true }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe7a11c0ffee34",
+        {
+          "parent": "858e07956d7aebd0",
+          "name": "GetShotGroundPosition",
+          "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
+          "properties": {
+            "498320989": { "type": "float32", "value": 0.30000001192092896 },
+            "920014207": { "type": "float32", "value": -3 },
+            "m_rSpatial": { "type": "SEntityTemplateReference", "value": "bdc33ba7ec3b01e7", "postInit": true }
+          },
+          "events": { "Position": { "Value": ["cafe7a11c0ffee35"] } }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe7a11c0ffee35",
+        {
+          "parent": "858e07956d7aebd0",
+          "name": "ShotGroundPositionDebuffer",
+          "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
+          "events": {
+            "Value": { "Position": ["cafe7a11c0ffee36"] },
+            "Done": {
+              "SetFalse": ["83b1f9e4ab95c101"],
+              "SpawnItem": ["cafe7a11c0ffee32"],
+              "Activate": ["e8b91dce6ad5b473"],
+              "Send": ["68eb9f90925cb8e9"],
+              "In": ["09e839fb1824ed01"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe7a11c0ffee36",
+        {
+          "parent": "858e07956d7aebd0",
+          "name": "SetShotPuddleAnchorPosition",
+          "factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+          "properties": { "m_Entity": { "type": "SEntityTemplateReference", "value": "cafe7a11c0ffee33", "postInit": true } }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}

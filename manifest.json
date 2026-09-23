@@ -32,6 +32,26 @@
       ]
     },
     {
+      "name": "Overpowered Oil Canister",
+      "tooltip": "Enlarges the oil canister puddle, enables pouring anywhere, and makes gunshots create an oil spill instead of exploding the canister.",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/overpowered_oil_canister"
+      ]
+    },
+    {
+      "name": "Unlock | Water Canister",
+      "tooltip": "Adds the water canister to the mission planning loadout.",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/unlock_water_canister"
+      ]
+    },
+    {
       "name": "Alcohol",
       "tooltip": "Makes vodka and whiskey bottles spill flammable alcohol",
       "group": "Main",

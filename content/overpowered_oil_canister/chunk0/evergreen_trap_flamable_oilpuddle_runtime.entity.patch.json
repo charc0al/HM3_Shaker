@@ -1,0 +1,31 @@
+{
+  "tempHash": "0036469B0D418ADA",
+  "tbluHash": "00BCFBADD535704A",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "eb0c15564983cb51",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_mTransform",
+            "value": {
+              "rotation": { "x": 0, "y": 0, "z": 0 },
+              "position": { "x": 0, "y": 0, "z": 0 },
+              "scale": { "x": 2.0, "y": 2.0, "z": 1.0 }
+            }
+          }
+        }
+      ]
+    },
+    { "AddEntity": ["cafe7a11c0ffee41", { "parent": "97a3c598e3638a13", "name": "OilPuddleSlipVolume_01", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 1.4 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee42", { "parent": "97a3c598e3638a13", "name": "ItemHelper_Logic_BananaSlip_01", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "c22109c1-9a7f-4b16-bb7a-bb9a3fce6801" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee41"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "dacb9c108b781af3", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "eb0c15564983cb51", "externalScene": null, "exposedEntity": "EffectSpatial" } } } }] },
+    { "AddEntity": ["cafe7a11c0ffee43", { "parent": "97a3c598e3638a13", "name": "OilPuddleSlipVolume_02", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 1.2 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee44", { "parent": "97a3c598e3638a13", "name": "ItemHelper_Logic_BananaSlip_02", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "8a05d156-51cf-435b-b11e-6c9963d8b2a4" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee43"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "dacb9c108b781af3", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "eb0c15564983cb51", "externalScene": null, "exposedEntity": "EffectSpatial" } } } }] },
+    { "AddEntity": ["cafe7a11c0ffee45", { "parent": "97a3c598e3638a13", "name": "OilPuddleSlipVolume_03", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 1.0 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "eb0c15564983cb51", "postInit": true } } }] },
+    { "AddEntity": ["cafe7a11c0ffee46", { "parent": "97a3c598e3638a13", "name": "ItemHelper_Logic_BananaSlip_03", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "a6a9d8dc-4429-4d3b-a12b-53f3ca7f6c79" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee45"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "dacb9c108b781af3", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "eb0c15564983cb51", "externalScene": null, "exposedEntity": "EffectSpatial" } } } }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee42"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee44"] }] },
+    { "SubEntityOperation": ["dacb9c108b781af3", { "AddEventConnection": ["OnVisible", "Rig", "cafe7a11c0ffee46"] }] }
+  ],
+  "patchVersion": 6
+}
