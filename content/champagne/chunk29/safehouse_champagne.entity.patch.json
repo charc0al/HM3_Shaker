@@ -4,10 +4,10 @@
 	"patch": [
 		{
 			"AddEntity": [
-				"cafe8c35cf0a30b1",
+				"cafe8107915988f4",
 				{
 					"parent": "bdd2f3ef19f86bbb",
-					"name": "Item_Shaker",
+					"name": "Item_ChampagneGlass",
 					"factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint",
 					"properties": {
@@ -16,19 +16,19 @@
 							"value": {
 								"rotation": {
 									"x": -0.0,
-									"y": 0.0,
-									"z": 40.00000131811318
+									"y": -0.0,
+									"z": 0.0
 								},
 								"position": {
-									"x": 30.100000381469727,
-									"y": -182.15,
-									"z": -9.949999809265137
+									"x": 29.52,
+									"y": -183.55,
+									"z": -9.95
 								}
 							}
 						},
 						"repositoryId": {
 							"type": "ZGuid",
-							"value": "8f6d512c-6c20-42c9-a58b-b7405247d46c"
+							"value": "34d7bfbe-18a7-47f8-89e2-44f23f1482dc"
 						},
 						"m_bSpawnOnStart": {
 							"type": "bool",
