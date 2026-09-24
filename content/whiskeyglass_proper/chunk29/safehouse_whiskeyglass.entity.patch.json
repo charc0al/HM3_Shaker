@@ -1,0 +1,70 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"e3884893a31b0401",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": -0.0,
+								"y": 0.0,
+								"z": -29.8078133166526
+							},
+							"position": {
+								"x": -0.00020128069445490837,
+								"y": -0.057080671191215515,
+								"z": 0.054308030754327774
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeff7be5011333",
+				{
+					"parent": "bdd2f3ef19f86bbb",
+					"name": "Item_WhiskeyGlass",
+					"factory": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/setpieces/setpieces_evergreen.template?/setpiece_evergreen_cosmeticitem.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": -0.0,
+									"y": -0.0,
+									"z": 0.0
+								},
+								"position": {
+									"x": 21.85,
+									"y": -173.606,
+									"z": -10.1488
+								}
+							}
+						},
+						"repositoryId": {
+							"type": "ZGuid",
+							"value": "14e3db07-e4a9-40df-bd16-a2687f0e8658"
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": true
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "fffffffffffffffe",
+							"postInit": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
