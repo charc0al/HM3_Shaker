@@ -305,6 +305,28 @@
 		},
 		{
 			"AddEntity": [
+				"cafe1ea44a6617c2",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "MegaPourStartDelay",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": { "type": "int32", "value": 250 }
+					},
+					"events": {
+						"Out": {
+							"SpawnItem": ["cafe1ea44a6617be"],
+							"Activate": ["6fb2d47311a31a13"],
+							"Send": ["265029877eb5c1c7"],
+							"In": ["2d39e6fa4dd0f197"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
 				"cafe1ea44a6617bd",
 				{
 					"parent": "9ace7163c31e3cba",
@@ -395,13 +417,8 @@
 					"events": {
 						"Started": {
 							"SetFalse": ["597006c76b6dea76"],
-							"Send": ["7cf05c490a1dce92"]
-						},
-						"Completed": {
-							"SpawnItem": ["cafe1ea44a6617be"],
-							"Activate": ["6fb2d47311a31a13"],
-							"Send": ["265029877eb5c1c7"],
-							"In": ["2d39e6fa4dd0f197"]
+							"Send": ["7cf05c490a1dce92"],
+							"In": ["cafe1ea44a6617c2"]
 						}
 					}
 				}
