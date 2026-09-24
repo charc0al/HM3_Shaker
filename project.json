@@ -1,4 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
-	"customPaths": []
+	"customPaths": [
+		"[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_flood.sweetline].pc_sweetline"
+	]
 }

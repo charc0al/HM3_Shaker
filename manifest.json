@@ -76,41 +76,82 @@
       ]
     },
     {
-      "name": "BONUS | Overpowered Water Canister",
+      "name": "Overpowered Water Canister",
       "tooltip": "So it's not a usless item with all the liquid throwables, this makes the water canister MUCH stronger. Experiment and find out :) (try shooting it)",
       "group": "Main",
       "type": "checkbox",
       "enabledByDefault": false,
       "contentFolders": [
         "content/overpowered_water_canister"
+      ]
+    },
+	{
+      "name": "Overpowered Oil Canister (WIP)",
+      "tooltip": "Work in progress, makes the oil canister far more powerful by [REDACTED]. May cause occasional crashes which is why it's still marked as WIP, let me know if you experience any.",
+      "group": "Main",
+      "type": "checkbox",
+      "enabledByDefault": false,
+      "contentFolders": [
+        "content/overpowered_oil_canister"
+      ]
+    },
+	{
+      "name": "BONUS | Champagne Glass",
+      "tooltip": "Adds a champagne glass melee weapon that creates slippery puddle when broken. Adds it to the safehouse as well.",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks-champagne.webp",
+      "contentFolders": [
+        "content/champagne"
+      ]
+    },
+    {
+      "name": "BONUS | Whiskey Glass",
+      "tooltip": "Adds a new whiskey glass melee item, which creates a slippery puddle when broken. Adds a whiskey glass to the safehouse as well.",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "image": "smf/unlocks-whiskeyglass.webp",
+      "contentFolders": [
+        "content/whiskeyglass_proper"
       ],
       "localisation": {
         "english": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Flood"
+          "ui_prop_melee_whiskey_glass_name": "Whiskey Glass",
+          "ui_prop_melee_whiskey_glass_desc": "A sturdy whiskey glass. Break it to create a slippery puddle."
         },
         "french": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Inonder"
+          "ui_prop_melee_whiskey_glass_name": "Verre à whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un solide verre à whisky. Brisez-le pour créer une flaque glissante."
         },
         "italian": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Allaga"
+          "ui_prop_melee_whiskey_glass_name": "Bicchiere da whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un robusto bicchiere da whisky. Rompilo per creare una pozza scivolosa."
         },
         "german": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Fluten"
+          "ui_prop_melee_whiskey_glass_name": "Whiskyglas",
+          "ui_prop_melee_whiskey_glass_desc": "Ein stabiles Whiskyglas. Zerbrich es, um eine rutschige Pfütze zu erzeugen."
         },
         "spanish": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Inundar"
+          "ui_prop_melee_whiskey_glass_name": "Vaso de whisky",
+          "ui_prop_melee_whiskey_glass_desc": "Un resistente vaso de whisky. Rómpelo para crear un charco resbaladizo."
         },
         "russian": {
-          "ui_prop_evergreen_waterspill_canister_flood": "Затопить"
+          "ui_prop_melee_whiskey_glass_name": "Стакан для виски",
+          "ui_prop_melee_whiskey_glass_desc": "Прочный стакан для виски. Разбейте его, чтобы создать скользкую лужу."
         },
         "chineseSimplified": {
-          "ui_prop_evergreen_waterspill_canister_flood": "淹没"
+          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
+          "ui_prop_melee_whiskey_glass_desc": "一个结实的威士忌酒杯。打碎它会形成一滩湿滑的液体。"
         },
         "chineseTraditional": {
-          "ui_prop_evergreen_waterspill_canister_flood": "淹沒"
+          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
+          "ui_prop_melee_whiskey_glass_desc": "一個結實的威士忌酒杯。打碎它會形成一灘濕滑的液體。"
         },
         "japanese": {
-          "ui_prop_evergreen_waterspill_canister_flood": "浸水させる"
+          "ui_prop_melee_whiskey_glass_name": "ウイスキーグラス",
+          "ui_prop_melee_whiskey_glass_desc": "丈夫なウイスキーグラス。割ると滑りやすい水たまりができる。"
         }
       }
     },
@@ -214,7 +255,7 @@
     },
     {
       "name": "Unlock | New York Vodka",
-      "tooltip": "Adds the New York vodka bottle as unlockable. ONLY USE IF YOU HAVE QUEST VODKA TURNED ON!",
+      "tooltip": "Adds the New York vodka bottle as unlockable. ONLY USE IF YOU HAVE QUEST ALCOHOL TURNED ON!",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": false,
@@ -225,7 +266,7 @@
     },
     {
       "name": "Unlock | Jasper Knight Vodka",
-      "tooltip": "Adds the vodka bottle from the tutorial mission as unlockable. ONLY USE IF YOU HAVE QUEST VODKA TURNED ON!",
+      "tooltip": "Adds the vodka bottle from the tutorial mission as unlockable. ONLY USE IF YOU HAVE QUEST ALCOHOL TURNED ON!",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": false,
@@ -254,76 +295,38 @@
       "contentFolders": [
         "content/unlock_water_canister"
       ]
-    },
-    {
-      "name": "(WIP) Overpowered Oil Canister",
-      "tooltip": "Work in progress, makes the oil canister far more powerful by [REDACTED]",
-      "group": "Main",
-      "type": "checkbox",
-      "enabledByDefault": false,
-      "contentFolders": [
-        "content/overpowered_oil_canister"
-      ]
-    },
-    {
-      "name": "(WIP) Champagne Glass",
-      "tooltip": "Adds throwable champagne glass which also works as a melee weapon. Creates slippery puddle when thrown or dropped. Work in progress, may be buggy.",
-      "group": "Unlockables",
-      "type": "checkbox",
-      "enabledByDefault": true,
-      "image": "smf/unlocks-champagne.webp",
-      "contentFolders": [
-        "content/champagne"
-      ]
-    },
-    {
-      "name": "Whiskey Glass",
-      "tooltip": "Adds a standalone throwable whiskey glass with melee animations. It creates a slippery puddle when it breaks.",
-      "group": "Unlockables",
-      "type": "checkbox",
-      "enabledByDefault": true,
-      "image": "smf/unlocks-whiskeyglass.webp",
-      "contentFolders": [
-        "content/whiskeyglass_proper"
-      ],
-      "localisation": {
-        "english": {
-          "ui_prop_melee_whiskey_glass_name": "Whiskey Glass",
-          "ui_prop_melee_whiskey_glass_desc": "A sturdy whiskey glass. Break it to create a slippery puddle."
-        },
-        "french": {
-          "ui_prop_melee_whiskey_glass_name": "Verre à whisky",
-          "ui_prop_melee_whiskey_glass_desc": "Un solide verre à whisky. Brisez-le pour créer une flaque glissante."
-        },
-        "italian": {
-          "ui_prop_melee_whiskey_glass_name": "Bicchiere da whisky",
-          "ui_prop_melee_whiskey_glass_desc": "Un robusto bicchiere da whisky. Rompilo per creare una pozza scivolosa."
-        },
-        "german": {
-          "ui_prop_melee_whiskey_glass_name": "Whiskyglas",
-          "ui_prop_melee_whiskey_glass_desc": "Ein stabiles Whiskyglas. Zerbrich es, um eine rutschige Pfütze zu erzeugen."
-        },
-        "spanish": {
-          "ui_prop_melee_whiskey_glass_name": "Vaso de whisky",
-          "ui_prop_melee_whiskey_glass_desc": "Un resistente vaso de whisky. Rómpelo para crear un charco resbaladizo."
-        },
-        "russian": {
-          "ui_prop_melee_whiskey_glass_name": "Стакан для виски",
-          "ui_prop_melee_whiskey_glass_desc": "Прочный стакан для виски. Разбейте его, чтобы создать скользкую лужу."
-        },
-        "chineseSimplified": {
-          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
-          "ui_prop_melee_whiskey_glass_desc": "一个结实的威士忌酒杯。打碎它会形成一滩湿滑的液体。"
-        },
-        "chineseTraditional": {
-          "ui_prop_melee_whiskey_glass_name": "威士忌酒杯",
-          "ui_prop_melee_whiskey_glass_desc": "一個結實的威士忌酒杯。打碎它會形成一灘濕滑的液體。"
-        },
-        "japanese": {
-          "ui_prop_melee_whiskey_glass_name": "ウイスキーグラス",
-          "ui_prop_melee_whiskey_glass_desc": "丈夫なウイスキーグラス。割ると滑りやすい水たまりができる。"
-        }
-      }
     }
-  ]
+  ],
+  "localisation": {
+    "english": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Flood"
+    },
+    "french": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inonder"
+    },
+    "italian": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Allaga"
+    },
+    "german": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Fluten"
+    },
+    "spanish": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inundar"
+    },
+    "russian": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Затопить"
+    },
+    "chineseSimplified": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹没"
+    },
+    "chineseTraditional": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹沒"
+    },
+    "japanese": {
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "浸水させる"
+    }
+  },
+  "localisedLines": {
+    "0018B8D644A982F0": "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD"
+  }
 }

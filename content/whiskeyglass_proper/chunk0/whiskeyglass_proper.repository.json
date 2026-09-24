@@ -33,7 +33,7 @@
     "RagdollImpactUpkickGlobal": 0.0, "Rarity": "ITEMRARITY_COMMON", "RecognizableByCivilians": true,
     "ReverseItemThrowRotationDirection": false, "Runtime": "62471775678642584", "SpawnKinematic": false,
     "Stackable": false, "SupportItem": "00000000-0000-0000-0000-000000000000", "ThrowImpactVisualRadius": 1.4,
-    "ThrowType": "THROW_PACIFY_LIGHT", "ThrowVelocity": 50.0, "ThrownCollisionLoudness": "eLoudness_Default",
+    "ThrowType": "THROW_KNOCKDOWN_LIGHT", "ThrowVelocity": 50.0, "ThrownCollisionLoudness": "eLoudness_Default",
     "Title": "Whiskey Glass", "TokenID": "PROP_MELEE_WHISKEY_GLASS", "UseFakePutDownPhysics": false,
     "VrCloseCombatDamage": -1.0
   }
