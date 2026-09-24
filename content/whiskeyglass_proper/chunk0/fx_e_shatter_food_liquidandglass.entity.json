@@ -1,0 +1,1422 @@
+{
+    "tempHash":  "009CD59EAEE7AEBC",
+    "tbluHash":  "00DD7FD32EAF7D7C",
+    "rootEntity":  "6a4154f52783fa51",
+    "entities":  {
+                     "afc76afb0b0eca78":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PB_Impact_Debris",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_ridDecalMaterial":  {
+                                                                                            "type":  "ZRuntimeResourceID",
+                                                                                            "value":  {
+                                                                                                          "resource":  "[assembly:/_pro/effects/materials/debris/fx_decal_debris_glass_4x4_01.mi].pc_mi",
+                                                                                                          "flag":  "5F"
+                                                                                                      }
+                                                                                        },
+                                                                 "m_fArrayIndexMax":  {
+                                                                                          "type":  "float32",
+                                                                                          "value":  15
+                                                                                      },
+                                                                 "m_fRotationSpeedMin":  {
+                                                                                             "type":  "float32",
+                                                                                             "value":  -10
+                                                                                         },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  3
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  15
+                                                                                        },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  1.0099999904632568
+                                                                                             },
+                                                                 "m_fRotationSpeedMax":  {
+                                                                                             "type":  "float32",
+                                                                                             "value":  10
+                                                                                         },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#2f5e39"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#41593b"
+                                                                                             },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  0.17000000178813934
+                                                                                  }
+                                                             }
+                                          },
+                     "dcd8cd6ef662c9a9":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PR_Smoke_Impact_4t_8x8_brc",
+                                              "factory":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_4t_8x8_brc.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_smoke.template?/fx_pr_smoke_impact_4t_8x8_brc.entitytemplate].pc_entityblueprint"
+                                          },
+                     "e8bdbe077e8c2857":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PR_Debris_Glass_4x4_01",
+                                              "factory":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_debris.template?/fx_pr_debris_glass_4x4_01.entitytemplate].pc_entityblueprint"
+                                          },
+                     "67f172b9f913ac16":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PB_Impact_Debris_Cheap",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris_cheap.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris_cheap.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_fArrayIndexMax":  {
+                                                                                          "type":  "float32",
+                                                                                          "value":  15
+                                                                                      },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  1
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  2
+                                                                                        },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.9300000071525574
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.6299999952316284
+                                                                                             },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#2f5e39"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#41593b"
+                                                                                             },
+                                                                 "m_fMotionStretchFactor":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  0.17000000178813934
+                                                                                            }
+                                                             }
+                                          },
+                     "4a12ee4d671890ea":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PR_Liquid_Splash_8x3_Water",
+                                              "factory":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_8x3_water.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_splash_8x3_water.entitytemplate].pc_entityblueprint"
+                                          },
+                     "0ab11d5f8f4ff7c9":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_PR_Liquid_Impact_4x1_Water_01",
+                                              "factory":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_impact_4x1_water_01.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_impact_4x1_water_01.entitytemplate].pc_entityblueprint"
+                                          },
+                     "965cba808a797219":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_E_Liquid_Sparks_Water",
+                                              "factory":  "[assembly:/_pro/effects/templates/liquid/fx_liquid.template?/fx_e_liquid_sparks_water.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/liquid/fx_liquid.template?/fx_e_liquid_sparks_water.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_fSizeA":  {
+                                                                                  "type":  "float32",
+                                                                                  "value":  300
+                                                                              },
+                                                       "m_fSizeB":  {
+                                                                        "type":  "float32",
+                                                                        "value":  400
+                                                                    },
+                                                       "m_fFixedEmissionCount":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  5
+                                                                                           },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  2
+                                                                                 },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  3
+                                                                                 },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  1
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.20000000298023224
+                                                                                             },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  30
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  50
+                                                                                        },
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.27391600608825684
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#c4c4c4"
+                                                                                             },
+                                                                 "m_fMotionStretchFactor":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  1
+                                                                                            },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "b9eb5c1b6cdb21e5",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "c4411708ac199b6c":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_PB_Impact_Water_Splash03",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "AlphaCurve":  {
+                                                                                    "type":  "ZCurve",
+                                                                                    "value":  {
+                                                                                                  "data":  [
+                                                                                                               [
+                                                                                                                   0.5009361505508423,
+                                                                                                                   1,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.21382147073745728,
+                                                                                                                   -0.7120032906532288,
+                                                                                                                   -0.0000000000000000479153071761,
+                                                                                                                   1
+                                                                                                               ],
+                                                                                                               [
+                                                                                                                   0.7471786141395569,
+                                                                                                                   0.5018181800842285,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.21382147073745728,
+                                                                                                                   0.07053888589143753,
+                                                                                                                   -0.7825421690940857,
+                                                                                                                   0.5018181800842285
+                                                                                                               ],
+                                                                                                               [
+                                                                                                                   0.9934210777282715,
+                                                                                                                   0.003636363660916686,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.003636363660916686
+                                                                                                               ]
+                                                                                                           ]
+                                                                                              }
+                                                                                },
+                                                                 "m_fMotionStretchFactor":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  5
+                                                                                            },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  1
+                                                                                  },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  120
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  180
+                                                                                        },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.30000001192092896
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.800000011920929
+                                                                                             },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#c4c4c4"
+                                                                                             },
+                                                                 "m_bEmitFrozen":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_vGravity":  {
+                                                                                    "type":  "SVector3",
+                                                                                    "value":  {
+                                                                                                  "x":  0,
+                                                                                                  "y":  0,
+                                                                                                  "z":  -1
+                                                                                              }
+                                                                                },
+                                                                 "m_bMultiTrack":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  true
+                                                                                   },
+                                                                 "m_fArrayIndexB":  {
+                                                                                        "type":  "float32",
+                                                                                        "value":  23
+                                                                                    },
+                                                                 "m_ePivotLocation":  {
+                                                                                          "type":  "EParticleSpritePivotLocation",
+                                                                                          "value":  "BOTTOM_PIVOT"
+                                                                                      }
+                                                             }
+                                          },
+                     "6d24773a9f3e11b6":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_PR_Liquid_Rupture_8x3_Water_02",
+                                              "factory":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_rupture_8x3_water_02.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/particlerenderers/fx_pr_liquids.template?/fx_pr_liquid_rupture_8x3_water_02.entitytemplate].pc_entityblueprint"
+                                          },
+                     "db7bce7117fe1159":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PB_Impact_Smoke",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_smoke.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_smoke.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#9e9e9e"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#636363"
+                                                                                             },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  0.36000001430511475
+                                                                                  }
+                                                             }
+                                          },
+                     "44adfd9c84243004":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_PB_Impact_Debris02",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_debris.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_ridDecalMaterial":  {
+                                                                                            "type":  "ZRuntimeResourceID",
+                                                                                            "value":  {
+                                                                                                          "resource":  "[assembly:/_pro/effects/materials/liquid/fx_decal_liquid_rupture_8x3_01.mi].pc_mi",
+                                                                                                          "flag":  "5F"
+                                                                                                      }
+                                                                                        },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  7
+                                                                                        },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  4
+                                                                                        },
+                                                                 "DecalTilesY":  {
+                                                                                     "type":  "uint32",
+                                                                                     "value":  3
+                                                                                 },
+                                                                 "m_fArrayIndexMax":  {
+                                                                                          "type":  "float32",
+                                                                                          "value":  23
+                                                                                      },
+                                                                 "m_fFriction":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  250
+                                                                                 },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  3
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  1
+                                                                                             },
+                                                                 "m_fRotationSpeedMax":  {
+                                                                                             "type":  "float32",
+                                                                                             "value":  2
+                                                                                         },
+                                                                 "m_fRotationSpeedMin":  {
+                                                                                             "type":  "float32",
+                                                                                             "value":  -2
+                                                                                         },
+                                                                 "m_bKillParticlesOnCollision":  {
+                                                                                                     "type":  "bool",
+                                                                                                     "value":  true
+                                                                                                 },
+                                                                 "DecalTilesX":  {
+                                                                                     "type":  "uint32",
+                                                                                     "value":  8
+                                                                                 },
+                                                                 "DecalSizeMultiplier":  {
+                                                                                             "type":  "float32",
+                                                                                             "value":  20
+                                                                                         },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  1
+                                                                                  },
+                                                                 "m_ridDecalController":  {
+                                                                                              "type":  "ZRuntimeResourceID",
+                                                                                              "value":  {
+                                                                                                            "resource":  "[assembly:/_pro/effects/templates/decals/fx_decalcontrollers.template?/fx_decalcontroller_particle.entitytemplate].pc_entitytemplate",
+                                                                                                            "flag":  "5F"
+                                                                                                        }
+                                                                                          },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#c4c4c4"
+                                                                                             }
+                                                             }
+                                          },
+                     "eefe01c006f9d3cc":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "DestructionEffectSourcesProvider",
+                                              "factory":  "[modules:/zdestructioneffectsourcesprovider.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zdestructioneffectsourcesprovider.class].pc_entityblueprint",
+                                              "events":  {
+                                                             "OnEffectActivated":  {
+                                                                                       "Activate":  [
+            "b272d08144638a8e",
+            "c91ef5c77cad457a",
+            "6f9aaa1d5062b052",
+            "863f7f4a2e78f1c4",
+            "b9eb5c1b6cdb21e5"
+                                                                                                    ]
+                                                                                   }
+                                                         }
+                                          },
+                     "863f7f4a2e78f1c4":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "ParticleEmitterPoint_Milk_Decal",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.0858519971370697
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  0
+                                                                 },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  90
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  4
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  -3
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "44adfd9c84243004"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "4a12ee4d671890ea"
+                                                                                      },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0.10000000149011612,
+                                                                                                     "y":  0.10000000149011612,
+                                                                                                     "z":  0.30000001192092896
+                                                                                                 }
+                                                                                   },
+                                                                 "m_eSpawnMode":  {
+                                                                                      "type":  "eParticleEmitterBoxEntity_SpawnModes",
+                                                                                      "value":  "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+                                                                                  },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "6a4154f52783fa51",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "c91ef5c77cad457a":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "ParticleEmitterPoint_Debris_Glass_Small",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.08522000163793564
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  100
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  10
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  180
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  4
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  0.20000000298023224
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "67f172b9f913ac16"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "e8bdbe077e8c2857"
+                                                                                      },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0.10000000149011612,
+                                                                                                     "y":  0.10000000149011612,
+                                                                                                     "z":  0.30000001192092896
+                                                                                                 }
+                                                                                   },
+                                                                 "m_eSpawnMode":  {
+                                                                                      "type":  "eParticleEmitterBoxEntity_SpawnModes",
+                                                                                      "value":  "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+                                                                                  },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "6a4154f52783fa51",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "b272d08144638a8e":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "ParticleEmitterPoint_Debris_Glass",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.11915100365877151
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  20
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  150
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  4
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  1
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "afc76afb0b0eca78"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "e8bdbe077e8c2857"
+                                                                                      },
+                                                                 "m_fInnerConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  15
+                                                                                       },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0.10000000149011612,
+                                                                                                     "y":  0.10000000149011612,
+                                                                                                     "z":  0.30000001192092896
+                                                                                                 }
+                                                                                   },
+                                                                 "m_eSpawnMode":  {
+                                                                                      "type":  "eParticleEmitterBoxEntity_SpawnModes",
+                                                                                      "value":  "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+                                                                                  },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "6a4154f52783fa51",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "6f9aaa1d5062b052":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "ParticleEmitterPoint_Smoke",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.09054400026798248
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  5
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  90
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  3
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  1
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "db7bce7117fe1159"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "dcd8cd6ef662c9a9"
+                                                                                      },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0.10000000149011612,
+                                                                                                     "y":  0.10000000149011612,
+                                                                                                     "z":  0.30000001192092896
+                                                                                                 }
+                                                                                   },
+                                                                 "m_eSpawnMode":  {
+                                                                                      "type":  "eParticleEmitterBoxEntity_SpawnModes",
+                                                                                      "value":  "BOX_SPAWNMODE_ELLIPSOID_INSIDE"
+                                                                                  },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "6a4154f52783fa51",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "747a230529a680de":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "ParticleEmitterPoint_Rupture_Water02",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.25287699699401855
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  20
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  180
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  1
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  0.699999988079071
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "c4411708ac199b6c"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "6d24773a9f3e11b6"
+                                                                                      },
+                                                                 "m_bUseTrackSequence":  {
+                                                                                             "type":  "bool",
+                                                                                             "value":  true
+                                                                                         },
+                                                                 "m_fParticlesPerSecond":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  0
+                                                                                           },
+                                                                 "m_fEmissionTimeSeconds":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  0.10000000149011612
+                                                                                            },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0,
+                                                                                                     "y":  0,
+                                                                                                     "z":  0
+                                                                                                 }
+                                                                                   },
+                                                                 "m_fInnerConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  120
+                                                                                       },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "b9eb5c1b6cdb21e5",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "047ee3c12a54cece":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_PB_Impact_Water_Splash04",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "AlphaCurve":  {
+                                                                                    "type":  "ZCurve",
+                                                                                    "value":  {
+                                                                                                  "data":  [
+                                                                                                               [
+                                                                                                                   0.21791569888591766,
+                                                                                                                   1,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.10377108305692673,
+                                                                                                                   -0.3455469310283661,
+                                                                                                                   -0.0000000000000000232540885006,
+                                                                                                                   1
+                                                                                                               ],
+                                                                                                               [
+                                                                                                                   0.6056683659553528,
+                                                                                                                   0.7582241296768188,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.10377108305692673,
+                                                                                                                   0.034233685582876205,
+                                                                                                                   -0.3797806203365326,
+                                                                                                                   0.7582241296768188
+                                                                                                               ],
+                                                                                                               [
+                                                                                                                   0.9934210777282715,
+                                                                                                                   0.5164483189582825,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0,
+                                                                                                                   0.5164483189582825
+                                                                                                               ]
+                                                                                                           ]
+                                                                                              }
+                                                                                },
+                                                                 "m_fMotionStretchFactor":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  7
+                                                                                            },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  1
+                                                                                  },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  120
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  180
+                                                                                        },
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.30000001192092896
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.5
+                                                                                             },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#c4c4c4"
+                                                                                             },
+                                                                 "m_bEmitFrozen":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  false
+                                                                                   },
+                                                                 "m_vGravity":  {
+                                                                                    "type":  "SVector3",
+                                                                                    "value":  {
+                                                                                                  "x":  0,
+                                                                                                  "y":  0,
+                                                                                                  "z":  0
+                                                                                              }
+                                                                                },
+                                                                 "m_bMultiTrack":  {
+                                                                                       "type":  "bool",
+                                                                                       "value":  true
+                                                                                   },
+                                                                 "m_fArrayIndexB":  {
+                                                                                        "type":  "float32",
+                                                                                        "value":  23
+                                                                                    },
+                                                                 "m_ePivotLocation":  {
+                                                                                          "type":  "EParticleSpritePivotLocation",
+                                                                                          "value":  "BOTTOM_PIVOT"
+                                                                                      }
+                                                             }
+                                          },
+                     "3fe75bebe2e369d4":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "ParticleEmitterPoint_Rupture_Water01",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.16185900568962097
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  10
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  20
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  1.5
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  0.10000000149011612
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "047ee3c12a54cece"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "6d24773a9f3e11b6"
+                                                                                      },
+                                                                 "m_bUseTrackSequence":  {
+                                                                                             "type":  "bool",
+                                                                                             "value":  true
+                                                                                         },
+                                                                 "m_fParticlesPerSecond":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  0
+                                                                                           },
+                                                                 "m_fEmissionTimeSeconds":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  0.10000000149011612
+                                                                                            },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0,
+                                                                                                     "y":  0,
+                                                                                                     "z":  0
+                                                                                                 }
+                                                                                   },
+                                                                 "m_fInnerConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  0
+                                                                                       },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "b9eb5c1b6cdb21e5",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "f5174cbbc1f02d77":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "FX_PB_Impact_Water_Splash",
+                                              "factory":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entitytype",
+                                              "blueprint":  "[assembly:/_pro/effects/templates/impacts/fx_impacts_materialbased.template?/fx_pb_impact_water_splash.entitytemplate].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_fTimeToLiveSecondsMin":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.12999999523162842
+                                                                                             },
+                                                                 "m_fTimeToLiveSecondsMax":  {
+                                                                                                 "type":  "float32",
+                                                                                                 "value":  0.25
+                                                                                             },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  100
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  120
+                                                                                        },
+                                                                 "m_fMotionStretchFactor":  {
+                                                                                                "type":  "float32",
+                                                                                                "value":  9
+                                                                                            },
+                                                                 "m_FixedAlpha":  {
+                                                                                      "type":  "float32",
+                                                                                      "value":  1
+                                                                                  },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               }
+                                                             }
+                                          },
+                     "2cdffb3f11e3be4d":  {
+                                              "parent":  "b9eb5c1b6cdb21e5",
+                                              "name":  "ParticleEmitterPoint_Water_Splash",
+                                              "factory":  "[modules:/zparticleemitterboxentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zparticleemitterboxentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.29432201385498047
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_bEnabled":  {
+                                                                                    "type":  "bool",
+                                                                                    "value":  false
+                                                                                },
+                                                                 "m_fFixedEmissionCount":  {
+                                                                                               "type":  "float32",
+                                                                                               "value":  3
+                                                                                           },
+                                                                 "m_fEmissionCameraProximity":  {
+                                                                                                    "type":  "float32",
+                                                                                                    "value":  20
+                                                                                                },
+                                                                 "m_fOuterConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  200
+                                                                                       },
+                                                                 "m_fSpeedMax":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  4
+                                                                                 },
+                                                                 "m_fSpeedMin":  {
+                                                                                     "type":  "float32",
+                                                                                     "value":  2
+                                                                                 },
+                                                                 "m_ParticleController":  {
+                                                                                              "type":  "SEntityTemplateReference",
+                                                                                              "value":  "f5174cbbc1f02d77"
+                                                                                          },
+                                                                 "m_ParticleRender":  {
+                                                                                          "type":  "SEntityTemplateReference",
+                                                                                          "value":  "0ab11d5f8f4ff7c9"
+                                                                                      },
+                                                                 "m_vGlobalSize":  {
+                                                                                       "type":  "SVector3",
+                                                                                       "value":  {
+                                                                                                     "x":  0,
+                                                                                                     "y":  0,
+                                                                                                     "z":  0
+                                                                                                 }
+                                                                                   },
+                                                                 "m_fInnerConeAngle":  {
+                                                                                           "type":  "float32",
+                                                                                           "value":  160
+                                                                                       },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "b9eb5c1b6cdb21e5",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             }
+                                          },
+                     "b9eb5c1b6cdb21e5":  {
+                                              "parent":  "6a4154f52783fa51",
+                                              "name":  "FX_E_Impact_Water_NoRings",
+                                              "factory":  "[modules:/zcompositeentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zcompositeentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_DYNAMIC"
+                                                                                      },
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  -0.1587029993534088
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "m_sourcesProvider":  {
+                                                                                           "type":  "SEntityTemplateReference",
+                                                                                           "value":  "eefe01c006f9d3cc"
+                                                                                       },
+                                                                 "m_ParticleColorRangeStart":  {
+                                                                                                   "type":  "SColorRGB",
+                                                                                                   "value":  "#878787"
+                                                                                               },
+                                                                 "m_ParticleColorRangeEnd":  {
+                                                                                                 "type":  "SColorRGB",
+                                                                                                 "value":  "#c4c4c4"
+                                                                                             },
+                                                                 "m_fParticleSizeMin":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  120
+                                                                                        },
+                                                                 "m_fParticleSizeMax":  {
+                                                                                            "type":  "float32",
+                                                                                            "value":  180
+                                                                                        },
+                                                                 "m_eidParent":  {
+                                                                                     "type":  "SEntityTemplateReference",
+                                                                                     "value":  "6a4154f52783fa51",
+                                                                                     "postInit":  true
+                                                                                 }
+                                                             },
+                                              "inputCopying":  {
+                                                                   "Activate":  {
+                                                                                    "Activate":  [
+                                                                                                     "965cba808a797219",
+                                                                                                     "2cdffb3f11e3be4d",
+                                                                                                     "3fe75bebe2e369d4",
+                                                                                                     "747a230529a680de"
+                                                                                                 ]
+                                                                                }
+                                                               },
+                                              "propertyAliases":  {
+                                                                      "m_ParticleColorRangeEnd":  [
+                                                                                                      {
+                                                                                                          "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                          "originalEntity":  "c4411708ac199b6c"
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                          "originalEntity":  "047ee3c12a54cece"
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                          "originalEntity":  "965cba808a797219"
+                                                                                                      }
+                                                                                                  ],
+                                                                      "m_ParticleColorRangeStart":  [
+                                                                                                        {
+                                                                                                            "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                            "originalEntity":  "965cba808a797219"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                            "originalEntity":  "f5174cbbc1f02d77"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                            "originalEntity":  "c4411708ac199b6c"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                            "originalEntity":  "047ee3c12a54cece"
+                                                                                                        }
+                                                                                                    ],
+                                                                      "m_fParticleSizeMax":  [
+                                                                                                 {
+                                                                                                     "originalProperty":  "m_fParticleSizeMax",
+                                                                                                     "originalEntity":  "047ee3c12a54cece"
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "originalProperty":  "m_fParticleSizeMax",
+                                                                                                     "originalEntity":  "c4411708ac199b6c"
+                                                                                                 }
+                                                                                             ],
+                                                                      "m_fParticleSizeMin":  [
+                                                                                                 {
+                                                                                                     "originalProperty":  "m_fParticleSizeMin",
+                                                                                                     "originalEntity":  "047ee3c12a54cece"
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "originalProperty":  "m_fParticleSizeMin",
+                                                                                                     "originalEntity":  "c4411708ac199b6c"
+                                                                                                 }
+                                                                                             ],
+                                                                      "m_sourcesProvider":  [
+                                                                                                {
+                                                                                                    "originalProperty":  "m_sourcesProvider",
+                                                                                                    "originalEntity":  "3fe75bebe2e369d4"
+                                                                                                },
+                                                                                                {
+                                                                                                    "originalProperty":  "m_sourcesProvider",
+                                                                                                    "originalEntity":  "747a230529a680de"
+                                                                                                },
+                                                                                                {
+                                                                                                    "originalProperty":  "m_sourcesProvider",
+                                                                                                    "originalEntity":  "2cdffb3f11e3be4d"
+                                                                                                }
+                                                                                            ]
+                                                                  }
+                                          },
+                     "6a4154f52783fa51":  {
+                                              "parent":  null,
+                                              "name":  "FX_E_Shatter_Food_LiquidAndGlass",
+                                              "factory":  "[modules:/zcompositeentity.class].pc_entitytype",
+                                              "blueprint":  "[modules:/zcompositeentity.class].pc_entityblueprint",
+                                              "properties":  {
+                                                                 "m_eRoomBehaviour":  {
+                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
+                                                                                          "value":  "ROOM_STATIC"
+                                                                                      },
+                                                                 "m_mTransform":  {
+                                                                                      "type":  "SMatrix43",
+                                                                                      "value":  {
+                                                                                                    "rotation":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0
+                                                                                                                 },
+                                                                                                    "position":  {
+                                                                                                                     "x":  0,
+                                                                                                                     "y":  0,
+                                                                                                                     "z":  0.6226540207862854
+                                                                                                                 }
+                                                                                                }
+                                                                                  },
+                                                                 "LiquidColorStart":  {
+                                                                                          "type":  "SColorRGB",
+                                                                                          "value":  "#878787"
+                                                                                      },
+                                                                 "LiquidColorEnd":  {
+                                                                                        "type":  "SColorRGB",
+                                                                                        "value":  "#c4c4c4"
+                                                                                    }
+                                                             },
+                                              "inputCopying":  {
+                                                                   "Activate":  {
+                                                                                    "Activate":  [
+          "b272d08144638a8e",
+          "c91ef5c77cad457a",
+          "6f9aaa1d5062b052",
+          "b9eb5c1b6cdb21e5",
+          "863f7f4a2e78f1c4"
+                                                                                                 ]
+                                                                                }
+                                                               },
+                                              "propertyAliases":  {
+                                                                      "GlassColorEnd":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                "originalEntity":  "afc76afb0b0eca78"
+                                                                                            },
+                                                                                            {
+                                                                                                "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                "originalEntity":  "67f172b9f913ac16"
+                                                                                            }
+                                                                                        ],
+                                                                      "GlassColorStart":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                  "originalEntity":  "afc76afb0b0eca78"
+                                                                                              },
+                                                                                              {
+                                                                                                  "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                  "originalEntity":  "67f172b9f913ac16"
+                                                                                              }
+                                                                                          ],
+                                                                      "LiquidColorEnd":  [
+                                                                                             {
+                                                                                                 "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                 "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                             },
+                                                                                             {
+                                                                                                 "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                 "originalEntity":  "44adfd9c84243004"
+                                                                                             }
+                                                                                         ],
+                                                                      "LiquidColorStart":  [
+                                                                                               {
+                                                                                                   "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                   "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                               },
+                                                                                               {
+                                                                                                   "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                   "originalEntity":  "44adfd9c84243004"
+                                                                                               }
+                                                                                           ],
+                                                                      "LiquidMaxSize":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_fParticleSizeMax",
+                                                                                                "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                            }
+                                                                                        ],
+                                                                      "LiquidMinSize":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_fParticleSizeMin",
+                                                                                                "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                            }
+                                                                                        ],
+                                                                      "LiquidSizeMax":  [
+                                                                                            {
+                                                                                                "originalProperty":  "LiquidSizeMax",
+                                                                                                "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                            }
+                                                                                        ],
+                                                                      "LiquidSizeMin":  [
+                                                                                            {
+                                                                                                "originalProperty":  "LiquidSizeMin",
+                                                                                                "originalEntity":  "b9eb5c1b6cdb21e5"
+                                                                                            }
+                                                                                        ],
+                                                                      "SmokeColorEnd":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_ParticleColorRangeEnd",
+                                                                                                "originalEntity":  "db7bce7117fe1159"
+                                                                                            }
+                                                                                        ],
+                                                                      "SmokeColorStart":  [
+                                                                                              {
+                                                                                                  "originalProperty":  "m_ParticleColorRangeStart",
+                                                                                                  "originalEntity":  "db7bce7117fe1159"
+                                                                                              }
+                                                                                          ],
+                                                                      "m_vGlobalSize":  [
+                                                                                            {
+                                                                                                "originalProperty":  "m_vGlobalSize",
+                                                                                                "originalEntity":  "b272d08144638a8e"
+                                                                                            },
+                                                                                            {
+                                                                                                "originalProperty":  "m_vGlobalSize",
+                                                                                                "originalEntity":  "c91ef5c77cad457a"
+                                                                                            },
+                                                                                            {
+                                                                                                "originalProperty":  "m_vGlobalSize",
+                                                                                                "originalEntity":  "6f9aaa1d5062b052"
+                                                                                            },
+                                                                                            {
+                                                                                                "originalProperty":  "m_vGlobalSize",
+                                                                                                "originalEntity":  "863f7f4a2e78f1c4"
+                                                                                            }
+                                                                                        ]
+                                                                  },
+                                              "exposedInterfaces":  {
+                                                                        "IDestructionEffectInterface":  "eefe01c006f9d3cc"
+                                                                    }
+                                          }
+                 },
+    "propertyOverrides":  [
+
+                          ],
+    "overrideDeletes":  [
+
+                        ],
+    "pinConnectionOverrides":  [
+
+                               ],
+    "pinConnectionOverrideDeletes":  [
+
+                                     ],
+    "externalScenes":  [
+
+                       ],
+    "subType":  "template",
+    "quickEntityVersion":  3.1,
+    "extraFactoryDependencies":  [
+
+                                 ],
+    "extraBlueprintDependencies":  [
+
+                                   ],
+    "comments":  [
+
+                 ]
+}
