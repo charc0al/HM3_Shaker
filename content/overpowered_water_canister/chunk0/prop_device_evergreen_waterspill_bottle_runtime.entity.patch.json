@@ -348,7 +348,10 @@
 						},
 						"m_RuntimeNetworkResourceID": {
 							"type": "ZRuntimeResourceID",
-							"value": null
+							"value": {
+								"resource": "[assembly:/animationnetworks/world/levels/s03_l07_dugong/mr_jerrycan_spill.aln].pc_rtn",
+								"flag": "9F"
+							}
 						},
 						"m_bUseAnimlayer": {
 							"type": "bool",
