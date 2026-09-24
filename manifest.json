@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "id": "Charc0al.MartiniPuddle",
   "name": "Drinks & Liquids",
   "description": "Shaken, not... spilled? Adds puddles to several thrown items. Water and wine (electricity), alcohol (flammable) and soda (slippery).",
@@ -85,7 +85,7 @@
         "content/overpowered_water_canister"
       ]
     },
-	{
+    {
       "name": "Overpowered Oil Canister (WIP)",
       "tooltip": "Work in progress, makes the oil canister far more powerful by [REDACTED]. May cause occasional crashes which is why it's still marked as WIP, let me know if you experience any.",
       "group": "Main",
@@ -95,7 +95,7 @@
         "content/overpowered_oil_canister"
       ]
     },
-	{
+    {
       "name": "BONUS | Champagne Glass",
       "tooltip": "Adds a champagne glass melee weapon that creates slippery puddle when broken. Adds it to the safehouse as well.",
       "group": "Unlockables",
