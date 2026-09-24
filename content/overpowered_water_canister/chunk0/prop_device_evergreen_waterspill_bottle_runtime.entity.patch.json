@@ -1,301 +1,404 @@
 {
-  "tempHash": "009C839CE5D889F0",
-  "tbluHash": "0040C129B8AF8631",
-  "patch": [
-    {
-      "SubEntityOperation": [
-        "ad69ac6d8060cb82",
-        {
-          "SetPropertyValue": {
-            "property_name": "m_ConditionList_Usable",
-            "value": []
-          }
-        }
-      ]
-    },
-    {
-      "SubEntityOperation": [
-        "b4278dbc6d3c432e",
-        {
-          "SetPropertyValue": {
-            "property_name": "m_ConditionList_Usable",
-            "value": []
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee01",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "WaterCanisterShotListener",
-          "factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_shotandimpulselistener.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_shotandimpulselistener.entitytemplate].pc_entityblueprint",
-          "properties": {
-            "m_sId": {
-              "type": "ZGuid",
-              "value": "5b5a0ff2-e919-4cdc-9d8c-7ed93ec7b0a1"
-            },
-            "m_ExplosionListenerTargets": {
-              "type": "TArray<SEntityTemplateReference>",
-              "value": []
-            },
-            "m_ShotListenerTargets": {
-              "type": "TArray<SEntityTemplateReference>",
-              "value": [
-                "cd2b746eb50a2033"
-              ],
-              "postInit": true
-            }
-          },
-          "events": {
-            "OnShot": {
-              "Disable": [
-                "cafe7a11c0ffee01"
-              ],
-              "SetFalse": [
-                "597006c76b6dea76"
-              ],
-              "Get": [
-                "cafe7a11c0ffee04"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee02",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "ShotWaterPuddleSpawner",
-          "factory": "[modules:/zitemspawner.class].pc_entitytype",
-          "blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
-          "properties": {
-            "m_mTransform": {
-              "type": "SMatrix43",
-              "value": {
-                "rotation": {
-                  "x": 0,
-                  "y": 0,
-                  "z": 0
-                },
-                "position": {
-                  "x": 0,
-                  "y": 0,
-                  "z": 0
-                }
-              }
-            },
-            "m_eidParent": {
-              "type": "SEntityTemplateReference",
-              "value": "cafe7a11c0ffee03",
-              "postInit": true
-            },
-            "m_bSpawnOnStart": {
-              "type": "bool",
-              "value": false
-            },
-            "m_bUsePlacementAttach": {
-              "type": "bool",
-              "value": false
-            },
-            "m_ePhysicsMode": {
-              "type": "ZItemSpawner.EPhysicsMode",
-              "value": "EPM_KINEMATIC"
-            },
-            "m_eRoomBehaviour": {
-              "type": "ZSpatialEntity.ERoomBehaviour",
-              "value": "ROOM_DYNAMIC"
-            },
-            "m_rMainItemKey": {
-              "type": "SEntityTemplateReference",
-              "value": "ad877bf0440a1f8a",
-              "postInit": true
-            }
-          },
-          "events": {
-            "ItemReady": {
-              "Detach": [
-                "cafe7a11c0ffee02"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee03",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "ShotWaterPuddleFlatAnchor",
-          "factory": "[modules:/zcompositeentity.class].pc_entitytype",
-          "blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
-          "properties": {
-            "m_mTransform": {
-              "type": "SMatrix43",
-              "value": {
-                "rotation": {
-                  "x": 0,
-                  "y": 0,
-                  "z": 0
-                },
-                "position": {
-                  "x": 0,
-                  "y": 0,
-                  "z": 0
-                }
-              }
-            },
-            "m_eidParent": {
-              "type": "SEntityTemplateReference",
-              "value": null,
-              "postInit": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee04",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "GetShotGroundPosition",
-          "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
-          "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
-          "properties": {
-            "498320989": {
-              "type": "float32",
-              "value": 0.30000001192092896
-            },
-            "920014207": {
-              "type": "float32",
-              "value": -3
-            },
-            "m_rSpatial": {
-              "type": "SEntityTemplateReference",
-              "value": "cd2b746eb50a2033",
-              "postInit": true
-            }
-          },
-          "events": {
-            "Position": {
-              "Value": [
-                "cafe7a11c0ffee05"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee05",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "ShotGroundPositionDebuffer",
-          "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
-          "events": {
-            "Value": {
-              "Position": [
-                "cafe7a11c0ffee06"
-              ]
-            },
-            "Done": {
-              "SpawnItem": [
-                "cafe7a11c0ffee02"
-              ],
-              "Activate": [
-                "6fb2d47311a31a13"
-              ],
-              "Send": [
-                "265029877eb5c1c7"
-              ],
-              "In": [
-                "2d39e6fa4dd0f197"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee06",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "SetShotPuddleAnchorPosition",
-          "factory": "[modules:/zsetpositionentity.class].pc_entitytype",
-          "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
-          "properties": {
-            "m_Entity": {
-              "type": "SEntityTemplateReference",
-              "value": "cafe7a11c0ffee03",
-              "postInit": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee07",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "FX_E_Water_Cooler_Leak_01",
-          "factory": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entityblueprint",
-          "properties": {
-            "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
-            "m_fParticleSizeMin": { "type": "float32", "value": 20 },
-            "m_fSpeedMin": { "type": "float32", "value": 1 },
-            "m_fSpeedMax": { "type": "float32", "value": 1 },
-            "m_fTimeToLiveSecondsMin": { "type": "float32", "value": 1 },
-            "m_fTimeToLiveSecondsMax": { "type": "float32", "value": 1 },
-            "m_fParticleSizeMax": { "type": "float32", "value": 0 },
-            "m_fParticlesPerSecond": { "type": "float32", "value": 40 },
-            "m_fParticlesPerSecondMax": { "type": "float32", "value": 40 },
-            "m_vGravity": { "type": "SVector3", "value": { "x": 0, "y": 0, "z": -2.5 } },
-            "m_eidParent": { "type": "SEntityTemplateReference", "value": "cd2b746eb50a2033", "postInit": true },
-            "m_CollisionEntity": { "type": "SEntityTemplateReference", "value": "cd2b746eb50a2033", "postInit": true }
-          }
-        }
-      ]
-    },
-    {
-      "SubEntityOperation": [
-        "cafe7a11c0ffee01",
-        { "AddEventConnection": ["OnShot", "Activate", "cafe7a11c0ffee07"] }
-      ]
-    },
-    {
-      "SubEntityOperation": [
-        "cafe7a11c0ffee01",
-        { "AddEventConnection": ["OnShot", "In", "cafe7a11c0ffee08"] }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe7a11c0ffee08",
-        {
-          "parent": "9ace7163c31e3cba",
-          "name": "ShotWaterSprayLifetime",
-          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
-          "properties": {
-            "Delay time (ms)": { "type": "int32", "value": 5000 }
-          },
-          "events": {
-            "Out": { "Deactivate": ["cafe7a11c0ffee07"] }
-          }
-        }
-      ]
-    }
-  ],
-  "patchVersion": 6
+	"tempHash": "009C839CE5D889F0",
+	"tbluHash": "0040C129B8AF8631",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"ad69ac6d8060cb82",
+				{
+					"PatchArrayPropertyValue": [
+						"m_ConditionList_Usable",
+						[
+							{ "RemoveItemByValue": "8efd75e7dec8dab7" },
+							{ "RemoveItemByValue": "6591bf750bc8f3fd" },
+							{ "RemoveItemByValue": "e2197acd77c8fa44" }
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b4278dbc6d3c432e",
+				{
+					"PatchArrayPropertyValue": [
+						"m_ConditionList_Usable",
+						[
+							{ "RemoveItemByValue": "8efd75e7dec8dab7" },
+							{ "RemoveItemByValue": "6591bf750bc8f3fd" },
+							{ "RemoveItemByValue": "e2197acd77c8fa44" }
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ce2f48005624ff8e",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aSubactions",
+						[
+							{
+								"AddItemAfter": [
+									"ad69ac6d8060cb82",
+									"cafe1ea44a6617bd"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee01",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "WaterCanisterShotListener",
+					"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_shotandimpulselistener.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_shotandimpulselistener.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_sId": {
+							"type": "ZGuid",
+							"value": "5b5a0ff2-e919-4cdc-9d8c-7ed93ec7b0a1"
+						},
+						"m_ExplosionListenerTargets": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": []
+						},
+						"m_ShotListenerTargets": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["cd2b746eb50a2033"],
+							"postInit": true
+						}
+					},
+					"events": {
+						"OnShot": {
+							"Disable": ["cafe7a11c0ffee01"],
+							"SetFalse": ["597006c76b6dea76"],
+							"Get": ["cafe7a11c0ffee04"],
+							"Activate": ["cafe7a11c0ffee07"],
+							"In": ["cafe7a11c0ffee08"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee02",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "ShotWaterPuddleSpawner",
+					"factory": "[modules:/zitemspawner.class].pc_entitytype",
+					"blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": { "x": 0, "y": 0, "z": 0 },
+								"position": { "x": 0, "y": 0, "z": 0 }
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7a11c0ffee03",
+							"postInit": true
+						},
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bUsePlacementAttach": {
+							"type": "bool",
+							"value": false
+						},
+						"m_ePhysicsMode": {
+							"type": "ZItemSpawner.EPhysicsMode",
+							"value": "EPM_KINEMATIC"
+						},
+						"m_eRoomBehaviour": {
+							"type": "ZSpatialEntity.ERoomBehaviour",
+							"value": "ROOM_DYNAMIC"
+						},
+						"m_rMainItemKey": {
+							"type": "SEntityTemplateReference",
+							"value": "ad877bf0440a1f8a",
+							"postInit": true
+						}
+					},
+					"events": {
+						"ItemReady": { "Detach": ["cafe7a11c0ffee02"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee03",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "ShotWaterPuddleFlatAnchor",
+					"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+					"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": { "x": 0, "y": 0, "z": 0 },
+								"position": { "x": 0, "y": 0, "z": 0 }
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": null,
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee04",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "GetShotGroundPosition",
+					"factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
+					"properties": {
+						"498320989": {
+							"type": "float32",
+							"value": 0.30000001192092896
+						},
+						"920014207": { "type": "float32", "value": -3 },
+						"m_rSpatial": {
+							"type": "SEntityTemplateReference",
+							"value": "cd2b746eb50a2033",
+							"postInit": true
+						}
+					},
+					"events": {
+						"Position": { "Value": ["cafe7a11c0ffee05"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee05",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "ShotGroundPositionDebuffer",
+					"factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
+					"events": {
+						"Value": { "Position": ["cafe7a11c0ffee06"] },
+						"Done": {
+							"SpawnItem": ["cafe7a11c0ffee02"],
+							"Activate": ["6fb2d47311a31a13"],
+							"Send": ["265029877eb5c1c7"],
+							"In": ["2d39e6fa4dd0f197"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee06",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "SetShotPuddleAnchorPosition",
+					"factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe7a11c0ffee03",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee07",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "FX_E_Water_Cooler_Leak_01",
+					"factory": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/effects/templates/water/fx_water_spray.template?/fx_e_water_cooler_leak_01.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": { "x": 0, "y": 0, "z": 0 },
+								"position": { "x": 0, "y": 0, "z": 0 }
+							}
+						},
+						"m_fParticleSizeMin": {
+							"type": "float32",
+							"value": 20
+						},
+						"m_fSpeedMin": { "type": "float32", "value": 1 },
+						"m_fSpeedMax": { "type": "float32", "value": 1 },
+						"m_fTimeToLiveSecondsMin": {
+							"type": "float32",
+							"value": 1
+						},
+						"m_fTimeToLiveSecondsMax": {
+							"type": "float32",
+							"value": 1
+						},
+						"m_fParticleSizeMax": {
+							"type": "float32",
+							"value": 0
+						},
+						"m_fParticlesPerSecond": {
+							"type": "float32",
+							"value": 40
+						},
+						"m_fParticlesPerSecondMax": {
+							"type": "float32",
+							"value": 40
+						},
+						"m_vGravity": {
+							"type": "SVector3",
+							"value": { "x": 0, "y": 0, "z": -2.5 }
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "cd2b746eb50a2033",
+							"postInit": true
+						},
+						"m_CollisionEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cd2b746eb50a2033",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7a11c0ffee08",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "ShotWaterSprayLifetime",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 5000
+						}
+					},
+					"events": {
+						"Out": { "Deactivate": ["cafe7a11c0ffee07"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1ea44a6617bd",
+				{
+					"parent": "9ace7163c31e3cba",
+					"name": "Interaction_Subaction Right MEGA POOL",
+					"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_eActionType": {
+							"type": "EActionType",
+							"value": "AT_REMOTE"
+						},
+						"m_bCanBeOperatedFromAnyAngle": {
+							"type": "bool",
+							"value": true
+						},
+						"m_sPromptText": {
+							"type": "ZString",
+							"value": "Pour stuff"
+						},
+						"m_sPromptTextPassive": {
+							"type": "ZString",
+							"value": "Empty!"
+						},
+						"m_bCanBeOperatedWithItemsInHand": {
+							"type": "bool",
+							"value": true
+						},
+						"m_rPromptTextResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_spill.sweetline].pc_sweetline",
+								"flag": "5F"
+							}
+						},
+						"m_ConditionList_Visible": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": [
+								"0b22c7ba20636d03",
+								"8e63e43c23dab071"
+							]
+						},
+						"m_RuntimeNetworkResourceID": {
+							"type": "ZRuntimeResourceID",
+							"value": null
+						},
+						"m_bUseAnimlayer": {
+							"type": "bool",
+							"value": false
+						},
+						"m_nAnimlayerTime": {
+							"type": "float32",
+							"value": 1.1200000047683716
+						},
+						"m_bInterruptibleAction": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bIsIllegal": { "type": "bool", "value": true },
+						"m_bIsLargeScale": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bIsSevere": { "type": "bool", "value": false },
+						"m_rPromptDescriptionTextResource": {
+							"type": "ZRuntimeResourceID",
+							"value": null
+						},
+						"m_rReadyCondition": {
+							"type": "SEntityTemplateReference",
+							"value": "d7ab3c11d528d3b5"
+						},
+						"m_bRestorePreSubactionItems": {
+							"type": "bool",
+							"value": false
+						},
+						"m_ConditionList_Usable": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": []
+						},
+						"m_eInputAction": {
+							"type": "EHM5GameInputFlag",
+							"value": "eGameInputActionDoor"
+						}
+					},
+					"events": {
+						"Started": {
+							"SetFalse": ["597006c76b6dea76"],
+							"Send": ["7cf05c490a1dce92"]
+						},
+						"Completed": { "Poll": ["a81a79b01a9419a5"] }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }
