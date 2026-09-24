@@ -376,7 +376,15 @@
 
                                                                                          "Rig":  [
 
-                                                                                                      "cafe7a11c0ffee22"
+                                                                                                      "cafe7a11c0ffee22",
+
+                                                                                                      "cafe7a11c0ffee24",
+
+                                                                                                      "cafe7a11c0ffee26",
+
+                                                                                                      "cafe7a11c0ffee28",
+
+                                                                                                      "cafe7a11c0ffee2a"
 
                                                                                                   ]
 
@@ -880,7 +888,57 @@
 
                                                              }
 
-                                          }
+                                          },
+
+                     "cafe7a11c0ffee27": {
+                         "parent": "975617a94a7708b2",
+                         "name": "WaterPuddleSlipVolume_04",
+                         "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+                         "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+                         "properties": {
+                             "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+                             "m_fRadius": { "type": "float32", "value": 4 },
+                             "m_eidParent": { "type": "SEntityTemplateReference", "value": "dbc101917b6c0c62", "postInit": true }
+                         }
+                     },
+
+                     "cafe7a11c0ffee28": {
+                         "parent": "975617a94a7708b2",
+                         "name": "ItemHelper_Logic_BananaSlip_04",
+                         "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+                         "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+                         "properties": {
+                             "m_sId": { "type": "ZGuid", "value": "6f73e9a5-4790-46eb-b701-77d473620781" },
+                             "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee27"], "postInit": true },
+                             "m_rItem": { "type": "SEntityTemplateReference", "value": "dfac4441e9f822ff", "postInit": true },
+                             "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "45a838c4454c7a88", "externalScene": null, "exposedEntity": "FX_Water_Leak_3x3m_A" } }
+                         }
+                     },
+
+                     "cafe7a11c0ffee29": {
+                         "parent": "975617a94a7708b2",
+                         "name": "WaterPuddleSlipVolume_05",
+                         "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+                         "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+                         "properties": {
+                             "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
+                             "m_fRadius": { "type": "float32", "value": 2.5 },
+                             "m_eidParent": { "type": "SEntityTemplateReference", "value": "dbc101917b6c0c62", "postInit": true }
+                         }
+                     },
+
+                     "cafe7a11c0ffee2a": {
+                         "parent": "975617a94a7708b2",
+                         "name": "ItemHelper_Logic_BananaSlip_05",
+                         "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+                         "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+                         "properties": {
+                             "m_sId": { "type": "ZGuid", "value": "294465b8-e889-4b20-ad4f-246c2e1607b5" },
+                             "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee29"], "postInit": true },
+                             "m_rItem": { "type": "SEntityTemplateReference", "value": "dfac4441e9f822ff", "postInit": true },
+                             "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "45a838c4454c7a88", "externalScene": null, "exposedEntity": "FX_Water_Leak_3x3m_A" } }
+                         }
+                     }
 
                  },
 
