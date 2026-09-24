@@ -1,0 +1,33 @@
+{
+  "PACKAGE_STARTING_PACKAGE": {
+    "Properties": {
+      "Unlocks": [
+        "PROP_MELEE_WHISKEY_GLASS"
+      ]
+    }
+  },
+  "PROP_MELEE_WHISKEY_GLASS": {
+    "Id": "PROP_MELEE_WHISKEY_GLASS",
+    "Guid": "7cf7e29e-2204-45bf-b412-e4817d9ea3a7",
+    "Type": "weapon",
+    "Subtype": "melee",
+    "RMTPrice": -1,
+    "GamePrice": -1,
+    "IsPurchasable": false,
+    "IsPublished": true,
+    "IsDroppable": false,
+    "Capabilities": [],
+    "Qualities": {},
+    "Properties": {
+      "Gameplay": {},
+      "Quality": 4,
+      "Rarity": "common",
+      "LoadoutSlot": "gear",
+      "RepositoryId": "14e3db07-e4a9-40df-bd16-a2687f0e8658",
+      "RepositoryAssets": [
+        "14e3db07-e4a9-40df-bd16-a2687f0e8658"
+      ]
+    },
+    "Rarity": "common"
+  }
+}

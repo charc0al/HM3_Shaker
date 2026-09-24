@@ -1,0 +1,18 @@
+{
+  "14e3db07-e4a9-40df-bd16-a2687f0e8658": {
+    "Name_LOC": "ui_prop_melee_whiskey_glass_name",
+    "Description": "ui_prop_melee_whiskey_glass_desc",
+    "Runtime": "62471775678642584",
+    "EnablePickUpOnRelease": true,
+    "Evergreen_CapacityCost": 3,
+    "GripAnimType": "IGT_Melee_1H_Rock",
+    "HolsterAbility": "eHolsteringAllowed",
+    "ItemHandsIdle": "IH_ONEHANDED",
+    "ItemHandsUse": "IH_ONEHANDED",
+    "OnlineTraits": [
+      "melee_nonlethal",
+      "throw_nonlethal_deprecated"
+    ],
+    "ThrowType": "THROW_KNOCKDOWN_LIGHT"
+  }
+}

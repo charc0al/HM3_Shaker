@@ -248,14 +248,14 @@
       ]
     },
     {
-      "name": "(WIP) Whiskey Glass",
-      "tooltip": "Adds throwable whiskey glass which creates a slippery puddle. Throwable only right now, eventually will add melee",
+      "name": "Whiskey Glass",
+      "tooltip": "Adds a standalone throwable whiskey glass with melee animations. It creates a slippery puddle when it breaks.",
       "group": "Unlockables",
       "type": "checkbox",
       "enabledByDefault": true,
       "image": "smf/unlocks-whiskeyglass.webp",
       "contentFolders": [
-        "content/whiskeyglass"
+        "content/whiskeyglass_proper"
       ],
       "localisation": {
         "english": {
