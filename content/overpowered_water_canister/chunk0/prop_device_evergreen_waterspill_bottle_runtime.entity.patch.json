@@ -386,7 +386,7 @@
 						},
 						"m_eInputAction": {
 							"type": "EHM5GameInputFlag",
-							"value": "eGameInputActionDoor"
+							"value": "eGameInputReload"
 						}
 					},
 					"events": {
