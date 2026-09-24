@@ -83,7 +83,36 @@
       "enabledByDefault": false,
       "contentFolders": [
         "content/overpowered_water_canister"
-      ]
+      ],
+      "localisation": {
+        "english": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Flood"
+        },
+        "french": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Inonder"
+        },
+        "italian": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Allaga"
+        },
+        "german": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Fluten"
+        },
+        "spanish": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Inundar"
+        },
+        "russian": {
+          "ui_prop_evergreen_waterspill_canister_flood": "Затопить"
+        },
+        "chineseSimplified": {
+          "ui_prop_evergreen_waterspill_canister_flood": "淹没"
+        },
+        "chineseTraditional": {
+          "ui_prop_evergreen_waterspill_canister_flood": "淹沒"
+        },
+        "japanese": {
+          "ui_prop_evergreen_waterspill_canister_flood": "浸水させる"
+        }
+      }
     },
     {
       "name": "Safehouse | Atlantide",

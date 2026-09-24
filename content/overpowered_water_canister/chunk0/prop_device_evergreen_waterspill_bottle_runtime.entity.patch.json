@@ -357,7 +357,7 @@
 						"m_rPromptTextResource": {
 							"type": "ZRuntimeResourceID",
 							"value": {
-								"resource": "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_spill.sweetline].pc_sweetline",
+								"resource": "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_flood.sweetline].pc_sweetline",
 								"flag": "5F"
 							}
 						},
