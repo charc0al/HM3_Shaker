@@ -376,11 +376,13 @@
 				},
 				"ImpactBack": {
 					"OnMeleeImpact": ["28cf92781d4d4cde"],
-					"ImpactBack": ["ad50959563f7f6bd"]
+					"ImpactBack": ["ad50959563f7f6bd"],
+					"In": ["cafeaabbccdde005"]
 				},
 				"ImpactFrontSide": {
 					"OnMeleeImpact": ["28cf92781d4d4cde"],
-					"ImpactFront": ["ad50959563f7f6bd"]
+					"ImpactFront": ["ad50959563f7f6bd"],
+					"In": ["cafeaabbccdde005"]
 				},
 				"OnStartPriming": {
 					"PrimeStartFloat": ["ad50959563f7f6bd"]
@@ -796,7 +798,7 @@
 				"m_mTransform": {
 					"type": "SMatrix43",
 					"value": {
-						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"rotation": { "x": 0.0, "y": 0.0, "z": 0.0 },
 						"position": {
 							"x": 0.0,
 							"y": -0.05000000074505806,
@@ -808,6 +810,47 @@
 					"type": "SEntityTemplateReference",
 					"value": "9b02512ec9334431",
 					"postInit": true
+				}
+			}
+		},
+		"cafeaabbccdde005": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "WhiskeyGlassMeleeImpulseDelay",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"Delay time (ms)": { "type": "int32", "value": 20 }
+			},
+			"events": { "Out": { "Apply": ["cafeaabbccdde006"] } }
+		},
+		"cafeaabbccdde006": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "WhiskeyGlassMeleeImpulse",
+			"factory": "[modules:/zphysicsaffectorentity.class].pc_entitytype",
+			"blueprint": "[modules:/zphysicsaffectorentity.class].pc_entityblueprint",
+			"properties": {
+				"m_vForce": {
+					"type": "SVector3",
+					"value": { "x": 47.0, "y": 47.0, "z": 47.0 }
+				},
+				"m_vImpulse": {
+					"type": "SVector3",
+					"value": { "x": -0.0, "y": 0.0, "z": 5.0 }
+				},
+				"m_bLocalSpace": { "type": "bool", "value": true },
+				"m_bTimerEnabled": { "type": "bool", "value": false },
+				"m_vTorqueImpulse": {
+					"type": "SVector3",
+					"value": { "x": 0, "y": 0, "z": 100 }
+				},
+				"m_aPhysicsObjects": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["9b02512ec9334431"],
+					"postInit": true
+				},
+				"m_vVelocity": {
+					"type": "SVector3",
+					"value": { "x": 0.0, "y": 0.0, "z": 0.0 }
 				}
 			}
 		}
