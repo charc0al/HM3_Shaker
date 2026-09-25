@@ -1,0 +1,7 @@
+{
+  "PACKAGE_STARTING_PACKAGE": { "Properties": { "Unlocks": ["PROP_MELEE_BEER_PROPER"] } },
+  "PROP_MELEE_BEER_PROPER": {
+    "Id": "PROP_MELEE_BEER_PROPER", "Guid": "496aef18-3c5b-4403-a9c6-b3f6869dd63d", "Type": "weapon", "Subtype": "melee", "RMTPrice": -1, "GamePrice": -1, "IsPurchasable": false, "IsPublished": true, "IsDroppable": false, "Capabilities": [], "Qualities": {},
+    "Properties": { "Gameplay": {}, "Quality": 4, "Rarity": "common", "LoadoutSlot": "gear", "RepositoryId": "c5e815bd-f0c9-4d7e-9a76-b5dd670ee895", "RepositoryAssets": ["c5e815bd-f0c9-4d7e-9a76-b5dd670ee895"] }, "Rarity": "common"
+  }
+}

@@ -156,6 +156,25 @@
       }
     },
     {
+      "name": "BONUS | Beer Bottle",
+      "tooltip": "Adds a throwable beer bottle melee weapon that creates a slippery puddle when it breaks.",
+      "group": "Unlockables",
+      "type": "checkbox",
+      "enabledByDefault": true,
+      "contentFolders": ["content/beer_proper"],
+      "localisation": {
+        "english": { "ui_prop_melee_beer_bottle_name": "Beer Bottle", "ui_prop_melee_beer_bottle_desc": "A sturdy beer bottle. Break it to create a slippery puddle." },
+        "french": { "ui_prop_melee_beer_bottle_name": "Bouteille de bière", "ui_prop_melee_beer_bottle_desc": "Une solide bouteille de bière. Brisez-la pour créer une flaque glissante." },
+        "italian": { "ui_prop_melee_beer_bottle_name": "Bottiglia di birra", "ui_prop_melee_beer_bottle_desc": "Una robusta bottiglia di birra. Rompila per creare una pozza scivolosa." },
+        "german": { "ui_prop_melee_beer_bottle_name": "Bierflasche", "ui_prop_melee_beer_bottle_desc": "Eine robuste Bierflasche. Zerbrich sie, um eine rutschige Pfütze zu erzeugen." },
+        "spanish": { "ui_prop_melee_beer_bottle_name": "Botella de cerveza", "ui_prop_melee_beer_bottle_desc": "Una resistente botella de cerveza. Rómpela para crear un charco resbaladizo." },
+        "russian": { "ui_prop_melee_beer_bottle_name": "Бутылка пива", "ui_prop_melee_beer_bottle_desc": "Прочная бутылка пива. Разбейте её, чтобы создать скользкую лужу." },
+        "chineseSimplified": { "ui_prop_melee_beer_bottle_name": "啤酒瓶", "ui_prop_melee_beer_bottle_desc": "一个结实的啤酒瓶。打碎它会形成一滩湿滑的液体。" },
+        "chineseTraditional": { "ui_prop_melee_beer_bottle_name": "啤酒瓶", "ui_prop_melee_beer_bottle_desc": "一個結實的啤酒瓶。打碎它會形成一灘濕滑的液體。" },
+        "japanese": { "ui_prop_melee_beer_bottle_name": "ビール瓶", "ui_prop_melee_beer_bottle_desc": "丈夫なビール瓶。割ると滑りやすい水たまりができる。" }
+      }
+    },
+    {
       "name": "Safehouse | Atlantide",
       "tooltip": "Adds the Atlantide water bottle to the kitchen",
       "group": "Safehouse",
