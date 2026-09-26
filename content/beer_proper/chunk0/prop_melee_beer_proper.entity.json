@@ -906,14 +906,6 @@
 					"type": "bool",
 					"value": true
 				},
-				"m_ConditionList_Visible": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe1ea44a66b126"]
-				},
-				"m_ConditionList_Usable": {
-					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe1ea44a66b126"]
-				},
 				"m_RuntimeNetworkResourceID": {
 					"type": "ZRuntimeResourceID",
 					"value": {
@@ -939,8 +931,9 @@
 			},
 			"events": {
 				"Started": {
-					"Input": ["cafe1ea44a66b104"]
-				}
+					"In": ["cafe1ea44a66b134"]
+				},
+				"Completed": { "Poll": ["cafe1ea44a66b135"] }
 			}
 		},
 		"cafe1ea44a66b102": {
@@ -1000,8 +993,7 @@
 			},
 			"events": {
 				"Out": {
-					"Start": ["cafe1ea44a66b103"],
-					"SetTrue": ["cafe1ea44a66b124"]
+					"Start": ["cafe1ea44a66b103"]
 				}
 			}
 		},
@@ -1032,13 +1024,7 @@
 				"m_eInputAction": { "type": "EHM5GameInputFlag", "value": "eGameInputReload" }
 			},
 			"events": {
-				"Started": {
-					"SetFalse": ["cafe1ea44a66b124", "cafe1ea44a66b127"],
-					"EnterSafeZone": ["cafe1ea44a66b107"],
-					"Attach": ["cafe1ea44a66b10c"],
-					"SetTrue": ["cafe1ea44a66b10e"],
-					"In": ["cafe1ea44a66b117"]
-				}
+				"Started": { "In": ["cafe1ea44a66b136"] }
 			}
 		},
 		"cafe1ea44a66b126": {
@@ -1119,6 +1105,120 @@
 					"In": ["cafe1ea44a66b132"]
 				}
 			}
+		},
+		"cafe1ea44a66b134": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "DrinkDrunkennessController",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"In": {
+					"SetFalse": ["cafe1ea44a66b137"],
+					"Get": ["cafe1ea44a66b143", "cafe1ea44a66b144", "cafe1ea44a66b145", "cafe1ea44a66b146", "cafe1ea44a66b147", "cafe1ea44a66b148"]
+				}
+			}
+		},
+		"cafe1ea44a66b135": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "Poll_AutoBathroomAfterDrink",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": { "m_rValueEntity": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b137" } },
+			"events": { "PollTrue": { "In": ["cafe1ea44a66b136"] } }
+		},
+		"cafe1ea44a66b136": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "BeginBeerBathroom",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"In": {
+					"Decrement": ["cafe1ea44a66b138"],
+					"SetFalse": ["cafe1ea44a66b137", "cafe1ea44a66b127"],
+					"EnterSafeZone": ["cafe1ea44a66b107"],
+					"Attach": ["cafe1ea44a66b10c"],
+					"SetTrue": ["cafe1ea44a66b10e"],
+					"In": ["cafe1ea44a66b117"]
+				}
+			}
+		},
+		"cafe1ea44a66b137": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "ValueBool_AutoBathroomAfterDrink",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+		},
+		"cafe1ea44a66b138": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "Drunkenness_0_to_9",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": {
+				"Increment": { "Add": ["cafe1ea44a66b13a"] },
+				"Decrement": { "Subtract": ["cafe1ea44a66b13a"] }
+			}
+		},
+		"cafe1ea44a66b139": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "ValueInt_Drunkenness",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_nValue": { "type": "int32", "value": 0 }, "m_bSetValueAlwaysTriggerChangedEvent": { "type": "bool", "value": true } },
+			"events": { "OnValue": { "Get": ["cafe1ea44a66b13c"] } }
+		},
+		"cafe1ea44a66b13a": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "AddOrSubtract_Drunkenness",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValue1": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" },
+				"m_rValue2": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b13b" },
+				"m_rResult": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }
+			}
+		},
+		"cafe1ea44a66b13b": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "ValueInt_One",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+			"properties": { "m_nValue": { "type": "int32", "value": 1 } }
+		},
+		"cafe1ea44a66b13c": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "DrunkennessAtLeastThree",
+			"factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" },
+				"m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b13d" },
+				"m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "HIGHER_OR_EQUAL" }
+			},
+			"events": { "GetTrue": { "SetTrue": ["cafe1ea44a66b124"] }, "GetFalse": { "SetFalse": ["cafe1ea44a66b124"] } }
+		},
+		"cafe1ea44a66b13d": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Three", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 3 } } },
+		"cafe1ea44a66b13e": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Nine", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 9 } } },
+		"cafe1ea44a66b13f": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Six", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 6 } } },
+		"cafe1ea44a66b140": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Five", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 5 } } },
+		"cafe1ea44a66b141": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Eight", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 8 } } },
+		"cafe1ea44a66b142": { "parent": "89d1f4f46e0d4adb", "name": "ValueInt_Two", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint", "properties": { "m_nValue": { "type": "int32", "value": 2 } } },
+		"cafe1ea44a66b143": {
+			"parent": "89d1f4f46e0d4adb", "name": "DrunkennessIsNine", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+			"properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b13e" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } },
+			"events": { "GetTrue": { "SetTrue": ["cafe1ea44a66b137"] }, "GetFalse": { "In": ["cafe1ea44a66b149"] } }
+		},
+		"cafe1ea44a66b144": { "parent": "89d1f4f46e0d4adb", "name": "DrunkennessIsSix", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint", "properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b13f" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } }, "events": { "GetTrue": { "SetTrue": ["cafe1ea44a66b137"] } } },
+		"cafe1ea44a66b145": { "parent": "89d1f4f46e0d4adb", "name": "DrunkennessIsThree", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint", "properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b13d" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } }, "events": { "GetTrue": { "SetTrue": ["cafe1ea44a66b137"] } } },
+		"cafe1ea44a66b146": { "parent": "89d1f4f46e0d4adb", "name": "DrunkennessWillReachThree", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint", "properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b142" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } }, "events": { "GetTrue": { "In": ["cafe1ea44a66b106"] } } },
+		"cafe1ea44a66b147": { "parent": "89d1f4f46e0d4adb", "name": "DrunkennessWillReachSix", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint", "properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b140" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } }, "events": { "GetTrue": { "In": ["cafe1ea44a66b106"] } } },
+		"cafe1ea44a66b148": { "parent": "89d1f4f46e0d4adb", "name": "DrunkennessWillReachNine", "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint", "properties": { "m_rFirstValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b139" }, "m_rSecondValueInt": { "type": "SEntityTemplateReference", "value": "cafe1ea44a66b141" }, "m_eEvaluation": { "type": "ZValueInt_Comparator_Poll.EEvaluationType", "value": "EQUAL" } }, "events": { "GetTrue": { "In": ["cafe1ea44a66b106"] } } },
+		"cafe1ea44a66b149": {
+			"parent": "89d1f4f46e0d4adb",
+			"name": "IncrementDrunkennessDelay",
+			"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+			"properties": { "Delay time (ms)": { "type": "int32", "value": 1 } },
+			"events": { "Out": { "Increment": ["cafe1ea44a66b138"] } }
 		},
 		"cafe1ea44a66b107": {
 			"parent": "89d1f4f46e0d4adb",
