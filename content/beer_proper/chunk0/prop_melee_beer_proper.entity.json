@@ -361,6 +361,14 @@
           "type": "SEntityTemplateReference",
           "value": "9b02512ec9334431"
         },
+        "m_pIllegalCondition": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b10e"
+        },
+        "m_bIsIllegal": {
+          "type": "bool",
+          "value": true
+        },
         "m_eAnimSetFrontSide": {
           "type": "ECCWeaponAnimSet",
           "value": "AS_SMASH_1H"
