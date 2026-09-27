@@ -1707,25 +1707,25 @@
     },
     "cafe1ea44a66b138": {
       "parent": "89d1f4f46e0d4adb",
-      "name": "Drunkenness_0_to_9",
+      "name": "Drunk47_DrunkennessClient",
       "factory": "[modules:/zentity.class].pc_entitytype",
       "blueprint": "[modules:/zentity.class].pc_entityblueprint",
       "inputCopying": {
         "Increment": {
-          "Add": [
-            "cafe1ea44a66b13a"
+          "TransmitEvent": [
+            "cafe1ea44a66b180"
           ]
         },
         "Decrement": {
-          "Subtract": [
-            "cafe1ea44a66b13a"
+          "TransmitEvent": [
+            "cafe1ea44a66b182"
           ]
         }
       }
     },
     "cafe1ea44a66b139": {
       "parent": "89d1f4f46e0d4adb",
-      "name": "ValueInt_Drunkenness",
+      "name": "ValueInt_Drunkenness_Mirror",
       "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
       "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
       "properties": {
@@ -2145,6 +2145,88 @@
         "m_sName": {
           "type": "ZString",
           "value": "HM3_Shaker_DrunkennessFilterStop"
+        }
+      }
+    },
+    "cafe1ea44a66b180": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47AddOne",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b181",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b181": {
+      "parent": "cafe1ea44a66b180",
+      "name": "TokenID_Drunk47_Drunkenness_AddOne",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_Drunkenness_AddOne"
+        }
+      }
+    },
+    "cafe1ea44a66b182": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47SubtractOne",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b183",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b183": {
+      "parent": "cafe1ea44a66b182",
+      "name": "TokenID_Drunk47_Drunkenness_SubtractOne",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_Drunkenness_SubtractOne"
+        }
+      }
+    },
+    "cafe1ea44a66b184": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelReceiver_Drunk47DrunkennessLevel",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_int32.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_int32.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b185",
+          "postInit": true
+        }
+      },
+      "events": {
+        "EventReceived": {
+          "SetValue": [
+            "cafe1ea44a66b139"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b185": {
+      "parent": "cafe1ea44a66b184",
+      "name": "TokenID_Drunk47_Drunkenness_LevelChanged",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_Drunkenness_LevelChanged"
         }
       }
     },
