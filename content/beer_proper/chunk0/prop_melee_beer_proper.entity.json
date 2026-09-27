@@ -1810,6 +1810,9 @@
         "GetFalse": {
           "SetFalse": [
             "cafe1ea44a66b124"
+          ],
+          "TransmitEvent": [
+            "cafe1ea44a66b153"
           ]
         }
       }
@@ -2093,7 +2096,7 @@
     },
     "cafe1ea44a66b151": {
       "parent": "89d1f4f46e0d4adb",
-      "name": "EventChannelTransmitter_BeerDrankAlcohol",
+      "name": "EventChannelTransmitter_DrunkennessFilterStart",
       "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
       "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
       "properties": {
@@ -2106,13 +2109,38 @@
     },
     "cafe1ea44a66b152": {
       "parent": "cafe1ea44a66b151",
-      "name": "TokenID_PF_47DrankAlcohol",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterStart",
       "factory": "[modules:/ztokenidentity.class].pc_entitytype",
       "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
       "properties": {
         "m_sName": {
           "type": "ZString",
-          "value": "PF_47DrankAlcohol"
+          "value": "HM3_Shaker_DrunkennessFilterStart"
+        }
+      }
+    },
+    "cafe1ea44a66b153": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterStop",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b154",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b154": {
+      "parent": "cafe1ea44a66b153",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterStop",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterStop"
         }
       }
     },
