@@ -140,6 +140,78 @@
           }
         }
       ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d407",
+        {
+          "parent": "cafe1ea44a66d401",
+          "name": "EventChannelReceiver_DrunkennessFilterLevelSix",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d408",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "In": [
+                "cafe1ea44a66d409"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d408",
+        {
+          "parent": "cafe1ea44a66d407",
+          "name": "TokenID_HM3_Shaker_DrunkennessFilterLevelSix",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "HM3_Shaker_DrunkennessFilterLevelSix"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d409",
+        {
+          "parent": "cafe1ea44a66d401",
+          "name": "DrunkennessFilterLevelSixIntensity",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {
+              "type": "int32",
+              "value": 150
+            }
+          },
+          "events": {
+            "Out": {
+              "BlendWeight": [
+                {
+                  "ref": "5b236772543af2e6",
+                  "value": {
+                    "type": "float32",
+                    "value": 0.6499999761581421
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
     }
   ],
   "patchVersion": 6

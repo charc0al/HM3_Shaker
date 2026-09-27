@@ -1742,7 +1742,8 @@
         "OnValue": {
           "Get": [
             "cafe1ea44a66b13c",
-            "cafe1ea44a66b14b"
+            "cafe1ea44a66b14b",
+            "cafe1ea44a66b155"
           ]
         }
       }
@@ -2141,6 +2142,58 @@
         "m_sName": {
           "type": "ZString",
           "value": "HM3_Shaker_DrunkennessFilterStop"
+        }
+      }
+    },
+    "cafe1ea44a66b155": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessAtLeastSix",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b13f"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "HIGHER_OR_EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b156"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b156": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevelSix",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b157",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b157": {
+      "parent": "cafe1ea44a66b156",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevelSix",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevelSix"
         }
       }
     },
