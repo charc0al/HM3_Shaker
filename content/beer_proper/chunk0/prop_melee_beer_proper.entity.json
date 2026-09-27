@@ -1802,6 +1802,9 @@
         "GetTrue": {
           "SetTrue": [
             "cafe1ea44a66b124"
+          ],
+          "TransmitEvent": [
+            "cafe1ea44a66b151"
           ]
         },
         "GetFalse": {
@@ -2085,6 +2088,31 @@
           "SetFalse": [
             "cafe1ea44a66b14a"
           ]
+        }
+      }
+    },
+    "cafe1ea44a66b151": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_BeerDrankAlcohol",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b152",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b152": {
+      "parent": "cafe1ea44a66b151",
+      "name": "TokenID_PF_47DrankAlcohol",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "PF_47DrankAlcohol"
         }
       }
     },
