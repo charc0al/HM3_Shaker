@@ -1743,7 +1743,16 @@
           "Get": [
             "cafe1ea44a66b13c",
             "cafe1ea44a66b14b",
-            "cafe1ea44a66b155"
+            "cafe1ea44a66b170",
+            "cafe1ea44a66b158",
+            "cafe1ea44a66b15b",
+            "cafe1ea44a66b15e",
+            "cafe1ea44a66b161",
+            "cafe1ea44a66b164",
+            "cafe1ea44a66b155",
+            "cafe1ea44a66b167",
+            "cafe1ea44a66b16a",
+            "cafe1ea44a66b16d"
           ]
         }
       }
@@ -1803,17 +1812,11 @@
         "GetTrue": {
           "SetTrue": [
             "cafe1ea44a66b124"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b151"
           ]
         },
         "GetFalse": {
           "SetFalse": [
             "cafe1ea44a66b124"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b153"
           ]
         }
       }
@@ -2147,7 +2150,7 @@
     },
     "cafe1ea44a66b155": {
       "parent": "89d1f4f46e0d4adb",
-      "name": "DrunkennessAtLeastSix",
+      "name": "DrunkennessIsSix_Filter",
       "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
       "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
       "properties": {
@@ -2161,7 +2164,7 @@
         },
         "m_eEvaluation": {
           "type": "ZValueInt_Comparator_Poll.EEvaluationType",
-          "value": "HIGHER_OR_EQUAL"
+          "value": "EQUAL"
         }
       },
       "events": {
@@ -2194,6 +2197,514 @@
         "m_sName": {
           "type": "ZString",
           "value": "HM3_Shaker_DrunkennessFilterLevelSix"
+        }
+      }
+    },
+    "cafe1ea44a66b158": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs1_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b13b"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b159"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b159": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel1",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b15a",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b15a": {
+      "parent": "cafe1ea44a66b159",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel1",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel1"
+        }
+      }
+    },
+    "cafe1ea44a66b15b": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs2_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b171"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b15c"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b15c": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel2",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b15d",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b15d": {
+      "parent": "cafe1ea44a66b15c",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel2",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel2"
+        }
+      }
+    },
+    "cafe1ea44a66b15e": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs3_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b13d"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b15f"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b15f": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel3",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b160",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b160": {
+      "parent": "cafe1ea44a66b15f",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel3",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel3"
+        }
+      }
+    },
+    "cafe1ea44a66b161": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs4_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b172"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b162"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b162": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel4",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b163",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b163": {
+      "parent": "cafe1ea44a66b162",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel4",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel4"
+        }
+      }
+    },
+    "cafe1ea44a66b164": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs5_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b173"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b165"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b165": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel5",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b166",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b166": {
+      "parent": "cafe1ea44a66b165",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel5",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel5"
+        }
+      }
+    },
+    "cafe1ea44a66b167": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs7_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b174"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b168"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b168": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel7",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b169",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b169": {
+      "parent": "cafe1ea44a66b168",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel7",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel7"
+        }
+      }
+    },
+    "cafe1ea44a66b16a": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs8_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b175"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b16b"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b16b": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel8",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b16c",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b16c": {
+      "parent": "cafe1ea44a66b16b",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel8",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel8"
+        }
+      }
+    },
+    "cafe1ea44a66b16d": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessIs9_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b13e"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b16e"
+          ]
+        }
+      }
+    },
+    "cafe1ea44a66b16e": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_DrunkennessFilterLevel9",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b16f",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b16f": {
+      "parent": "cafe1ea44a66b16e",
+      "name": "TokenID_HM3_Shaker_DrunkennessFilterLevel9",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "HM3_Shaker_DrunkennessFilterLevel9"
+        }
+      }
+    },
+    "cafe1ea44a66b171": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "ValueInt_2_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_nValue": {
+          "type": "int32",
+          "value": 2
+        }
+      }
+    },
+    "cafe1ea44a66b172": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "ValueInt_4_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_nValue": {
+          "type": "int32",
+          "value": 4
+        }
+      }
+    },
+    "cafe1ea44a66b173": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "ValueInt_5_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_nValue": {
+          "type": "int32",
+          "value": 5
+        }
+      }
+    },
+    "cafe1ea44a66b174": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "ValueInt_7_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_nValue": {
+          "type": "int32",
+          "value": 7
+        }
+      }
+    },
+    "cafe1ea44a66b175": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "ValueInt_8_Filter",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_nValue": {
+          "type": "int32",
+          "value": 8
+        }
+      }
+    },
+    "cafe1ea44a66b170": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "DrunkennessAtLeastOne_FilterActive",
+      "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rFirstValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b139"
+        },
+        "m_rSecondValueInt": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b13b"
+        },
+        "m_eEvaluation": {
+          "type": "ZValueInt_Comparator_Poll.EEvaluationType",
+          "value": "HIGHER_OR_EQUAL"
+        }
+      },
+      "events": {
+        "GetTrue": {
+          "TransmitEvent": [
+            "cafe1ea44a66b151"
+          ]
+        },
+        "GetFalse": {
+          "TransmitEvent": [
+            "cafe1ea44a66b153"
+          ]
         }
       }
     },
