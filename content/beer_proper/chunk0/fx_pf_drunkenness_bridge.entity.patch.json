@@ -37,6 +37,132 @@
     },
     {
       "AddEntity": [
+        "cafe1ea44a66d510",
+        {
+          "parent": "78d19a084a9a8f8f",
+          "name": "ValueBool_Drunk47BathroomIllegalActive",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d511",
+        {
+          "parent": "78d19a084a9a8f8f",
+          "name": "IllegalAction_Drunk47Bathroom",
+          "factory": "[modules:/zillegalactionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zillegalactionentity.class].pc_entityblueprint",
+          "properties": {
+            "m_pEnabledCondition": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d510"
+            },
+            "m_bIsIllegal": {
+              "type": "bool",
+              "value": true
+            },
+            "m_fIllegalDuration": {
+              "type": "float32",
+              "value": 3600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d512",
+        {
+          "parent": "78d19a084a9a8f8f",
+          "name": "EventChannelReceiver_Drunk47BathroomIllegalStart",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d513",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "SetTrue": [
+                "cafe1ea44a66d510"
+              ],
+              "Trigger": [
+                "cafe1ea44a66d511"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d513",
+        {
+          "parent": "cafe1ea44a66d512",
+          "name": "TokenID_Drunk47_BathroomIllegalStart",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_BathroomIllegalStart"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d514",
+        {
+          "parent": "78d19a084a9a8f8f",
+          "name": "EventChannelReceiver_Drunk47BathroomIllegalStop",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d515",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "SetFalse": [
+                "cafe1ea44a66d510"
+              ],
+              "Abort": [
+                "cafe1ea44a66d511"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d515",
+        {
+          "parent": "cafe1ea44a66d514",
+          "name": "TokenID_Drunk47_BathroomIllegalStop",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_BathroomIllegalStop"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
         "cafe1ea44a66d501",
         {
           "parent": "cafe1ea44a66d500",

@@ -3148,12 +3148,68 @@
         "OnTrue": {
           "Activate": [
             "cafe1ea44a66b10d"
+          ],
+          "TransmitEvent": [
+            "cafe1ea44a66b187"
           ]
         },
         "OnFalse": {
           "Deactivate": [
             "cafe1ea44a66b10d"
+          ],
+          "TransmitEvent": [
+            "cafe1ea44a66b189"
           ]
+        }
+      }
+    },
+    "cafe1ea44a66b187": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47BathroomIllegalStart",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b188",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b188": {
+      "parent": "cafe1ea44a66b187",
+      "name": "TokenID_Drunk47_BathroomIllegalStart",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_BathroomIllegalStart"
+        }
+      }
+    },
+    "cafe1ea44a66b189": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47BathroomIllegalStop",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b190",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b190": {
+      "parent": "cafe1ea44a66b189",
+      "name": "TokenID_Drunk47_BathroomIllegalStop",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_BathroomIllegalStop"
         }
       }
     },
