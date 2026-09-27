@@ -7,17 +7,6 @@
         "5b236772543af2e6",
         {
           "SetPropertyValue": {
-            "property_name": "m_fBlendSustainDuration",
-            "value": 30
-          }
-        }
-      ]
-    },
-    {
-      "SubEntityOperation": [
-        "5b236772543af2e6",
-        {
-          "SetPropertyValue": {
             "property_name": "m_fBlendOutDuration",
             "value": 0.5
           }
@@ -52,8 +41,41 @@
           },
           "events": {
             "EventReceived": {
-              "BlendInOut": [
+              "BlendIn": [
                 "5b236772543af2e6"
+              ],
+              "In": [
+                "cafe1ea44a66d406"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d406",
+        {
+          "parent": "cafe1ea44a66d401",
+          "name": "DrunkennessFilterLevelThreeIntensity",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {
+              "type": "int32",
+              "value": 100
+            }
+          },
+          "events": {
+            "Out": {
+              "BlendWeight": [
+                {
+                  "ref": "5b236772543af2e6",
+                  "value": {
+                    "type": "float32",
+                    "value": 0.30000001192092896
+                  }
+                }
               ]
             }
           }
