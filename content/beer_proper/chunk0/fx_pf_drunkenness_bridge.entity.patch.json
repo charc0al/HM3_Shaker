@@ -93,6 +93,9 @@
               ],
               "Trigger": [
                 "cafe1ea44a66d511"
+              ],
+              "In": [
+                "cafe1ea44a66d516"
               ]
             }
           }
@@ -137,7 +140,8 @@
                 "cafe1ea44a66d510"
               ],
               "Abort": [
-                "cafe1ea44a66d511"
+                "cafe1ea44a66d511",
+                "cafe1ea44a66d516"
               ]
             }
           }
@@ -1109,6 +1113,33 @@
                     "value": 1
                   }
                 }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d516",
+        {
+          "parent": "78d19a084a9a8f8f",
+          "name": "Drunk47BathroomIllegalRetriggerTimer",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {
+              "type": "int32",
+              "value": 1000
+            }
+          },
+          "events": {
+            "Out": {
+              "Trigger": [
+                "cafe1ea44a66d511"
+              ],
+              "In": [
+                "cafe1ea44a66d516"
               ]
             }
           }
