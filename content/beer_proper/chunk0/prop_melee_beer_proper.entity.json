@@ -3542,13 +3542,6 @@
           ]
         },
         "Done": {
-          "MakeVisible": [
-            "cafe1ea44a66b116"
-          ],
-          "Activate": [
-            "cafe1ea44a66b116",
-            "cafe1ea44a66b118"
-          ],
           "SetTrue": [
             "cafe1ea44a66b119"
           ],

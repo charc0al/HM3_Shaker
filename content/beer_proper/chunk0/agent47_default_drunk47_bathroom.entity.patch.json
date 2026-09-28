@@ -247,7 +247,9 @@
           "events": {
             "EventReceived": {
               "Attach": ["cafe1ea44a66d714"],
-              "SetTrue": ["cafe1ea44a66d716"]
+              "SetTrue": ["cafe1ea44a66d716"],
+              "SetFalse": ["cafe1ea44a66d71b"],
+              "In": ["cafe1ea44a66d718"]
             }
           }
         }
@@ -288,7 +290,9 @@
           "events": {
             "EventReceived": {
               "SetFalse": ["cafe1ea44a66d716"],
-              "Detach": ["cafe1ea44a66d714"]
+              "Detach": ["cafe1ea44a66d714"],
+              "Deactivate": ["cafe1ea44a66d723"],
+              "MakeInvisible": ["cafe1ea44a66d721"]
             }
           }
         }
@@ -355,6 +359,215 @@
             },
             "m_eRoomBehaviour": {"type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC"},
             "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d715", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d718",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomGroundStartDelay",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {"type": "int32", "value": 100}
+          },
+          "events": {
+            "Out": {
+              "Get": ["cafe1ea44a66d71a"],
+              "In": ["cafe1ea44a66d719"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d719",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomGroundFallbackDelay",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {"type": "int32", "value": 250}
+          },
+          "events": {"Out": {"Poll": ["cafe1ea44a66d71c"]}}
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71a",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "GetGroundPosition_Drunk47Bathroom",
+          "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
+          "properties": {
+            "498320989": {"type": "float32", "value": 0.3},
+            "920014207": {"type": "float32", "value": -3},
+            "m_rSpatial": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d71d", "postInit": true}
+          },
+          "events": {
+            "Position": {
+              "SetTrue": ["cafe1ea44a66d71b"],
+              "Value": ["cafe1ea44a66d71f"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71b",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "ValueBool_Drunk47BathroomGroundFound",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71c",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Poll_Drunk47BathroomGroundFound",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rValueEntity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d71b"}
+          },
+          "events": {"PollFalse": {"Get": ["cafe1ea44a66d71e"]}}
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71d",
+        {
+          "parent": "cafe1ea44a66d715",
+          "name": "Drunk47BathroomGroundOrigin",
+          "factory": "[modules:/zspatialentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {"x": 0, "y": 0, "z": 0},
+                "position": {"x": 0, "y": 1, "z": 0}
+              }
+            },
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d715", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71e",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "GetGroundPosition_Drunk47BathroomFallback",
+          "factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
+          "properties": {
+            "498320989": {"type": "float32", "value": 0.3},
+            "920014207": {"type": "float32", "value": -20},
+            "m_rSpatial": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d720", "postInit": true}
+          },
+          "events": {"Position": {"Value": ["cafe1ea44a66d71f"]}}
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d71f",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomGroundPosition",
+          "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
+          "events": {
+            "Value": {"Position": ["cafe1ea44a66d722"]},
+            "Done": {
+              "MakeVisible": ["cafe1ea44a66d721"],
+              "Activate": ["cafe1ea44a66d721", "cafe1ea44a66d723"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d720",
+        {
+          "parent": "cafe1ea44a66d715",
+          "name": "Drunk47BathroomFallbackGroundOrigin",
+          "factory": "[modules:/zspatialentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {"x": 0, "y": 0, "z": 0},
+                "position": {"x": 0, "y": 2, "z": 0}
+              }
+            },
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d715", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d721",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "FX_Water_Leak_Drunk47Bathroom",
+          "factory": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_PrimitiveScale": {"type": "SVector3", "value": {"x": 0.001, "y": 0.001, "z": 0.001}},
+            "m_bVisible": {"type": "bool", "value": false},
+            "m_bRemovePhysics": {"type": "bool", "value": true},
+            "m_bKinematic": {"type": "bool", "value": true},
+            "LeakSpeed": {"type": "float32", "value": 0.4},
+            "ConstantColorRGB_01_Value": {"type": "SColorRGB", "value": "#000000"},
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": null, "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d722",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "SetPosition_Drunk47BathroomSplash",
+          "factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+          "properties": {
+            "m_Entity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d723",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "FX_E_Piss_Puddle_Splash_Drunk47Bathroom",
+          "factory": "00E1A44A66B118C0",
+          "blueprint": "00E1A44A66B118C1",
+          "properties": {
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true},
+            "m_CollisionEntity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true}
           }
         }
       ]
