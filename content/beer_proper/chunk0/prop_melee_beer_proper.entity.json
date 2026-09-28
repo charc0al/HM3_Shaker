@@ -1687,11 +1687,11 @@
           "EnterSafeZone": [
             "cafe1ea44a66b107"
           ],
-          "TransmitEvent": [
-            "cafe1ea44a66b195"
-          ],
           "Attach": [
             "cafe1ea44a66b10c"
+          ],
+          "TransmitEvent": [
+            "cafe1ea44a66b195"
           ],
           "SetTrue": [
             "cafe1ea44a66b10e"
@@ -2905,6 +2905,9 @@
           "Attach": [
             "cafe1ea44a66b10c"
           ],
+          "TransmitEvent": [
+            "cafe1ea44a66b195"
+          ],
           "SetTrue": [
             "cafe1ea44a66b10e"
           ],
@@ -3537,8 +3540,7 @@
       "events": {
         "Value": {
           "Position": [
-            "cafe1ea44a66b115",
-            "cafe1ea44a66b121"
+            "cafe1ea44a66b115"
           ]
         },
         "Done": {
@@ -3552,7 +3554,6 @@
             "cafe1ea44a66b11c"
           ],
           "In": [
-            "cafe1ea44a66b122",
             "cafe1ea44a66b132"
           ]
         }

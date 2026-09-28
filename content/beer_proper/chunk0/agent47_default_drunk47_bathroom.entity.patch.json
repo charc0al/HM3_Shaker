@@ -493,10 +493,16 @@
           "factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
           "events": {
-            "Value": {"Position": ["cafe1ea44a66d722"]},
+            "Value": {
+              "Position": [
+                "cafe1ea44a66d722",
+                "cafe1ea44a66d728"
+              ]
+            },
             "Done": {
               "MakeVisible": ["cafe1ea44a66d721"],
-              "Activate": ["cafe1ea44a66d721", "cafe1ea44a66d723"]
+              "Activate": ["cafe1ea44a66d721", "cafe1ea44a66d723"],
+              "In": ["cafe1ea44a66d729"]
             }
           }
         }
@@ -569,6 +575,98 @@
             "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true},
             "m_CollisionEntity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true}
           }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d724",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomPuddleSpawnAnchor",
+          "factory": "[modules:/zspatialentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+          "properties": {
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": null, "postInit": true},
+            "m_eRoomBehaviour": {"type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC"}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d725",
+        {
+          "parent": "cafe1ea44a66d724",
+          "name": "Spawn_Drunk47BathroomPissPuddle",
+          "factory": "[modules:/zitemspawner.class].pc_entitytype",
+          "blueprint": "[modules:/zitemspawner.class].pc_entityblueprint",
+          "properties": {
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d724", "postInit": true},
+            "m_bSpawnOnStart": {"type": "bool", "value": false},
+            "m_bUsePlacementAttach": {"type": "bool", "value": false},
+            "m_ePhysicsMode": {"type": "ZItemSpawner.EPhysicsMode", "value": "EPM_KINEMATIC"},
+            "m_eRoomBehaviour": {"type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC"},
+            "m_rMainItemKey": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d726", "postInit": true}
+          },
+          "events": {
+            "ItemSpawned": {"SetItem": ["cafe1ea44a66d727"]},
+            "Item": {"SetItem": ["cafe1ea44a66d727"]}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d726",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "ItemKey_Drunk47BathroomPissPuddle",
+          "factory": "[modules:/zitemrepositorykeyentity.class].pc_entitytype",
+          "blueprint": "[modules:/zitemrepositorykeyentity.class].pc_entityblueprint",
+          "properties": {
+            "m_RepositoryId": {"type": "ZGuid", "value": "c5f5c688-6f3f-44e9-9be8-13099d17d7f4"}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d727",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomPissPuddleItemProxy",
+          "factory": "[modules:/zhm5itemproxy.class].pc_entitytype",
+          "blueprint": "[modules:/zhm5itemproxy.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d728",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "SetPosition_Drunk47BathroomPuddleSpawner",
+          "factory": "[modules:/zsetpositionentity.class].pc_entitytype",
+          "blueprint": "[modules:/zsetpositionentity.class].pc_entityblueprint",
+          "properties": {
+            "m_Entity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d725", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d729",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomPuddleSpawnDelay",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {"type": "int32", "value": 100}
+          },
+          "events": {"Out": {"SpawnItem": ["cafe1ea44a66d725"]}}
         }
       ]
     }
