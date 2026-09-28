@@ -822,8 +822,7 @@
           "events": {
             "OnValue": {
               "TransmitEvent": [
-                "cafe1ea44a66d746",
-                "cafe1ea44a66d750"
+                "cafe1ea44a66d746"
               ]
             }
           }
@@ -986,41 +985,6 @@
             "m_sName": {
               "type": "ZString",
               "value": "Drunk47_Drunkenness_LevelChanged"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe1ea44a66d750",
-        {
-          "parent": "cafe1ea44a66d740",
-          "name": "EventChannelTransmitter_PF_47DrankAlcohol",
-          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
-          "properties": {
-            "m_rChannelToken": {
-              "type": "SEntityTemplateReference",
-              "value": "cafe1ea44a66d751",
-              "postInit": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "AddEntity": [
-        "cafe1ea44a66d751",
-        {
-          "parent": "cafe1ea44a66d750",
-          "name": "TokenID_PF_47DrankAlcohol",
-          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
-          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
-          "properties": {
-            "m_sName": {
-              "type": "ZString",
-              "value": "PF_47DrankAlcohol"
             }
           }
         }
