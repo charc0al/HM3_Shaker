@@ -29,7 +29,7 @@
         "cafe1ea44a66d500",
         {
           "parent": "78d19a084a9a8f8f",
-          "name": "Drunk47_DrunkennessController",
+          "name": "Drunk47_DrunkennessController_LegacyDisabled",
           "factory": "[modules:/zentity.class].pc_entitytype",
           "blueprint": "[modules:/zentity.class].pc_entityblueprint"
         }
@@ -271,7 +271,7 @@
           "properties": {
             "m_sName": {
               "type": "ZString",
-              "value": "Drunk47_Drunkenness_AddOne"
+              "value": "Drunk47_Drunkenness_AddOne_LegacyDisabled"
             }
           }
         }
@@ -313,7 +313,7 @@
           "properties": {
             "m_sName": {
               "type": "ZString",
-              "value": "Drunk47_Drunkenness_SubtractOne"
+              "value": "Drunk47_Drunkenness_SubtractOne_LegacyDisabled"
             }
           }
         }

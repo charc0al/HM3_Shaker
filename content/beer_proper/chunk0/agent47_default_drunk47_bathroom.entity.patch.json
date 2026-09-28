@@ -502,7 +502,8 @@
             "Done": {
               "MakeVisible": ["cafe1ea44a66d721"],
               "Activate": ["cafe1ea44a66d721", "cafe1ea44a66d723"],
-              "In": ["cafe1ea44a66d729"]
+              "In": ["cafe1ea44a66d729", "cafe1ea44a66d734"],
+              "EnableSlipping": ["cafe1ea44a66d732"]
             }
           }
         }
@@ -667,6 +668,325 @@
             "Delay time (ms)": {"type": "int32", "value": 100}
           },
           "events": {"Out": {"SpawnItem": ["cafe1ea44a66d725"]}}
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d730",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Sound_Drunk47BathroomLeak",
+          "factory": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/templates/sound/customsoundtemplates.template?/sound_interactiveprop.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Loop_SFX_Event": {
+              "type": "ZRuntimeResourceID",
+              "value": {
+                "resource": "[assembly:/sound/wwise/exportedwwisedata/events/props_events/setpieces/traps/setpiece_trap_watercooler/play_sfx_trap_watercooler_leak.wwiseevent].pc_wwisebank",
+                "flag": "5F"
+              }
+            },
+            "DeviceOn": {
+              "type": "TArray<SEntityTemplateReference>",
+              "value": ["cafe1ea44a66d716"],
+              "postInit": true
+            },
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {"x": 0, "y": 0, "z": 0},
+                "position": {"x": 0, "y": 0, "z": 0.5}
+              }
+            },
+            "m_bUseRaycastObstruction": {"type": "bool", "value": false},
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true}
+          },
+          "subsets": {
+            "AudioEmitters": ["cafe1ea44a66d710"]
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d731",
+        {
+          "parent": "cafe1ea44a66d721",
+          "name": "Drunk47BathroomSlipVolume",
+          "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+          "properties": {
+            "m_fRadius": {"type": "float32", "value": 0.45},
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d732",
+        {
+          "parent": "cafe1ea44a66d721",
+          "name": "PropHelper_SlipperyFloors_Drunk47Bathroom",
+          "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_eRoomBehaviour": {"type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC"},
+            "WaterPresent": {"type": "TArray<SEntityTemplateReference>", "value": ["cafe1ea44a66d733"]},
+            "AllowSoap": {"type": "bool", "value": true},
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d721", "postInit": true},
+            "m_Boxes": {"type": "TArray<SEntityTemplateReference>", "value": ["cafe1ea44a66d731"]}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d733",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "WaterPresent_Drunk47Bathroom",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_bValue": {"type": "bool", "value": true}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d734",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomSlipRearmTimer",
+          "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "Delay time (ms)": {"type": "int32", "value": 1000}
+          },
+          "events": {"Out": {"Poll": ["cafe1ea44a66d735"]}}
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d735",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Poll_Drunk47BathroomEffectsActive",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rValueEntity": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d716"}
+          },
+          "events": {
+            "PollTrue": {
+              "EnableSlipping": ["cafe1ea44a66d732"],
+              "In": ["cafe1ea44a66d734"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d740",
+        {
+          "parent": "158cb860b1fce56d",
+          "name": "Drunk47DrunkennessController",
+          "factory": "[modules:/zentity.class].pc_entitytype",
+          "blueprint": "[modules:/zentity.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d741",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "ValueInt_Drunk47Drunkenness",
+          "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_basic.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_nValue": {
+              "type": "int32",
+              "value": 0
+            },
+            "m_bSetValueAlwaysTriggerChangedEvent": {
+              "type": "bool",
+              "value": true
+            }
+          },
+          "events": {
+            "OnValue": {
+              "TransmitEvent": [
+                "cafe1ea44a66d746"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d742",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "AddOrSubtract_Drunk47Drunkenness",
+          "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint_operation.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint_operation.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rValue1": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d741"
+            },
+            "m_rValue2": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d743"
+            },
+            "m_rResult": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d741"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d743",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "ValueInt_One_Drunk47",
+          "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_nValue": {
+              "type": "int32",
+              "value": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d744",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "EventChannelReceiver_Drunk47AddOne",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d745",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "Add": [
+                "cafe1ea44a66d742"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d745",
+        {
+          "parent": "cafe1ea44a66d744",
+          "name": "TokenID_Drunk47_Drunkenness_AddOne",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_Drunkenness_AddOne"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d747",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "EventChannelReceiver_Drunk47SubtractOne",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d748",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "Subtract": [
+                "cafe1ea44a66d742"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d748",
+        {
+          "parent": "cafe1ea44a66d747",
+          "name": "TokenID_Drunk47_Drunkenness_SubtractOne",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_Drunkenness_SubtractOne"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d746",
+        {
+          "parent": "cafe1ea44a66d740",
+          "name": "EventChannelTransmitter_Drunk47DrunkennessLevel",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_int32.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_int32.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d749",
+              "postInit": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d749",
+        {
+          "parent": "cafe1ea44a66d746",
+          "name": "TokenID_Drunk47_Drunkenness_LevelChanged",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_Drunkenness_LevelChanged"
+            }
+          }
         }
       ]
     }
