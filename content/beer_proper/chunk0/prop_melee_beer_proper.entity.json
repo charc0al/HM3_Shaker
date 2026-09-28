@@ -1687,6 +1687,9 @@
           "EnterSafeZone": [
             "cafe1ea44a66b107"
           ],
+          "TransmitEvent": [
+            "cafe1ea44a66b195"
+          ],
           "Attach": [
             "cafe1ea44a66b10c"
           ],
@@ -3911,6 +3914,31 @@
         "m_sName": {
           "type": "ZString",
           "value": "Drunk47_BathroomStop"
+        }
+      }
+    },
+    "cafe1ea44a66b195": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47BathroomEffectsStart",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b196",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b196": {
+      "parent": "cafe1ea44a66b195",
+      "name": "TokenID_Drunk47_BathroomEffectsStart",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_BathroomEffectsStart"
         }
       }
     }

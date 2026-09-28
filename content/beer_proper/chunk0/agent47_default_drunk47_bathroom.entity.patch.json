@@ -86,7 +86,35 @@
               "type": "bool",
               "value": false
             },
+            "m_fPitchAngle": {
+              "type": "float32",
+              "value": 0
+            },
+            "m_fYawAngle": {
+              "type": "float32",
+              "value": 0
+            },
+            "m_bAlignPitchAngle": {
+              "type": "bool",
+              "value": false
+            },
+            "m_bAlignYawAngle": {
+              "type": "bool",
+              "value": false
+            },
             "m_pSafeZoneOrigin": {
+              "type": "SEntityTemplateReference",
+              "value": null
+            },
+            "m_bBlendOutCloth": {
+              "type": "bool",
+              "value": true
+            },
+            "m_fClothBlendTime": {
+              "type": "float32",
+              "value": 2
+            },
+            "m_pSafeZoneLoopPosition": {
               "type": "SEntityTemplateReference",
               "value": null
             },
@@ -97,6 +125,10 @@
             "m_bDropAndPickupLeftHandItem": {
               "type": "bool",
               "value": true
+            },
+            "m_bHideNonLeftHandItems": {
+              "type": "bool",
+              "value": false
             }
           }
         }
@@ -182,6 +214,147 @@
               "type": "ZString",
               "value": "Drunk47_BathroomStop"
             }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d710",
+        {
+          "parent": "158cb860b1fce56d",
+          "name": "Drunk47BathroomEffects",
+          "factory": "[modules:/zentity.class].pc_entitytype",
+          "blueprint": "[modules:/zentity.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d711",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "EventChannelReceiver_Drunk47BathroomEffectsStart",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d712",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "Attach": ["cafe1ea44a66d714"],
+              "SetTrue": ["cafe1ea44a66d716"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d712",
+        {
+          "parent": "cafe1ea44a66d711",
+          "name": "TokenID_Drunk47_BathroomEffectsStart",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_BathroomEffectsStart"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d713",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "EventChannelReceiver_Drunk47BathroomEffectsStop",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d708",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "SetFalse": ["cafe1ea44a66d716"],
+              "Detach": ["cafe1ea44a66d714"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d714",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "HeroBoneAttach_Drunk47BathroomEffects",
+          "factory": "[modules:/zheroboneattachentity.class].pc_entitytype",
+          "blueprint": "[modules:/zheroboneattachentity.class].pc_entityblueprint",
+          "properties": {
+            "m_BoneName": {"type": "ZString", "value": "Pelvis"},
+            "m_spatial": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d715"},
+            "m_bStartAttached": {"type": "bool", "value": false}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d715",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "Drunk47BathroomEffectsSpatial",
+          "factory": "[modules:/zspatialentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d716",
+        {
+          "parent": "cafe1ea44a66d710",
+          "name": "ValueBool_Drunk47BathroomEffectsActive",
+          "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+          "events": {
+            "OnTrue": {"Activate": ["cafe1ea44a66d717"]},
+            "OnFalse": {"Deactivate": ["cafe1ea44a66d717"]}
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d717",
+        {
+          "parent": "cafe1ea44a66d715",
+          "name": "FX_E_Liquid_Piss_Drunk47",
+          "factory": "[assembly:/_pro/effects/templates/liquid/fx_liquid.template?/fx_e_liquid_piss.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/effects/templates/liquid/fx_liquid.template?/fx_e_liquid_piss.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {"x": 97.51867083658354, "y": 0.7535178718294449, "z": -27.305880691722805},
+                "position": {"x": -0.0607759989798069, "y": 0.11294899880886078, "z": 0.000590000010561198},
+                "scale": {"x": 0.999999821422476, "y": 1.0000000136018228, "z": 1.000000876077821}
+              }
+            },
+            "m_eRoomBehaviour": {"type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC"},
+            "m_eidParent": {"type": "SEntityTemplateReference", "value": "cafe1ea44a66d715", "postInit": true}
           }
         }
       ]
