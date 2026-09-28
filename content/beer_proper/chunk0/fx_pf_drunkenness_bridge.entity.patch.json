@@ -556,9 +556,6 @@
           },
       "events": {
         "EventReceived": {
-          "BlendIn": [
-            "5b236772543af2e6"
-          ],
           "BlendWeight": [
             {
               "ref": "5b236772543af2e6",
@@ -567,6 +564,12 @@
                 "value": 0.1
               }
             }
+          ],
+          "BlendIn": [
+            "5b236772543af2e6"
+          ],
+          "In": [
+            "cafe1ea44a66d412"
           ]
         }
           }
@@ -595,26 +598,26 @@
         "cafe1ea44a66d412",
         {
           "parent": "cafe1ea44a66d401",
-          "name": "DrunkennessFilterLevel1Intensity",
+        "name": "DrunkennessFilterLevel1StartAfterWeight",
           "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
           "properties": {
             "Delay time (ms)": {
               "type": "int32",
-              "value": 150
+            "value": 1
             }
           },
           "events": {
             "Out": {
-              "BlendWeight": [
-                {
-                  "ref": "5b236772543af2e6",
-                  "value": {
-                    "type": "float32",
-                    "value": 0.1
-                  }
-                }
-              ]
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.1
+              }
+            }
+          ]
             }
           }
         }
