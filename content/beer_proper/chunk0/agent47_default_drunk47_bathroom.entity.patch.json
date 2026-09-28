@@ -101,6 +101,90 @@
           }
         }
       ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d705",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "EventChannelReceiver_Drunk47BathroomStart",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d706",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "EnterSafeZone": [
+                "cafe1ea44a66d704"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d706",
+        {
+          "parent": "cafe1ea44a66d705",
+          "name": "TokenID_Drunk47_BathroomStart",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_BathroomStart"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d707",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "EventChannelReceiver_Drunk47BathroomStop",
+          "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_rChannelToken": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d708",
+              "postInit": true
+            }
+          },
+          "events": {
+            "EventReceived": {
+              "ExitSafeZoneNoAnim": [
+                "cafe1ea44a66d704"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d708",
+        {
+          "parent": "cafe1ea44a66d707",
+          "name": "TokenID_Drunk47_BathroomStop",
+          "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+          "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+          "properties": {
+            "m_sName": {
+              "type": "ZString",
+              "value": "Drunk47_BathroomStop"
+            }
+          }
+        }
+      ]
     }
   ],
   "patchVersion": 6
