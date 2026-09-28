@@ -1,0 +1,107 @@
+{
+  "tempHash": "00D347CBA29EE6BA",
+  "tbluHash": "000A263E54999100",
+  "patch": [
+    {
+      "AddEntity": [
+        "cafe1ea44a66d700",
+        {
+          "parent": "158cb860b1fce56d",
+          "name": "Drunk47BathroomActivity",
+          "factory": "[modules:/zentity.class].pc_entitytype",
+          "blueprint": "[modules:/zentity.class].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d701",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "Drunk47BathroomNetworkSelector",
+          "factory": "[modules:/zchildnetworkselectorentity.class].pc_entitytype",
+          "blueprint": "[modules:/zchildnetworkselectorentity.class].pc_entityblueprint",
+          "properties": {
+            "m_aChildNetworks": {
+              "type": "TArray<SEntityTemplateReference>",
+              "value": [
+                "cafe1ea44a66d702"
+              ],
+              "postInit": true
+            },
+            "m_rSelectedIndex": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d703",
+              "postInit": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d702",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "MR_Stand_Piss_Drunk47Bathroom",
+          "factory": "[modules:/zchildnetworkentity.class].pc_entitytype",
+          "blueprint": "[modules:/zchildnetworkentity.class].pc_entityblueprint",
+          "properties": {
+            "m_RuntimeNetworkResourceID": {
+              "type": "ZRuntimeResourceID",
+              "value": {
+                "resource": "008655EF0E618E77",
+                "flag": "9F"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d703",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "Drunk47BathroomNetworkIndex",
+          "factory": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d704",
+        {
+          "parent": "cafe1ea44a66d700",
+          "name": "HM5DisguiseSafeZone_Drunk47Bathroom",
+          "factory": "[modules:/zhm5disguisesafezoneentity.class].pc_entitytype",
+          "blueprint": "[modules:/zhm5disguisesafezoneentity.class].pc_entityblueprint",
+          "properties": {
+            "m_pSafeZoneNetwork": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe1ea44a66d701"
+            },
+            "m_bSetPositionOnExit": {
+              "type": "bool",
+              "value": false
+            },
+            "m_pSafeZoneOrigin": {
+              "type": "SEntityTemplateReference",
+              "value": null
+            },
+            "m_bHideItems": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bDropAndPickupLeftHandItem": {
+              "type": "bool",
+              "value": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}
