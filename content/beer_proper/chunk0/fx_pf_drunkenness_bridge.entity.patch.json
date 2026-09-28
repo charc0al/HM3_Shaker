@@ -368,16 +368,6 @@
               "value": "cafe1ea44a66d403",
               "postInit": true
             }
-          },
-          "events": {
-            "EventReceived": {
-              "BlendIn": [
-                "5b236772543af2e6"
-              ],
-              "In": [
-                "cafe1ea44a66d406"
-              ]
-            }
           }
         }
       ]
@@ -486,12 +476,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d409"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.6499999761581421
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -558,12 +554,21 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d412"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendIn": [
+            "5b236772543af2e6"
+          ],
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.1
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -630,12 +635,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d415"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.2
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -702,12 +713,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d418"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.3
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -774,12 +791,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d41b"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.4166666567325592
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -846,12 +869,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d41e"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.5333333611488342
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -918,12 +947,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d421"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.7666666507720947
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -990,12 +1025,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d424"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 0.8833333253860474
+              }
             }
+          ]
+        }
           }
         }
       ]
@@ -1062,12 +1103,18 @@
               "postInit": true
             }
           },
-          "events": {
-            "EventReceived": {
-              "In": [
-                "cafe1ea44a66d427"
-              ]
+      "events": {
+        "EventReceived": {
+          "BlendWeight": [
+            {
+              "ref": "5b236772543af2e6",
+              "value": {
+                "type": "float32",
+                "value": 1
+              }
             }
+          ]
+        }
           }
         }
       ]
