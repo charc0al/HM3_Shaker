@@ -1640,13 +1640,13 @@
           "SetFalse": [
             "cafe1ea44a66b137"
           ],
+          "TransmitEvent": [
+            "cafe1ea44a66b197"
+          ],
           "Get": [
             "cafe1ea44a66b143",
             "cafe1ea44a66b144",
-            "cafe1ea44a66b145",
-            "cafe1ea44a66b146",
-            "cafe1ea44a66b147",
-            "cafe1ea44a66b148"
+            "cafe1ea44a66b145"
           ]
         }
       }
@@ -1739,16 +1739,7 @@
           "Get": [
             "cafe1ea44a66b13c",
             "cafe1ea44a66b14b",
-            "cafe1ea44a66b170",
-            "cafe1ea44a66b158",
-            "cafe1ea44a66b15b",
-            "cafe1ea44a66b15e",
-            "cafe1ea44a66b161",
-            "cafe1ea44a66b164",
-            "cafe1ea44a66b155",
-            "cafe1ea44a66b167",
-            "cafe1ea44a66b16a",
-            "cafe1ea44a66b16d"
+            "cafe1ea44a66b170"
           ]
         }
       }
@@ -3900,6 +3891,31 @@
         "m_sName": {
           "type": "ZString",
           "value": "Drunk47_BathroomEffectsStart"
+        }
+      }
+    },
+    "cafe1ea44a66b197": {
+      "parent": "89d1f4f46e0d4adb",
+      "name": "EventChannelTransmitter_Drunk47BathroomVoiceCheck",
+      "factory": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rChannelToken": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe1ea44a66b198",
+          "postInit": true
+        }
+      }
+    },
+    "cafe1ea44a66b198": {
+      "parent": "cafe1ea44a66b197",
+      "name": "TokenID_Drunk47_BathroomVoiceCheck",
+      "factory": "[modules:/ztokenidentity.class].pc_entitytype",
+      "blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Drunk47_BathroomVoiceCheck"
         }
       }
     }

@@ -823,6 +823,11 @@
             "OnValue": {
               "TransmitEvent": [
                 "cafe1ea44a66d746"
+              ],
+              "Get": [
+                "cafe1ea44a66d750", "cafe1ea44a66d751", "cafe1ea44a66d752",
+                "cafe1ea44a66d753", "cafe1ea44a66d754", "cafe1ea44a66d755",
+                "cafe1ea44a66d756", "cafe1ea44a66d757", "cafe1ea44a66d758"
               ]
             }
           }
@@ -954,6 +959,174 @@
           }
         }
       ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d750",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs1_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d760"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d770"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d751",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs2_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d761"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d771"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d752",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs3_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d762"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d772"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d753",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs4_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d763"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d773"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d754",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs5_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d764"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d774"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d755",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs6_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d765"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d775"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d756",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs7_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d766"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d776"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d757",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs8_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d767"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d777"]}}}
+      ]
+    },
+    {
+      "AddEntity": [
+        "cafe1ea44a66d758",
+        {"parent":"cafe1ea44a66d740","name":"DrunkennessIs9_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d768"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"TransmitEvent":["cafe1ea44a66d778"]}}}
+      ]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d760", {"parent":"cafe1ea44a66d740","name":"ValueInt_1_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":1}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d761", {"parent":"cafe1ea44a66d740","name":"ValueInt_2_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":2}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d762", {"parent":"cafe1ea44a66d740","name":"ValueInt_3_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":3}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d763", {"parent":"cafe1ea44a66d740","name":"ValueInt_4_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":4}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d764", {"parent":"cafe1ea44a66d740","name":"ValueInt_5_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":5}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d765", {"parent":"cafe1ea44a66d740","name":"ValueInt_6_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":6}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d766", {"parent":"cafe1ea44a66d740","name":"ValueInt_7_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":7}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d767", {"parent":"cafe1ea44a66d740","name":"ValueInt_8_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":8}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d768", {"parent":"cafe1ea44a66d740","name":"ValueInt_9_Filter","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":9}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d770", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel1","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d780","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d771", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel2","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d781","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d772", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel3","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d782","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d773", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel4","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d783","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d774", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel5","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d784","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d775", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevelSix","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d785","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d776", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel7","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d786","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d777", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel8","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d787","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d778", {"parent":"cafe1ea44a66d740","name":"EventChannelTransmitter_DrunkennessFilterLevel9","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchanneltransmitter_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d788","postInit":true}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d780", {"parent":"cafe1ea44a66d770","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel1","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel1"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d781", {"parent":"cafe1ea44a66d771","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel2","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel2"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d782", {"parent":"cafe1ea44a66d772","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel3","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel3"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d783", {"parent":"cafe1ea44a66d773","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel4","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel4"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d784", {"parent":"cafe1ea44a66d774","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel5","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel5"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d785", {"parent":"cafe1ea44a66d775","name":"TokenID_HM3_Shaker_DrunkennessFilterLevelSix","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevelSix"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d786", {"parent":"cafe1ea44a66d776","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel7","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel7"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d787", {"parent":"cafe1ea44a66d777","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel8","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel8"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d788", {"parent":"cafe1ea44a66d778","name":"TokenID_HM3_Shaker_DrunkennessFilterLevel9","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"HM3_Shaker_DrunkennessFilterLevel9"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d790", {"parent":"158cb860b1fce56d","name":"HeroStandIn_Drunk47BathroomVoice","factory":"[modules:/zherostandin.class].pc_entitytype","blueprint":"[modules:/zherostandin.class].pc_entityblueprint"}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d791", {"parent":"cafe1ea44a66d740","name":"DialogLine_47NeedsBathroom","factory":"[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/actor/spsystem.template?/dialogline.entitytemplate].pc_entityblueprint","properties":{"m_rCharacter":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d790"},"m_pAudioEvent":{"type":"ZRuntimeResourceID","value":"[assembly:/localization/hitman6/conversations/hokkaido/2000_snowcrane/2000_story/dr2132_47needstousebathroom.sweetdialog?/dr2132_47needstousebathroom_47_001.sweetdialogitem].pc_dialogevent"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d792", {"parent":"cafe1ea44a66d740","name":"Drunk47BathroomLineDelay","factory":"[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint","properties":{"Delay time (ms)":{"type":"int32","value":7000}},"events":{"Out":{"Start":["cafe1ea44a66d791"]}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d793", {"parent":"cafe1ea44a66d740","name":"EventChannelReceiver_Drunk47BathroomVoiceCheck","factory":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/gamecore/events/eventchannel.template?/eventchannelreceiver_void.entitytemplate].pc_entityblueprint","properties":{"m_rChannelToken":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d794","postInit":true}},"events":{"EventReceived":{"Get":["cafe1ea44a66d795","cafe1ea44a66d796","cafe1ea44a66d797"]}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d794", {"parent":"cafe1ea44a66d793","name":"TokenID_Drunk47_BathroomVoiceCheck","factory":"[modules:/ztokenidentity.class].pc_entitytype","blueprint":"[modules:/ztokenidentity.class].pc_entityblueprint","properties":{"m_sName":{"type":"ZString","value":"Drunk47_BathroomVoiceCheck"}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d795", {"parent":"cafe1ea44a66d740","name":"DrunkennessWillReachThree","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d798"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"In":["cafe1ea44a66d792"]}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d796", {"parent":"cafe1ea44a66d740","name":"DrunkennessWillReachSix","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d799"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"In":["cafe1ea44a66d792"]}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d797", {"parent":"cafe1ea44a66d740","name":"DrunkennessWillReachNine","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint_comparator_poll.entitytemplate].pc_entityblueprint","properties":{"m_rFirstValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d741"},"m_rSecondValueInt":{"type":"SEntityTemplateReference","value":"cafe1ea44a66d800"},"m_eEvaluation":{"type":"ZValueInt_Comparator_Poll.EEvaluationType","value":"EQUAL"}},"events":{"GetTrue":{"In":["cafe1ea44a66d792"]}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d798", {"parent":"cafe1ea44a66d740","name":"ValueInt_2_BathroomVoice","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":2}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d799", {"parent":"cafe1ea44a66d740","name":"ValueInt_5_BathroomVoice","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":5}}}]
+    },
+    {
+      "AddEntity": ["cafe1ea44a66d800", {"parent":"cafe1ea44a66d740","name":"ValueInt_8_BathroomVoice","factory":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entitytype","blueprint":"[assembly:/_pro/design/logic/valueint.template?/valueint.entitytemplate].pc_entityblueprint","properties":{"m_nValue":{"type":"int32","value":8}}}]
     },
     {
       "AddEntity": [
