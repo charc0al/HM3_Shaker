@@ -1677,28 +1677,21 @@
       "blueprint": "[modules:/zentity.class].pc_entityblueprint",
       "inputCopying": {
         "In": {
-          "Decrement": [
-            "cafe1ea44a66b138"
-          ],
-          "SetFalse": [
-            "cafe1ea44a66b137",
-            "cafe1ea44a66b127"
-          ],
-          "EnterSafeZone": [
-            "cafe1ea44a66b107"
-          ],
-          "Attach": [
-            "cafe1ea44a66b10c"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b195"
-          ],
-          "SetTrue": [
-            "cafe1ea44a66b10e"
-          ],
-          "In": [
-            "cafe1ea44a66b117"
-          ]
+      "Decrement": [
+        "cafe1ea44a66b138"
+      ],
+      "SetFalse": [
+        "cafe1ea44a66b137"
+      ],
+      "EnterSafeZone": [
+        "cafe1ea44a66b107"
+      ],
+      "TransmitEvent": [
+        "cafe1ea44a66b195"
+      ],
+      "SetTrue": [
+        "cafe1ea44a66b10e"
+      ]
         }
       }
     },
@@ -2895,25 +2888,18 @@
       "blueprint": "[modules:/zentity.class].pc_entityblueprint",
       "inputCopying": {
         "In": {
-          "SetFalse": [
-            "cafe1ea44a66b137",
-            "cafe1ea44a66b127"
-          ],
-          "EnterSafeZone": [
-            "cafe1ea44a66b107"
-          ],
-          "Attach": [
-            "cafe1ea44a66b10c"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b195"
-          ],
-          "SetTrue": [
-            "cafe1ea44a66b10e"
-          ],
-          "In": [
-            "cafe1ea44a66b117"
-          ]
+      "SetFalse": [
+        "cafe1ea44a66b137"
+      ],
+      "EnterSafeZone": [
+        "cafe1ea44a66b107"
+      ],
+      "TransmitEvent": [
+        "cafe1ea44a66b195"
+      ],
+      "SetTrue": [
+        "cafe1ea44a66b10e"
+      ]
         }
       }
     },
@@ -3151,21 +3137,15 @@
       "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
       "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
       "events": {
-        "OnTrue": {
-          "Activate": [
-            "cafe1ea44a66b10d"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b187"
-          ]
-        },
-        "OnFalse": {
-          "Deactivate": [
-            "cafe1ea44a66b10d"
-          ],
-          "TransmitEvent": [
-            "cafe1ea44a66b189"
-          ]
+    "OnTrue": {
+      "TransmitEvent": [
+        "cafe1ea44a66b187"
+      ]
+    },
+    "OnFalse": {
+      "TransmitEvent": [
+        "cafe1ea44a66b189"
+      ]
         }
       }
     },
@@ -3482,19 +3462,9 @@
           "ExitSafeZoneNoAnim": [
             "cafe1ea44a66b107"
           ],
-          "SetFalse": [
-            "cafe1ea44a66b10e",
-            "cafe1ea44a66b119"
-          ],
-          "Deactivate": [
-            "cafe1ea44a66b118"
-          ],
-          "MakeInvisible": [
-            "cafe1ea44a66b116"
-          ],
-          "Detach": [
-            "cafe1ea44a66b10c"
-          ],
+      "SetFalse": [
+        "cafe1ea44a66b10e"
+      ],
           "TransmitEvent": [
             "cafe1ea44a66b193"
           ]
