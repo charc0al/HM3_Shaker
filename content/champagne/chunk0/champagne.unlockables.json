@@ -10,7 +10,7 @@
     "Id": "PROP_GLASS_CHAMPAGNE",
     "Guid": "84ec0fef-f030-4dc4-8e71-f94ba2c6a36e",
     "Type": "weapon",
-    "Subtype": "melee",
+    "Subtype": "evergreen_kill_method_drown",
     "RMTPrice": -1,
     "GamePrice": -1,
     "IsPurchasable": false,

@@ -96,22 +96,22 @@
       ]
     },
     {
-      "name": "BONUS | Champagne Glass",
-      "tooltip": "Adds a champagne glass melee weapon that creates slippery puddle when broken. Adds it to the safehouse as well.",
+      "name": "BONUS | Champagne Glass (see description)",
+      "tooltip": "(DONT USE WITH DRUNK47, USE THAT MOD'S VERSION OF THIS ITEM INSTEAD) Adds a champagne glass melee weapon that creates slippery puddle when broken. Adds it to the safehouse as well.",
       "group": "Unlockables",
       "type": "checkbox",
-      "enabledByDefault": true,
+      "enabledByDefault": false,
       "image": "smf/unlocks-champagne.webp",
       "contentFolders": [
         "content/champagne"
       ]
     },
     {
-      "name": "BONUS | Whiskey Glass",
-      "tooltip": "Adds a new whiskey glass melee item, which creates a slippery puddle when broken. Adds a whiskey glass to the safehouse as well.",
+      "name": "BONUS | Whiskey Glass (see desctiption)",
+      "tooltip": "(DONT USE WITH DRUNK47, USE THAT MOD'S VERSION OF THIS ITEM INSTEAD) Adds a new whiskey glass melee item, which creates a slippery puddle when broken. Adds a whiskey glass to the safehouse as well.",
       "group": "Unlockables",
       "type": "checkbox",
-      "enabledByDefault": true,
+      "enabledByDefault": false,
       "image": "smf/unlocks-whiskeyglass.webp",
       "contentFolders": [
         "content/whiskeyglass_proper"
@@ -299,31 +299,49 @@
   ],
   "localisation": {
     "english": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Flood"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Flood",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Drinks",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Drinks"
     },
     "french": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inonder"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inonder",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Boissons",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Boissons"
     },
     "italian": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Allaga"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Allaga",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Bevande",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Bevande"
     },
     "german": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Fluten"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Fluten",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Getränke",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Getränke"
     },
     "spanish": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inundar"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Inundar",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Bebidas",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Bebidas"
     },
     "russian": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Затопить"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "Затопить",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "Напитки",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "Напитки"
     },
     "chineseSimplified": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹没"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹没",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "饮料",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "饮料"
     },
     "chineseTraditional": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹沒"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "淹沒",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "飲料",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "飲料"
     },
     "japanese": {
-      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "浸水させる"
+      "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD": "浸水させる",
+      "UI_ITEM_SUBTYPE_EVERGREEN_KILL_METHOD_DROWN": "ドリンク",
+      "UI_ITEM_SUBTYPE_IN_PLURAL_EVERGREEN_KILL_METHOD_DROWN": "ドリンク"
     }
   },
   "localisedLines": {

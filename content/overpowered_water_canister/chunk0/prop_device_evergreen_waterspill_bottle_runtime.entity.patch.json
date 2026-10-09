@@ -19,6 +19,28 @@
 		},
 		{
 			"SubEntityOperation": [
+				"c5d3f12f5d5db60a",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_mTransform",
+						"value": {
+							"rotation": {
+								"x": 90.00000000000001,
+								"y": 4.296211924040461e-31,
+								"z": -180.0
+							},
+							"position": {
+								"x": 0.0,
+								"y": 0.019999999552965164,
+								"z": 0.33000001311302185
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
 				"b4278dbc6d3c432e",
 				{
 					"PatchArrayPropertyValue": [
@@ -312,7 +334,10 @@
 					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
 					"properties": {
-						"Delay time (ms)": { "type": "int32", "value": 250 }
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 250
+						}
 					},
 					"events": {
 						"Out": {
@@ -444,8 +469,14 @@
 							"type": "SEntityTemplateReference",
 							"value": "b81da0cf5899ab63"
 						},
-						"m_bSpawnOnStart": { "type": "bool", "value": false },
-						"m_bUsePlacementAttach": { "type": "bool", "value": false },
+						"m_bSpawnOnStart": {
+							"type": "bool",
+							"value": false
+						},
+						"m_bUsePlacementAttach": {
+							"type": "bool",
+							"value": false
+						},
 						"m_ePhysicsMode": {
 							"type": "ZItemSpawner.EPhysicsMode",
 							"value": "EPM_KINEMATIC"

@@ -10,7 +10,7 @@
     "Id": "PROP_MELEE_WHISKEY_GLASS",
     "Guid": "7cf7e29e-2204-45bf-b412-e4817d9ea3a7",
     "Type": "weapon",
-    "Subtype": "melee",
+    "Subtype": "evergreen_kill_method_drown",
     "RMTPrice": -1,
     "GamePrice": -1,
     "IsPurchasable": false,
