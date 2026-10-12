@@ -1,6 +1,8 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
-	"customPaths": [
-		"[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_flood.sweetline].pc_sweetline"
-	]
+  "$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
+  "customPaths": [
+    "[assembly:/localization/hitman6/conversations/ui/pro/gamemode_evergreen/evergreen_items.sweetmenutext?/ui_prop_evergreen_waterspill_canister_flood.sweetline].pc_sweetline",
+    "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entitytype",
+    "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entityblueprint"
+  ]
 }

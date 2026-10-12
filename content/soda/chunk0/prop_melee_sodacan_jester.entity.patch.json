@@ -69,7 +69,7 @@
             },
             "LeakSpeed": {
               "type": "float32",
-              "value": 0.40
+              "value": 0.4
             },
             "ConstantColorRGB_01_Value": {
               "type": "SColorRGB",
@@ -87,18 +87,84 @@
           "name": "Water Present",
           "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
-          "properties": { "m_bValue": { "type": "bool", "value": true } }
+          "properties": {
+            "m_bValue": {
+              "type": "bool",
+              "value": true
+            }
+          }
         }
       ]
     },
     {
       "AddEntity": [
-        "cafe4b3d9a84c2e1", { "parent": "cafe2a576dfb3613", "name": "SodaPuddleSlipVolume", "factory": "[modules:/zspherevolumeentity.class].pc_entitytype", "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_fRadius": { "type": "float32", "value": 0.5 }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "cafedf0494f286ed", "postInit": true } } }
+        "cafe4b3d9a84c2e1",
+        {
+          "parent": "cafe2a576dfb3613",
+          "name": "SodaPuddleSlipVolume",
+          "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+          "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "position": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              }
+            },
+            "m_fRadius": {
+              "type": "float32",
+              "value": 0.5
+            },
+            "m_eidParent": {
+              "type": "SEntityTemplateReference",
+              "value": "cafedf0494f286ed",
+              "postInit": true
+            }
+          }
+        }
       ]
     },
     {
       "AddEntity": [
-        "cafe5c8e7d9ab341", { "parent": "cafe2a576dfb3613", "name": "ItemHelper_Logic_BananaSlip", "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype", "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint", "properties": { "m_sId": { "type": "ZGuid", "value": "48de2781-eb86-4418-a7c7-44cfb7d211ee" }, "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe4b3d9a84c2e1"], "postInit": true }, "m_rItem": { "type": "SEntityTemplateReference", "value": "b0930bb70f81afed", "postInit": true }, "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": "cafe454b1fbb40eb", "postInit": true } } }
+        "cafe5c8e7d9ab341",
+        {
+          "parent": "cafe2a576dfb3613",
+          "name": "ItemHelper_Logic_BananaSlip",
+          "factory": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entityblueprint",
+          "properties": {
+            "m_sId": {
+              "type": "ZGuid",
+              "value": "48de2781-eb86-4418-a7c7-44cfb7d211ee"
+            },
+            "m_Spheres": {
+              "type": "TArray<SEntityTemplateReference>",
+              "value": [
+                "cafe4b3d9a84c2e1"
+              ],
+              "postInit": true
+            },
+            "m_rItem": {
+              "type": "SEntityTemplateReference",
+              "value": "b0930bb70f81afed",
+              "postInit": true
+            },
+            "m_rGeomEntity": {
+              "type": "SEntityTemplateReference",
+              "value": "cafe454b1fbb40eb",
+              "postInit": true
+            }
+          }
+        }
       ]
     },
     {
@@ -156,7 +222,47 @@
     },
     {
       "AddEntity": [
-        "cafe93b99b7bd8aa", { "parent": "cafe2a576dfb3613", "name": "SlipperyFloorVolume", "factory": "[modules:/zboxvolumeentity.class].pc_entitytype", "blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint", "properties": { "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } }, "m_vGlobalSize": { "type": "SVector3", "value": { "x": 1, "y": 1, "z": 0.55 } }, "m_eRoomBehaviour": { "type": "ZSpatialEntity.ERoomBehaviour", "value": "ROOM_DYNAMIC" }, "m_eidParent": { "type": "SEntityTemplateReference", "value": "cafedf0494f286ed", "postInit": true } } }
+        "cafe93b99b7bd8aa",
+        {
+          "parent": "cafe2a576dfb3613",
+          "name": "SlipperyFloorVolume",
+          "factory": "[modules:/zboxvolumeentity.class].pc_entitytype",
+          "blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
+          "properties": {
+            "m_mTransform": {
+              "type": "SMatrix43",
+              "value": {
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                },
+                "position": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              }
+            },
+            "m_vGlobalSize": {
+              "type": "SVector3",
+              "value": {
+                "x": 1,
+                "y": 1,
+                "z": 0.55
+              }
+            },
+            "m_eRoomBehaviour": {
+              "type": "ZSpatialEntity.ERoomBehaviour",
+              "value": "ROOM_DYNAMIC"
+            },
+            "m_eidParent": {
+              "type": "SEntityTemplateReference",
+              "value": "cafedf0494f286ed",
+              "postInit": true
+            }
+          }
+        }
       ]
     },
     {

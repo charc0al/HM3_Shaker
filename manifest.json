@@ -346,5 +346,8 @@
   },
   "localisedLines": {
     "0018B8D644A982F0": "UI_PROP_EVERGREEN_WATERSPILL_CANISTER_FLOOD"
-  }
+  },
+  "contentFolders": [
+    "content/shared"
+  ]
 }

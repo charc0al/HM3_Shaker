@@ -271,8 +271,8 @@
         {
           "parent": "d1a7000000000001",
           "name": "ItemHelper_Logic_BananaSlip",
-          "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-          "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+          "factory": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entitytype",
+          "blueprint": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entityblueprint",
           "properties": {
             "m_sId": {
               "type": "ZGuid",

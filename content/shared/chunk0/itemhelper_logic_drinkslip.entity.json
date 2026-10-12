@@ -1,0 +1,466 @@
+{
+  "tempHash": "00F3226171BC7E95",
+  "tbluHash": "0056552EF71C6DB4",
+  "rootEntity": "cafe50defb5358f1",
+  "entities": {
+    "cafe0d407b7825ec": {
+      "parent": "cafe50defb5358f1",
+      "name": "Rigged",
+      "factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+      "events": {
+        "OnTrue": {
+          "Enable": [
+            "cafe8f1d450ffb4c"
+          ]
+        },
+        "OnFalse": {
+          "Disable": [
+            "cafe8f1d450ffb4c"
+          ]
+        }
+      },
+      "outputCopying": {
+        "OnTrue": {
+          "OnRig": [
+            "cafe50defb5358f1"
+          ]
+        }
+      }
+    },
+    "cafeb39610eeffea": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorPickerFilterBehaviorSelectionDisabled",
+      "factory": "[modules:/zactorpickerfilterbehaviorselectiondisabled.class].pc_entitytype",
+      "blueprint": "[modules:/zactorpickerfilterbehaviorselectiondisabled.class].pc_entityblueprint"
+    },
+    "cafec57ccc85f74d": {
+      "parent": "cafe50defb5358f1",
+      "name": "IActor_Debuffer",
+      "factory": "[assembly:/_pro/design/logic.template?/iactor_debuffer.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/iactor_debuffer.entitytemplate].pc_entityblueprint",
+      "events": {
+        "Value": {
+          "SetIActor": [
+            "cafee45629549062",
+            "cafede4652dd1142"
+          ]
+        },
+        "Done": {
+          "SetTrue": [
+            "cafe045caa751f81"
+          ],
+          "In": [
+            "cafede4796437e5e"
+          ]
+        }
+      }
+    },
+    "cafe045caa751f81": {
+      "parent": "cafe50defb5358f1",
+      "name": "Sprung",
+      "factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint",
+      "outputCopying": {
+        "OnTrue": {
+          "OnSprung": [
+            "cafe50defb5358f1"
+          ]
+        }
+      }
+    },
+    "cafede4796437e5e": {
+      "parent": "cafe50defb5358f1",
+      "name": "Trigger Slip",
+      "factory": "[modules:/zsignalforkentity_void.class].pc_entitytype",
+      "blueprint": "[modules:/zsignalforkentity_void.class].pc_entityblueprint",
+      "events": {
+        "Out01": {
+          "Trigger": [
+            "cafee45629549062"
+          ]
+        },
+        "Out02": {
+          "In": [
+            "cafe88d32e103e56"
+          ]
+        },
+        "Out03": {
+          "GetIActor": [
+            "cafede4652dd1142"
+          ]
+        }
+      }
+    },
+    "cafe879648932c10": {
+      "parent": "cafe50defb5358f1",
+      "name": "Rigged Gracefully",
+      "factory": "[assembly:/_pro/design/logic/valuebool2.template?/valuebool_delayed.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool2.template?/valuebool_delayed.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rValueEntity": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe0d407b7825ec"
+        },
+        "m_nDelayOnTrue": {
+          "type": "float32",
+          "value": 0.20000000298023224
+        }
+      }
+    },
+    "cafee45629549062": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorDynamicTemplateManipulator",
+      "factory": "[modules:/zactordynamictemplatemanipulator.class].pc_entitytype",
+      "blueprint": "[modules:/zactordynamictemplatemanipulator.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "PacifyAnimStand_BananaSlip"
+        },
+        "m_pTemplate": {
+          "type": "ZRuntimeResourceID",
+          "value": {
+            "resource": "[assembly:/_pro/design/gamecore/deatheffects.template?/adt_pacifyanimstand_bananaslip.entitytemplate].pc_entitytemplate",
+            "flag": "5F"
+          }
+        },
+        "m_rItem": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_rSetpiece": {
+          "type": "SEntityTemplateReference",
+          "value": "cafeb0e20c1ee0c8",
+          "postInit": true
+        }
+      }
+    },
+    "cafe8f1d450ffb4c": {
+      "parent": "cafe50defb5358f1",
+      "name": "VolumeTriggerCharacter",
+      "factory": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/templates/markup/volumetrigger.template?/volumetriggercharacter.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_TriggerOnHitman": {
+          "type": "bool",
+          "value": false
+        },
+        "m_TriggerOnActorAlive": {
+          "type": "bool",
+          "value": true
+        },
+        "m_bEnabled": {
+          "type": "bool",
+          "value": false
+        },
+        "m_Boxes": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": []
+        },
+        "m_Spheres": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": []
+        }
+      },
+      "events": {
+        "OnTrue": {
+          "In": [
+            "cafe41a866b0537b"
+          ]
+        }
+      }
+    },
+    "cafe41a866b0537b": {
+      "parent": "cafe50defb5358f1",
+      "name": "SignalPipe_Conditional_Void",
+      "factory": "[assembly:/_pro/design/logic/signalpipes.template?/signalpipe_conditional_void.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/signalpipes.template?/signalpipe_conditional_void.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_condition": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe879648932c10"
+        }
+      },
+      "events": {
+        "Out": {
+          "Pick": [
+            "cafeb0a67978f12d"
+          ]
+        }
+      }
+    },
+    "cafe280a38369498": {
+      "parent": "cafe50defb5358f1",
+      "name": "Reset on pickup if not sprung",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_rValueEntity": {
+          "type": "SEntityTemplateReference",
+          "value": "cafe045caa751f81"
+        }
+      },
+      "events": {
+        "PollFalse": {
+          "SetTrue": [
+            "cafe8ded82754865"
+          ]
+        }
+      }
+    },
+    "cafeb0a67978f12d": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorPicker",
+      "factory": "[modules:/zactorpicker.class].pc_entitytype",
+      "blueprint": "[modules:/zactorpicker.class].pc_entityblueprint",
+      "properties": {
+        "m_aVolumes": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": []
+        },
+        "m_aFilters": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": [
+            "cafeb39610eeffea"
+          ]
+        },
+        "m_aEnterEffects": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": [
+            "cafec16e3262f783"
+          ],
+          "postInit": true
+        }
+      }
+    },
+    "cafe88d32e103e56": {
+      "parent": "cafe50defb5358f1",
+      "name": "FX Delay",
+      "factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "Delay time (ms)": {
+          "type": "int32",
+          "value": 100
+        }
+      },
+      "outputCopying": {
+        "Out": {
+          "TriggerFX": [
+            "cafe50defb5358f1"
+          ]
+        }
+      }
+    },
+    "cafec16e3262f783": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorPickerEffectReference",
+      "factory": "[modules:/zactorpickereffectreference.class].pc_entitytype",
+      "blueprint": "[modules:/zactorpickereffectreference.class].pc_entityblueprint",
+      "events": {
+        "OnIActor": {
+          "Value": [
+            "cafec57ccc85f74d"
+          ]
+        }
+      }
+    },
+    "cafebc8e3da19ad1": {
+      "parent": "cafe50defb5358f1",
+      "name": "StateControl",
+      "factory": "[assembly:/_pro/design/logic.template?/statecontrol.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/statecontrol.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_States": {
+          "type": "TArray<SEntityTemplateReference>",
+          "value": [
+            "cafe8ded82754865",
+            "cafe0d407b7825ec",
+            "cafe045caa751f81"
+          ],
+          "postInit": true
+        }
+      }
+    },
+    "cafe8ded82754865": {
+      "parent": "cafe50defb5358f1",
+      "name": "Idle",
+      "factory": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic.template?/state.entitytemplate].pc_entityblueprint"
+    },
+    "cafeb0e20c1ee0c8": {
+      "parent": "cafe50defb5358f1",
+      "name": "Setpiece",
+      "factory": "[modules:/zsetpieceentity.class].pc_entitytype",
+      "blueprint": "[modules:/zsetpieceentity.class].pc_entityblueprint",
+      "properties": {
+        "m_sId": {
+          "type": "ZGuid",
+          "value": "00000000-0000-0000-0000-000000000000"
+        },
+        "m_rSetpiece": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        },
+        "m_rSpatial": {
+          "type": "SEntityTemplateReference",
+          "value": null
+        }
+      }
+    },
+    "cafe50defb5358f1": {
+      "parent": null,
+      "name": "ItemHelper_Logic_DrinkSlip",
+      "factory": "[modules:/zentity.class].pc_entitytype",
+      "blueprint": "[modules:/zentity.class].pc_entityblueprint",
+      "inputCopying": {
+        "Rig": {
+          "SetTrue": [
+            "cafe0d407b7825ec"
+          ]
+        },
+        "Reset": {
+          "Poll": [
+            "cafe280a38369498"
+          ]
+        }
+      },
+      "propertyAliases": {
+        "m_Boxes": [
+          {
+            "originalProperty": "m_Boxes",
+            "originalEntity": "cafe8f1d450ffb4c"
+          },
+          {
+            "originalProperty": "m_aVolumes",
+            "originalEntity": "cafeb0a67978f12d"
+          }
+        ],
+        "m_Spheres": [
+          {
+            "originalProperty": "m_Spheres",
+            "originalEntity": "cafe8f1d450ffb4c"
+          },
+          {
+            "originalProperty": "m_aVolumes",
+            "originalEntity": "cafeb0a67978f12d"
+          }
+        ],
+        "m_rGeomEntity": [
+          {
+            "originalProperty": "m_rSetpiece",
+            "originalEntity": "cafeb0e20c1ee0c8"
+          },
+          {
+            "originalProperty": "m_rSpatial",
+            "originalEntity": "cafeb0e20c1ee0c8"
+          }
+        ],
+        "m_rItem": [
+          {
+            "originalProperty": "m_rItem",
+            "originalEntity": "cafee45629549062"
+          }
+        ],
+        "m_sId": [
+          {
+            "originalProperty": "m_sId",
+            "originalEntity": "cafeb0e20c1ee0c8"
+          }
+        ]
+      },
+      "exposedEntities": {
+        "Idle": {
+          "isArray": false,
+          "refersTo": [
+            "cafe8ded82754865"
+          ]
+        },
+        "Rigged": {
+          "isArray": false,
+          "refersTo": [
+            "cafe0d407b7825ec"
+          ]
+        },
+        "Sprung": {
+          "isArray": false,
+          "refersTo": [
+            "cafe045caa751f81"
+          ]
+        }
+      }
+    },
+    "cafede4652dd1142": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorStandIn_SlippingNPC",
+      "factory": "[modules:/zactorstandin.class].pc_entitytype",
+      "blueprint": "[modules:/zactorstandin.class].pc_entityblueprint",
+      "events": {
+        "OnGetIActor": {
+          "IActor": [
+            "cafe40c338669300"
+          ]
+        }
+      }
+    },
+    "cafe40c338669300": {
+      "parent": "cafe50defb5358f1",
+      "name": "ActorData",
+      "factory": "[modules:/zactordataentity.class].pc_entitytype",
+      "blueprint": "[modules:/zactordataentity.class].pc_entityblueprint",
+      "events": {
+        "IsTarget": {
+          "SetValue": [
+            "cafef75d6e6d3141"
+          ]
+        }
+      }
+    },
+    "cafef75d6e6d3141": {
+      "parent": "cafe50defb5358f1",
+      "name": "IsTarget",
+      "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+      "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+      "properties": {
+        "m_bAlwaysSignalOnSet": {
+          "type": "bool",
+          "value": true
+        }
+      },
+      "events": {
+        "OnTrue": {
+          "Trigger": [
+            "cafe11b8c730205e"
+          ]
+        }
+      }
+    },
+    "cafe11b8c730205e": {
+      "parent": "cafe50defb5358f1",
+      "name": "EG_TargetSlipped",
+      "factory": "[modules:/zcontractsevententity.class].pc_entitytype",
+      "blueprint": "[modules:/zcontractsevententity.class].pc_entityblueprint",
+      "properties": {
+        "m_sName": {
+          "type": "ZString",
+          "value": "Evergreen_TargetSlipped"
+        },
+        "m_bSendDirectly": {
+          "type": "bool",
+          "value": true
+        }
+      }
+    }
+  },
+  "propertyOverrides": [],
+  "overrideDeletes": [],
+  "pinConnectionOverrides": [],
+  "pinConnectionOverrideDeletes": [],
+  "externalScenes": [],
+  "subType": "template",
+  "quickEntityVersion": 3.1,
+  "extraFactoryDependencies": [],
+  "extraBlueprintDependencies": [],
+  "comments": []
+}
