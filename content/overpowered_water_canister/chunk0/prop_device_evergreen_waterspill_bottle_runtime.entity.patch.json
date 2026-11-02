@@ -27,10 +27,10 @@
 							"rotation": {
 								"x": 90.00000000000001,
 								"y": 4.296211924040461e-31,
-								"z": -180.0
+								"z": -180
 							},
 							"position": {
-								"x": 0.0,
+								"x": 0,
 								"y": 0.019999999552965164,
 								"z": 0.33000001311302185
 							}
@@ -64,7 +64,7 @@
 							{
 								"AddItemAfter": [
 									"ad69ac6d8060cb82",
-									"cafe1ea44a6617bd"
+									"cafeb87bf21811d0"
 								]
 							}
 						]
@@ -74,7 +74,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee01",
+				"cafe42a635ceefe1",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "WaterCanisterShotListener",
@@ -97,11 +97,11 @@
 					},
 					"events": {
 						"OnShot": {
-							"Disable": ["cafe7a11c0ffee01"],
+							"Disable": ["cafe42a635ceefe1"],
 							"SetFalse": ["597006c76b6dea76"],
-							"Get": ["cafe7a11c0ffee04"],
-							"Activate": ["cafe7a11c0ffee07"],
-							"In": ["cafe7a11c0ffee08"]
+							"Get": ["cafeb48106259f18"],
+							"Activate": ["cafe0f699eecee89"],
+							"In": ["cafeb64f2fecb93d"]
 						}
 					}
 				}
@@ -109,7 +109,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee02",
+				"cafee8b27c39ae75",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "ShotWaterPuddleSpawner",
@@ -125,7 +125,7 @@
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe7a11c0ffee03",
+							"value": "cafe114bda5b6609",
 							"postInit": true
 						},
 						"m_bSpawnOnStart": {
@@ -151,14 +151,14 @@
 						}
 					},
 					"events": {
-						"ItemReady": { "Detach": ["cafe7a11c0ffee02"] }
+						"ItemReady": { "Detach": ["cafee8b27c39ae75"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee03",
+				"cafe114bda5b6609",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "ShotWaterPuddleFlatAnchor",
@@ -183,7 +183,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee04",
+				"cafeb48106259f18",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "GetShotGroundPosition",
@@ -202,23 +202,23 @@
 						}
 					},
 					"events": {
-						"Position": { "Value": ["cafe7a11c0ffee05"] }
+						"Position": { "Value": ["cafe694361d49ef0"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee05",
+				"cafe694361d49ef0",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "ShotGroundPositionDebuffer",
 					"factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
 					"events": {
-						"Value": { "Position": ["cafe7a11c0ffee06"] },
+						"Value": { "Position": ["cafe10bc0fdf323d"] },
 						"Done": {
-							"SpawnItem": ["cafe7a11c0ffee02"],
+							"SpawnItem": ["cafee8b27c39ae75"],
 							"Activate": ["6fb2d47311a31a13"],
 							"Send": ["265029877eb5c1c7"],
 							"In": ["2d39e6fa4dd0f197"]
@@ -229,7 +229,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee06",
+				"cafe10bc0fdf323d",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "SetShotPuddleAnchorPosition",
@@ -238,7 +238,7 @@
 					"properties": {
 						"m_Entity": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe7a11c0ffee03",
+							"value": "cafe114bda5b6609",
 							"postInit": true
 						}
 					}
@@ -247,7 +247,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee07",
+				"cafe0f699eecee89",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "FX_E_Water_Cooler_Leak_01",
@@ -307,7 +307,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee08",
+				"cafeb64f2fecb93d",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "ShotWaterSprayLifetime",
@@ -320,14 +320,14 @@
 						}
 					},
 					"events": {
-						"Out": { "Deactivate": ["cafe7a11c0ffee07"] }
+						"Out": { "Deactivate": ["cafe0f699eecee89"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe1ea44a6617c2",
+				"cafef1b951e91fdc",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "MegaPourStartDelay",
@@ -341,7 +341,7 @@
 					},
 					"events": {
 						"Out": {
-							"SpawnItem": ["cafe1ea44a6617be"],
+							"SpawnItem": ["cafef9ff8e058d31"],
 							"Activate": ["6fb2d47311a31a13"],
 							"Send": ["265029877eb5c1c7"],
 							"In": ["2d39e6fa4dd0f197"]
@@ -352,7 +352,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe1ea44a6617bd",
+				"cafeb87bf21811d0",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "Interaction_Subaction Right MEGA POOL",
@@ -443,7 +443,7 @@
 						"Started": {
 							"SetFalse": ["597006c76b6dea76"],
 							"Send": ["7cf05c490a1dce92"],
-							"In": ["cafe1ea44a6617c2"]
+							"In": ["cafef1b951e91fdc"]
 						}
 					}
 				}
@@ -451,7 +451,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe1ea44a6617be",
+				"cafef9ff8e058d31",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "MegaWaterPuddleSpawner",
@@ -487,19 +487,19 @@
 						},
 						"m_rMainItemKey": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe1ea44a6617bf",
+							"value": "cafe2e90670b4cfd",
 							"postInit": true
 						}
 					},
 					"events": {
-						"ItemReady": { "Detach": ["cafe1ea44a6617be"] }
+						"ItemReady": { "Detach": ["cafef9ff8e058d31"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe1ea44a6617bf",
+				"cafe2e90670b4cfd",
 				{
 					"parent": "9ace7163c31e3cba",
 					"name": "MegaWaterspill",

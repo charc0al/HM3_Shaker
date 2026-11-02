@@ -1,1011 +1,474 @@
 {
-
-    "tempHash":  "0031DF42E26C798F",
-
-    "tbluHash":  "004BD6A73EA38F08",
-
-    "rootEntity":  "975617a94a7708b2",
-
-    "entities":  {
-
-                     "45a838c4454c7a88":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "FX_Water_Leak_3x3m_A",
-
-                                              "factory":  "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "m_eRoomBehaviour":  {
-
-                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
-
-                                                                                          "value":  "ROOM_DYNAMIC"
-
-                                                                                      },
-
-                                                                 "LeakSpeed":  {
-
-                                                                                   "type":  "float32",
-
-                                                                                   "value":  0.20000000298023224
-
-                                                                               },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  "dbc101917b6c0c62",
-
-                                                                                     "postInit":  true
-
-                                                                                 },
-
-                                                                 "m_PrimitiveScale":  {
-
-                                                                                          "type":  "SVector3",
-
-                                                                                          "value":  {
-
-                                                                                                        "x":  10,
-
-                                                                                                        "y":  10,
-
-                                                                                                        "z":  1
-
-                                                                                                    }
-
-                                                                                      }
-
-                                                             }
-
-                                          },
-
-                     "dfac4441e9f822ff":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "ItemCoreNoPhys",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_bKinematic":  {
-
-                                                                                      "type":  "bool",
-
-                                                                                      "value":  true
-
-                                                                                  },
-
-                                                                 "m_rGeomentity":  {
-
-                                                                                       "type":  "SEntityTemplateReference",
-
-                                                                                       "value":  {
-
-                                                                                                     "ref":  "45a838c4454c7a88",
-
-                                                                                                     "externalScene":  null,
-
-                                                                                                     "exposedEntity":  "FX_Water_Leak_3x3m_A"
-
-                                                                                                 }
-
-                                                                                   }
-
-                                                             },
-
-                                              "events":  {
-
-                                                             "OnVisible":  {
-
-                                                                               "Activate":  [
-
-                                                                                                "dbc101917b6c0c62"
-
-                                                                                            ]
-
-                                                                           }
-
-                                                         },
-
-                                              "subsets":  {
-
-                                                              "Replicable":  [
-
-                                                                                 "975617a94a7708b2"
-
-                                                                             ]
-
-                                                          }
-
-                                          },
-
-                     "6d7c0746337380e2":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "PropHelper_SlipperyFloors",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "m_eRoomBehaviour":  {
-
-                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
-
-                                                                                          "value":  "ROOM_DYNAMIC"
-
-                                                                                      },
-
-                                                                 "WaterPresent":  {
-
-                                                                                      "type":  "TArray\u003cSEntityTemplateReference\u003e",
-
-                                                                                      "value":  [
-
-                                                                                                    {
-
-                                                                                                        "ref":  "dfac4441e9f822ff",
-
-                                                                                                        "externalScene":  null,
-
-                                                                                                        "exposedEntity":  "ItemVisible"
-
-                                                                                                    }
-
-                                                                                                ]
-
-                                                                                  },
-
-                                                                 "AllowSoap":  {
-
-                                                                                   "type":  "bool",
-
-                                                                                   "value":  true
-
-                                                                               },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  "dbc101917b6c0c62",
-
-                                                                                     "postInit":  true
-
-                                                                                 },
-
-                                                                 "m_Boxes":  {
-
-                                                                                 "type":  "TArray\u003cSEntityTemplateReference\u003e",
-
-                                                                                 "value":  [
-
-                                                                                               {
-
-                                                                                                   "ref":  "dbc101917b6c0c62",
-
-                                                                                                   "externalScene":  null,
-
-                                                                                                   "exposedEntity":  "VolumeBox_electrify"
-
-                                                                                               }
-
-                                                                                           ],
-
-                                                                                 "postInit":  true
-
-                                                                             }
-
-                                                             }
-
-                                          },
-
-                     "dbc101917b6c0c62":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "PropHelper_WaterSpill",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_waterspill_scalable_evergreen.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_waterspill_scalable_evergreen.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  5.283631801605225,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "NPCKillVolumem_vGlobalSize":  {
-
-                                                                                                    "type":  "SVector3",
-
-                                                                                                    "value":  {
-
-                                                                                                                  "x":  20,
-
-                                                                                                                  "y":  20,
-
-                                                                                                                  "z":  0.550000011920929
-
-                                                                                                              }
-
-                                                                                                },
-
-                                                                 "m_sId":  {
-
-                                                                               "type":  "ZGuid",
-
-                                                                               "value":  "562b2b9d-d342-47ef-9434-54d1529ad4ae"
-
-                                                                           },
-
-                                                                 "m_eRoomBehaviour":  {
-
-                                                                                          "type":  "ZSpatialEntity.ERoomBehaviour",
-
-                                                                                          "value":  "ROOM_DYNAMIC"
-
-                                                                                      },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  null
-
-                                                                                 }
-
-                                                             },
-
-                                              "events":  {
-
-                                                             "WaterSpillActivated":  {
-
-                                                                                         "Activate":  [
-
-                                                                                                          "45a838c4454c7a88"
-
-                                                                                                      ],
-
-                                                                                         "EnableSlipping":  [
-
-                                                                                                                "6d7c0746337380e2"
-
-                                                                                                            ],
-
-                                                                                         "Rig":  [
-
-                                                                                                      "cafe7a11c0ffee22",
-
-                                                                                                      "cafe7a11c0ffee24",
-
-                                                                                                      "cafe7a11c0ffee26",
-
-                                                                                                      "cafe7a11c0ffee28",
-
-                                                                                                      "cafe7a11c0ffee2a"
-
-                                                                                                  ]
-
-                                                                                     }
-
-                                                         },
-
-                                              "subsets":  {
-
-                                                              "AudioEmitters":  [
-
-                                                                                    "975617a94a7708b2"
-
-                                                                                ]
-
-                                                          }
-
-                                          },
-
-                     "975617a94a7708b2":  {
-
-                                              "parent":  null,
-
-                                              "name":  "Evergreen_Trap_Electricity_Slippery_WaterPuddle_Mega_Runtime",
-
-                                              "factory":  "[modules:/zentity.class].pc_entitytype",
-
-                                              "blueprint":  "[modules:/zentity.class].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  5.283631801605225,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  }
-
-                                                             },
-
-                                              "propertyAliases":  {
-
-                                                                      "m_eidParent":  [
-
-                                                                                          {
-
-                                                                                              "originalProperty":  "m_eidParent",
-
-                                                                                              "originalEntity":  "dbc101917b6c0c62"
-
-                                                                                          }
-
-                                                                                      ],
-
-                                                                      "m_mTransform":  [
-
-                                                                                           {
-
-                                                                                               "originalProperty":  "m_mTransform",
-
-                                                                                               "originalEntity":  "dbc101917b6c0c62"
-
-                                                                                           }
-
-                                                                                       ]
-
-                                                                  },
-
-                                              "exposedEntities":  {
-
-                                                                      "m_bIsElectrifiedTrap":  {
-
-                                                                                                   "isArray":  false,
-
-                                                                                                   "refersTo":  [
-
-
-
-                                                                                                                ]
-
-                                                                                               }
-
-                                                                  },
-
-                                              "exposedInterfaces":  {
-
-                                                                        "ZHM5Item":  "dfac4441e9f822ff",
-
-                                                                        "IItemBase":  "dfac4441e9f822ff",
-
-                                                                        "IItem":  "dfac4441e9f822ff",
-
-                                                                        "ZSpatialEntity":  "dbc101917b6c0c62"
-
-                                                                    }
-
-                                          },
-
-                     "cafe7a11c0ffee21":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "WaterPuddleSlipVolume_01",
-
-                                              "factory":  "[modules:/zspherevolumeentity.class].pc_entitytype",
-
-                                              "blueprint":  "[modules:/zspherevolumeentity.class].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "m_fRadius":  {
-
-                                                                                   "type":  "float32",
-
-                                                                                   "value":  7
-
-                                                                               },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  "dbc101917b6c0c62",
-
-                                                                                     "postInit":  true
-
-                                                                                 }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee22":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "ItemHelper_Logic_BananaSlip_01",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_sId":  {
-
-                                                                               "type":  "ZGuid",
-
-                                                                               "value":  "8ae0cb3c-9534-4a45-b05c-20c9f1248784"
-
-                                                                           },
-
-                                                                 "m_Spheres":  {
-
-                                                                                   "type":  "TArray\u003cSEntityTemplateReference\u003e",
-
-                                                                                   "value":  [
-
-                                                                                                 "cafe7a11c0ffee21"
-
-                                                                                             ],
-
-                                                                                   "postInit":  true
-
-                                                                               },
-
-                                                                 "m_rItem":  {
-
-                                                                                 "type":  "SEntityTemplateReference",
-
-                                                                                 "value":  "dfac4441e9f822ff",
-
-                                                                                 "postInit":  true
-
-                                                                             },
-
-                                                                 "m_rGeomEntity":  {
-
-                                                                                       "type":  "SEntityTemplateReference",
-
-                                                                                       "value":  {
-
-                                                                                                     "ref":  "45a838c4454c7a88",
-
-                                                                                                     "externalScene":  null,
-
-                                                                                                     "exposedEntity":  "FX_Water_Leak_3x3m_A"
-
-                                                                                                 }
-
-                                                                                   }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee23":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "WaterPuddleSlipVolume_02",
-
-                                              "factory":  "[modules:/zspherevolumeentity.class].pc_entitytype",
-
-                                              "blueprint":  "[modules:/zspherevolumeentity.class].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "m_fRadius":  {
-
-                                                                                   "type":  "float32",
-
-                                                                                   "value":  6
-
-                                                                               },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  "dbc101917b6c0c62",
-
-                                                                                     "postInit":  true
-
-                                                                                 }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee24":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "ItemHelper_Logic_BananaSlip_02",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_sId":  {
-
-                                                                               "type":  "ZGuid",
-
-                                                                               "value":  "92539c47-9c21-463f-853f-302ae4b36404"
-
-                                                                           },
-
-                                                                 "m_Spheres":  {
-
-                                                                                   "type":  "TArray\u003cSEntityTemplateReference\u003e",
-
-                                                                                   "value":  [
-
-                                                                                                 "cafe7a11c0ffee23"
-
-                                                                                             ],
-
-                                                                                   "postInit":  true
-
-                                                                               },
-
-                                                                 "m_rItem":  {
-
-                                                                                 "type":  "SEntityTemplateReference",
-
-                                                                                 "value":  "dfac4441e9f822ff",
-
-                                                                                 "postInit":  true
-
-                                                                             },
-
-                                                                 "m_rGeomEntity":  {
-
-                                                                                       "type":  "SEntityTemplateReference",
-
-                                                                                       "value":  {
-
-                                                                                                     "ref":  "45a838c4454c7a88",
-
-                                                                                                     "externalScene":  null,
-
-                                                                                                     "exposedEntity":  "FX_Water_Leak_3x3m_A"
-
-                                                                                                 }
-
-                                                                                   }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee25":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "WaterPuddleSlipVolume_03",
-
-                                              "factory":  "[modules:/zspherevolumeentity.class].pc_entitytype",
-
-                                              "blueprint":  "[modules:/zspherevolumeentity.class].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_mTransform":  {
-
-                                                                                      "type":  "SMatrix43",
-
-                                                                                      "value":  {
-
-                                                                                                    "rotation":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 },
-
-                                                                                                    "position":  {
-
-                                                                                                                     "x":  0,
-
-                                                                                                                     "y":  0,
-
-                                                                                                                     "z":  0
-
-                                                                                                                 }
-
-                                                                                                }
-
-                                                                                  },
-
-                                                                 "m_fRadius":  {
-
-                                                                                   "type":  "float32",
-
-                                                                                   "value":  5
-
-                                                                               },
-
-                                                                 "m_eidParent":  {
-
-                                                                                     "type":  "SEntityTemplateReference",
-
-                                                                                     "value":  "dbc101917b6c0c62",
-
-                                                                                     "postInit":  true
-
-                                                                                 }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee26":  {
-
-                                              "parent":  "975617a94a7708b2",
-
-                                              "name":  "ItemHelper_Logic_BananaSlip_03",
-
-                                              "factory":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-
-                                              "blueprint":  "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
-
-                                              "properties":  {
-
-                                                                 "m_sId":  {
-
-                                                                               "type":  "ZGuid",
-
-                                                                               "value":  "d364238e-996a-4466-af0b-f46ad273195f"
-
-                                                                           },
-
-                                                                 "m_Spheres":  {
-
-                                                                                   "type":  "TArray\u003cSEntityTemplateReference\u003e",
-
-                                                                                   "value":  [
-
-                                                                                                 "cafe7a11c0ffee25"
-
-                                                                                             ],
-
-                                                                                   "postInit":  true
-
-                                                                               },
-
-                                                                 "m_rItem":  {
-
-                                                                                 "type":  "SEntityTemplateReference",
-
-                                                                                 "value":  "dfac4441e9f822ff",
-
-                                                                                 "postInit":  true
-
-                                                                             },
-
-                                                                 "m_rGeomEntity":  {
-
-                                                                                       "type":  "SEntityTemplateReference",
-
-                                                                                       "value":  {
-
-                                                                                                     "ref":  "45a838c4454c7a88",
-
-                                                                                                     "externalScene":  null,
-
-                                                                                                     "exposedEntity":  "FX_Water_Leak_3x3m_A"
-
-                                                                                                 }
-
-                                                                                   }
-
-                                                             }
-
-                                          },
-
-                     "cafe7a11c0ffee27": {
-                         "parent": "975617a94a7708b2",
-                         "name": "WaterPuddleSlipVolume_04",
-                         "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
-                         "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
-                         "properties": {
-                             "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
-                             "m_fRadius": { "type": "float32", "value": 4 },
-                             "m_eidParent": { "type": "SEntityTemplateReference", "value": "dbc101917b6c0c62", "postInit": true }
-                         }
-                     },
-
-                     "cafe7a11c0ffee28": {
-                         "parent": "975617a94a7708b2",
-                         "name": "ItemHelper_Logic_BananaSlip_04",
-                         "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-                         "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
-                         "properties": {
-                             "m_sId": { "type": "ZGuid", "value": "6f73e9a5-4790-46eb-b701-77d473620781" },
-                             "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee27"], "postInit": true },
-                             "m_rItem": { "type": "SEntityTemplateReference", "value": "dfac4441e9f822ff", "postInit": true },
-                             "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "45a838c4454c7a88", "externalScene": null, "exposedEntity": "FX_Water_Leak_3x3m_A" } }
-                         }
-                     },
-
-                     "cafe7a11c0ffee29": {
-                         "parent": "975617a94a7708b2",
-                         "name": "WaterPuddleSlipVolume_05",
-                         "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
-                         "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
-                         "properties": {
-                             "m_mTransform": { "type": "SMatrix43", "value": { "rotation": { "x": 0, "y": 0, "z": 0 }, "position": { "x": 0, "y": 0, "z": 0 } } },
-                             "m_fRadius": { "type": "float32", "value": 2.5 },
-                             "m_eidParent": { "type": "SEntityTemplateReference", "value": "dbc101917b6c0c62", "postInit": true }
-                         }
-                     },
-
-                     "cafe7a11c0ffee2a": {
-                         "parent": "975617a94a7708b2",
-                         "name": "ItemHelper_Logic_BananaSlip_05",
-                         "factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
-                         "blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
-                         "properties": {
-                             "m_sId": { "type": "ZGuid", "value": "294465b8-e889-4b20-ad4f-246c2e1607b5" },
-                             "m_Spheres": { "type": "TArray<SEntityTemplateReference>", "value": ["cafe7a11c0ffee29"], "postInit": true },
-                             "m_rItem": { "type": "SEntityTemplateReference", "value": "dfac4441e9f822ff", "postInit": true },
-                             "m_rGeomEntity": { "type": "SEntityTemplateReference", "value": { "ref": "45a838c4454c7a88", "externalScene": null, "exposedEntity": "FX_Water_Leak_3x3m_A" } }
-                         }
-                     }
-
-                 },
-
-    "propertyOverrides":  [
-
-
-
-                          ],
-
-    "overrideDeletes":  [
-
-
-
-                        ],
-
-    "pinConnectionOverrides":  [
-
-
-
-                               ],
-
-    "pinConnectionOverrideDeletes":  [
-
-
-
-                                     ],
-
-    "externalScenes":  [
-
-
-
-                       ],
-
-    "subType":  "template",
-
-    "quickEntityVersion":  3.1,
-
-    "extraFactoryDependencies":  [
-
-                                     {
-
-                                         "resource":  "[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_leakmasks_01.texture?/mask_a.tex](asheightmap).pc_tex",
-
-                                         "flag":  "5F"
-
-                                     },
-
-                                     {
-
-                                         "resource":  "[assembly:/_pro/effects/textures/misc/fx_generic_flowmaps.texture?/flow_expanding.tex](asheightmap).pc_tex",
-
-                                         "flag":  "5F"
-
-                                     }
-
-                                 ],
-
-    "extraBlueprintDependencies":  [
-
-
-
-                                   ],
-
-    "comments":  [
-
-
-
-                 ]
-
+	"tempHash": "0031DF42E26C798F",
+	"tbluHash": "004BD6A73EA38F08",
+	"rootEntity": "975617a94a7708b2",
+	"entities": {
+		"45a838c4454c7a88": {
+			"parent": "975617a94a7708b2",
+			"name": "FX_Water_Leak_3x3m_A",
+			"factory": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"LeakSpeed": {
+					"type": "float32",
+					"value": 0.20000000298023224
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				},
+				"m_PrimitiveScale": {
+					"type": "SVector3",
+					"value": { "x": 10, "y": 10, "z": 1 }
+				}
+			}
+		},
+		"dfac4441e9f822ff": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemCoreNoPhys",
+			"factory": "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemcore.template?/itemcorenophys.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bKinematic": { "type": "bool", "value": true },
+				"m_rGeomentity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			},
+			"events": {
+				"OnVisible": { "Activate": ["dbc101917b6c0c62"] }
+			},
+			"subsets": { "Replicable": ["975617a94a7708b2"] }
+		},
+		"6d7c0746337380e2": {
+			"parent": "975617a94a7708b2",
+			"name": "PropHelper_SlipperyFloors",
+			"factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"WaterPresent": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "dfac4441e9f822ff",
+							"externalScene": null,
+							"exposedEntity": "ItemVisible"
+						}
+					]
+				},
+				"AllowSoap": { "type": "bool", "value": true },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				},
+				"m_Boxes": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						{
+							"ref": "dbc101917b6c0c62",
+							"externalScene": null,
+							"exposedEntity": "VolumeBox_electrify"
+						}
+					],
+					"postInit": true
+				}
+			}
+		},
+		"dbc101917b6c0c62": {
+			"parent": "975617a94a7708b2",
+			"name": "PropHelper_WaterSpill",
+			"factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_waterspill_scalable_evergreen.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_waterspill_scalable_evergreen.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": {
+							"x": 0,
+							"y": 5.283631801605225,
+							"z": 0
+						}
+					}
+				},
+				"NPCKillVolumem_vGlobalSize": {
+					"type": "SVector3",
+					"value": { "x": 20, "y": 20, "z": 0.550000011920929 }
+				},
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "562b2b9d-d342-47ef-9434-54d1529ad4ae"
+				},
+				"m_eRoomBehaviour": {
+					"type": "ZSpatialEntity.ERoomBehaviour",
+					"value": "ROOM_DYNAMIC"
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				}
+			},
+			"events": {
+				"WaterSpillActivated": {
+					"Activate": ["45a838c4454c7a88"],
+					"EnableSlipping": ["6d7c0746337380e2"],
+					"Rig": [
+						"cafe361f9e258174",
+						"cafe6d6b51ddb79b",
+						"cafee0ef46abad2d",
+						"cafea03925bb423f",
+						"cafec684ba064907"
+					]
+				}
+			},
+			"subsets": { "AudioEmitters": ["975617a94a7708b2"] }
+		},
+		"975617a94a7708b2": {
+			"parent": null,
+			"name": "Evergreen_Trap_Electricity_Slippery_WaterPuddle_Mega_Runtime",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": {
+							"x": 0,
+							"y": 5.283631801605225,
+							"z": 0
+						}
+					}
+				}
+			},
+			"propertyAliases": {
+				"m_eidParent": [
+					{
+						"originalProperty": "m_eidParent",
+						"originalEntity": "dbc101917b6c0c62"
+					}
+				],
+				"m_mTransform": [
+					{
+						"originalProperty": "m_mTransform",
+						"originalEntity": "dbc101917b6c0c62"
+					}
+				]
+			},
+			"exposedEntities": {
+				"m_bIsElectrifiedTrap": {
+					"isArray": false,
+					"refersTo": []
+				}
+			},
+			"exposedInterfaces": {
+				"ZHM5Item": "dfac4441e9f822ff",
+				"IItemBase": "dfac4441e9f822ff",
+				"IItem": "dfac4441e9f822ff",
+				"ZSpatialEntity": "dbc101917b6c0c62"
+			}
+		},
+		"cafec776f88b10bb": {
+			"parent": "975617a94a7708b2",
+			"name": "WaterPuddleSlipVolume_01",
+			"factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_fRadius": { "type": "float32", "value": 7 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				}
+			}
+		},
+		"cafe361f9e258174": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemHelper_Logic_BananaSlip_01",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "8ae0cb3c-9534-4a45-b05c-20c9f1248784"
+				},
+				"m_Spheres": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafec776f88b10bb"],
+					"postInit": true
+				},
+				"m_rItem": {
+					"type": "SEntityTemplateReference",
+					"value": "dfac4441e9f822ff",
+					"postInit": true
+				},
+				"m_rGeomEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			}
+		},
+		"cafe3a297f47284c": {
+			"parent": "975617a94a7708b2",
+			"name": "WaterPuddleSlipVolume_02",
+			"factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_fRadius": { "type": "float32", "value": 6 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				}
+			}
+		},
+		"cafe6d6b51ddb79b": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemHelper_Logic_BananaSlip_02",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "92539c47-9c21-463f-853f-302ae4b36404"
+				},
+				"m_Spheres": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe3a297f47284c"],
+					"postInit": true
+				},
+				"m_rItem": {
+					"type": "SEntityTemplateReference",
+					"value": "dfac4441e9f822ff",
+					"postInit": true
+				},
+				"m_rGeomEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			}
+		},
+		"cafea7c69d1ba5f1": {
+			"parent": "975617a94a7708b2",
+			"name": "WaterPuddleSlipVolume_03",
+			"factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_fRadius": { "type": "float32", "value": 5 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				}
+			}
+		},
+		"cafee0ef46abad2d": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemHelper_Logic_BananaSlip_03",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "d364238e-996a-4466-af0b-f46ad273195f"
+				},
+				"m_Spheres": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafea7c69d1ba5f1"],
+					"postInit": true
+				},
+				"m_rItem": {
+					"type": "SEntityTemplateReference",
+					"value": "dfac4441e9f822ff",
+					"postInit": true
+				},
+				"m_rGeomEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			}
+		},
+		"cafe6a93621b395f": {
+			"parent": "975617a94a7708b2",
+			"name": "WaterPuddleSlipVolume_04",
+			"factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_fRadius": { "type": "float32", "value": 4 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				}
+			}
+		},
+		"cafea03925bb423f": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemHelper_Logic_BananaSlip_04",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "6f73e9a5-4790-46eb-b701-77d473620781"
+				},
+				"m_Spheres": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe6a93621b395f"],
+					"postInit": true
+				},
+				"m_rItem": {
+					"type": "SEntityTemplateReference",
+					"value": "dfac4441e9f822ff",
+					"postInit": true
+				},
+				"m_rGeomEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			}
+		},
+		"cafef1273dfb7f87": {
+			"parent": "975617a94a7708b2",
+			"name": "WaterPuddleSlipVolume_05",
+			"factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0 }
+					}
+				},
+				"m_fRadius": { "type": "float32", "value": 2.5 },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "dbc101917b6c0c62",
+					"postInit": true
+				}
+			}
+		},
+		"cafec684ba064907": {
+			"parent": "975617a94a7708b2",
+			"name": "ItemHelper_Logic_BananaSlip_05",
+			"factory": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/itemhelpers.template?/itemhelper_logic_bananaslip.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "294465b8-e889-4b20-ad4f-246c2e1607b5"
+				},
+				"m_Spheres": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafef1273dfb7f87"],
+					"postInit": true
+				},
+				"m_rItem": {
+					"type": "SEntityTemplateReference",
+					"value": "dfac4441e9f822ff",
+					"postInit": true
+				},
+				"m_rGeomEntity": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "45a838c4454c7a88",
+						"externalScene": null,
+						"exposedEntity": "FX_Water_Leak_3x3m_A"
+					}
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [
+		{
+			"resource": "[assembly:/_pro/effects/textures/liquid/fx_decal_liquid_leakmasks_01.texture?/mask_a.tex](asheightmap).pc_tex",
+			"flag": "5F"
+		},
+		{
+			"resource": "[assembly:/_pro/effects/textures/misc/fx_generic_flowmaps.texture?/flow_expanding.tex](asheightmap).pc_tex",
+			"flag": "5F"
+		}
+	],
+	"extraBlueprintDependencies": [],
+	"comments": []
 }

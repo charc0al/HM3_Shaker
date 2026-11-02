@@ -4,7 +4,7 @@
   "patch": [
     {
       "AddEntity": [
-        "d1a7000000000001",
+        "cafe9b72b2d12fd6",
         {
           "parent": "30259aea6bfc9919",
           "name": "DrinkingGlassWater",
@@ -35,15 +35,15 @@
           "inputCopying": {
             "Activate": {
               "MakeVisible": [
-                "d1a7000000000002"
+                "cafeb4cd0c604d7d"
               ],
               "Activate": [
-                "d1a7000000000002",
-                "d1a7000000000003"
+                "cafeb4cd0c604d7d",
+                "cafea476766207e9"
               ],
               "SetInPhysicsWorld": [
                 {
-                  "ref": "d1a7000000000002",
+                  "ref": "cafeb4cd0c604d7d",
                   "value": {
                     "type": "bool",
                     "value": true
@@ -56,27 +56,27 @@
             "m_eidParent": [
               {
                 "originalProperty": "m_eidParent",
-                "originalEntity": "d1a7000000000003"
+                "originalEntity": "cafea476766207e9"
               }
             ],
             "m_mTransform": [
               {
                 "originalProperty": "m_mTransform",
-                "originalEntity": "d1a7000000000003"
+                "originalEntity": "cafea476766207e9"
               }
             ]
           },
           "exposedInterfaces": {
-            "ZSpatialEntity": "d1a7000000000003"
+            "ZSpatialEntity": "cafea476766207e9"
           }
         }
       ]
     },
     {
       "AddEntity": [
-        "d1a7000000000002",
+        "cafeb4cd0c604d7d",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "FX_Water_Leak_3x3m_A",
           "factory": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/effects/templates/water/fx_water_leaks.template?/fx_water_leak_3x3m_a.entitytemplate].pc_entityblueprint",
@@ -138,7 +138,7 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000003",
+              "value": "cafea476766207e9",
               "postInit": true
             },
             "ConstantColorRGB_01_Value": {
@@ -151,9 +151,9 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000003",
+        "cafea476766207e9",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "PropHelper_WaterSpill_Scalable_Evergreen",
           "factory": "00723CFE06572417",
           "blueprint": "00BD16137B053885",
@@ -198,13 +198,13 @@
           "events": {
             "WaterSpillActivated": {
               "MakeVisible": [
-                "d1a7000000000002"
+                "cafeb4cd0c604d7d"
               ],
               "EnableSlipping": [
-                "d1a700000000000b"
+                "cafe1e6552f41b5b"
               ],
               "Rig": [
-                "d1a700000000000a"
+                "cafe1f710765fc88"
               ]
             }
           }
@@ -213,9 +213,9 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000008",
+        "cafe794a0478ad72",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "Water Present",
           "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
@@ -230,9 +230,9 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000009",
+        "cafe978a95e900f7",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "DrinkingGlassPuddleSlipVolume",
           "factory": "[modules:/zspherevolumeentity.class].pc_entitytype",
           "blueprint": "[modules:/zspherevolumeentity.class].pc_entityblueprint",
@@ -258,7 +258,7 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000003",
+              "value": "cafea476766207e9",
               "postInit": true
             }
           }
@@ -267,9 +267,9 @@
     },
     {
       "AddEntity": [
-        "d1a700000000000a",
+        "cafe1f710765fc88",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "ItemHelper_Logic_BananaSlip",
           "factory": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/gamecore/hm3_shaker.template?/itemhelper_logic_drinkslip.entitytemplate].pc_entityblueprint",
@@ -281,7 +281,7 @@
             "m_Spheres": {
               "type": "TArray<SEntityTemplateReference>",
               "value": [
-                "d1a7000000000009"
+                "cafe978a95e900f7"
               ],
               "postInit": true
             },
@@ -292,7 +292,7 @@
             },
             "m_rGeomEntity": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000002",
+              "value": "cafeb4cd0c604d7d",
               "postInit": true
             }
           }
@@ -301,9 +301,9 @@
     },
     {
       "AddEntity": [
-        "d1a700000000000b",
+        "cafe1e6552f41b5b",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "PropHelper_SlipperyFloors",
           "factory": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entitytype",
           "blueprint": "[assembly:/_pro/design/gamecore/prophelpers.template?/prophelper_slipperyfloors.entitytemplate].pc_entityblueprint",
@@ -330,7 +330,7 @@
             "WaterPresent": {
               "type": "TArray<SEntityTemplateReference>",
               "value": [
-                "d1a7000000000008"
+                "cafe794a0478ad72"
               ]
             },
             "AllowSoap": {
@@ -339,13 +339,13 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000003",
+              "value": "cafea476766207e9",
               "postInit": true
             },
             "m_Boxes": {
               "type": "TArray<SEntityTemplateReference>",
               "value": [
-                "d1a700000000000c"
+                "cafe80c8df1872f9"
               ]
             }
           }
@@ -354,9 +354,9 @@
     },
     {
       "AddEntity": [
-        "d1a700000000000c",
+        "cafe80c8df1872f9",
         {
-          "parent": "d1a7000000000001",
+          "parent": "cafe9b72b2d12fd6",
           "name": "SlipperyFloorVolume",
           "factory": "[modules:/zboxvolumeentity.class].pc_entitytype",
           "blueprint": "[modules:/zboxvolumeentity.class].pc_entityblueprint",
@@ -390,7 +390,7 @@
             },
             "m_eidParent": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000003",
+              "value": "cafea476766207e9",
               "postInit": true
             }
           }
@@ -399,7 +399,7 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000004",
+        "cafe129d4c0d2f53",
         {
           "parent": "30259aea6bfc9919",
           "name": "VoidSignalOnce_Simple",
@@ -408,7 +408,7 @@
           "events": {
             "Out": {
               "Get": [
-                "d1a7000000000005"
+                "cafe4b498e6430b8"
               ]
             }
           }
@@ -417,7 +417,7 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000005",
+        "cafe4b498e6430b8",
         {
           "parent": "30259aea6bfc9919",
           "name": "GetGroundPosition",
@@ -441,7 +441,7 @@
           "events": {
             "Position": {
               "Value": [
-                "d1a7000000000006"
+                "cafef3e26a672c76"
               ]
             }
           }
@@ -450,7 +450,7 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000006",
+        "cafef3e26a672c76",
         {
           "parent": "30259aea6bfc9919",
           "name": "Vector3_Debuffer",
@@ -459,12 +459,12 @@
           "events": {
             "Value": {
               "Position": [
-                "d1a7000000000007"
+                "cafe558ddca163d0"
               ]
             },
             "Done": {
               "Activate": [
-                "d1a7000000000001"
+                "cafe9b72b2d12fd6"
               ]
             }
           }
@@ -473,7 +473,7 @@
     },
     {
       "AddEntity": [
-        "d1a7000000000007",
+        "cafe558ddca163d0",
         {
           "parent": "30259aea6bfc9919",
           "name": "SetPosition",
@@ -482,7 +482,7 @@
           "properties": {
             "m_Entity": {
               "type": "SEntityTemplateReference",
-              "value": "d1a7000000000001",
+              "value": "cafe9b72b2d12fd6",
               "postInit": true
             }
           }
@@ -496,7 +496,7 @@
           "AddEventConnection": [
             "OnFirstShatter",
             "Signal",
-            "d1a7000000000004"
+            "cafe129d4c0d2f53"
           ]
         }
       ]

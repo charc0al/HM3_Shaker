@@ -21,7 +21,7 @@
 					"AddEventConnection": [
 						"OnShot",
 						"Get",
-						"cafe7a11c0ffee34"
+						"cafe1832d620b157"
 					]
 				}
 			]
@@ -33,7 +33,7 @@
 					"AddEventConnection": [
 						"OnShot",
 						"Activate",
-						"cafe7a11c0ffee37"
+						"cafe847cfd314f4b"
 					]
 				}
 			]
@@ -57,7 +57,7 @@
 					"AddEventConnection": [
 						"OnShot",
 						"In",
-						"cafe7a11c0ffee38"
+						"cafe5d36b5af972c"
 					]
 				}
 			]
@@ -94,7 +94,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee32",
+				"cafe30debf1400cb",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "ShotOilPuddleSpawner",
@@ -110,7 +110,7 @@
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe7a11c0ffee33",
+							"value": "cafe26e17facf98d",
 							"postInit": true
 						},
 						"m_bSpawnOnStart": {
@@ -136,14 +136,14 @@
 						}
 					},
 					"events": {
-						"ItemReady": { "Detach": ["cafe7a11c0ffee32"] }
+						"ItemReady": { "Detach": ["cafe30debf1400cb"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee33",
+				"cafe26e17facf98d",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "ShotOilPuddleFlatAnchor",
@@ -168,7 +168,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee34",
+				"cafe1832d620b157",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "GetShotGroundPosition",
@@ -187,24 +187,24 @@
 						}
 					},
 					"events": {
-						"Position": { "Value": ["cafe7a11c0ffee35"] }
+						"Position": { "Value": ["cafe32bb42743f50"] }
 					}
 				}
 			]
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee35",
+				"cafe32bb42743f50",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "ShotGroundPositionDebuffer",
 					"factory": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entitytype",
 					"blueprint": "[assembly:/_pro/design/logic.template?/vector3_debuffer.entitytemplate].pc_entityblueprint",
 					"events": {
-						"Value": { "Position": ["cafe7a11c0ffee36"] },
+						"Value": { "Position": ["cafe503fb199148d"] },
 						"Done": {
 							"SetFalse": ["83b1f9e4ab95c101"],
-							"SpawnItem": ["cafe7a11c0ffee32"],
+							"SpawnItem": ["cafe30debf1400cb"],
 							"Activate": ["e8b91dce6ad5b473"],
 							"Send": ["68eb9f90925cb8e9"],
 							"In": ["09e839fb1824ed01"]
@@ -215,7 +215,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee36",
+				"cafe503fb199148d",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "SetShotPuddleAnchorPosition",
@@ -224,7 +224,7 @@
 					"properties": {
 						"m_Entity": {
 							"type": "SEntityTemplateReference",
-							"value": "cafe7a11c0ffee33",
+							"value": "cafe26e17facf98d",
 							"postInit": true
 						}
 					}
@@ -233,7 +233,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee37",
+				"cafe847cfd314f4b",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "FX_E_Water_Cooler_Leak_01",
@@ -293,7 +293,7 @@
 		},
 		{
 			"AddEntity": [
-				"cafe7a11c0ffee38",
+				"cafe5d36b5af972c",
 				{
 					"parent": "858e07956d7aebd0",
 					"name": "ShotOilSprayLifetime",
@@ -306,7 +306,7 @@
 						}
 					},
 					"events": {
-						"Out": { "Deactivate": ["cafe7a11c0ffee37"] }
+						"Out": { "Deactivate": ["cafe847cfd314f4b"] }
 					}
 				}
 			]
