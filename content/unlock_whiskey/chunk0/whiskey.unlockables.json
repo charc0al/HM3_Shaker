@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "MELEE_WHISKEY"
-      ]
-    }
-  },
   "MELEE_WHISKEY": {
     "Id": "MELEE_WHISKEY",
     "Guid": "0a3c47b7-51ce-4b25-b5c5-40216d4318de",

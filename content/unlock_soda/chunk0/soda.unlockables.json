@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "MELEE_SODA"
-      ]
-    }
-  },
   "MELEE_SODA": {
     "Id": "MELEE_SODA",
     "Guid": "1a7e5c60-9493-425a-9a8b-7d0518645d35",

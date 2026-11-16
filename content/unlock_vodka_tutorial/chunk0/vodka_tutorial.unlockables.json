@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "VODKA_TUTORIAL"
-      ]
-    }
-  },
   "VODKA_TUTORIAL": {
     "Id": "VODKA_TUTORIAL",
     "Guid": "f2d2cf42-edb1-41f2-8bdc-cb75e7e38657",

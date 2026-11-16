@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "JERRYCAN_WATER"
-      ]
-    }
-  },
   "JERRYCAN_WATER": {
     "Id": "JERRYCAN_WATER",
     "Guid": "f2979ed8-28f6-4c8d-9afc-7b1a1aa11a11",

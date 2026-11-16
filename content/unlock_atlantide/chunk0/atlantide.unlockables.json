@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "MELEE_ATLANTIDE"
-      ]
-    }
-  },
   "MELEE_ATLANTIDE": {
     "Id": "MELEE_ATLANTIDE",
     "Guid": "629d6e33-921c-4f57-a012-bec1ef8bcd2c",

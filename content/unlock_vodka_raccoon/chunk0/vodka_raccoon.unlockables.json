@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "VODKA_RACCOON"
-      ]
-    }
-  },
   "VODKA_RACCOON": {
     "Id": "VODKA_RACCOON",
     "Guid": "956b9f76-b9b5-4476-9ac4-cb1742047cef",
