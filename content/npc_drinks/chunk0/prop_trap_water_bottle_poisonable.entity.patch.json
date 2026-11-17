@@ -346,10 +346,7 @@
 					"factory": "[modules:/zgetgroundpositionentity.class].pc_entitytype",
 					"blueprint": "[modules:/zgetgroundpositionentity.class].pc_entityblueprint",
 					"properties": {
-						"498320989": {
-							"type": "float32",
-							"value": 0.30000001192092896
-						},
+						"498320989": { "type": "float32", "value": 0.3 },
 						"920014207": { "type": "float32", "value": -3 },
 						"m_rSpatial": {
 							"type": "SEntityTemplateReference",

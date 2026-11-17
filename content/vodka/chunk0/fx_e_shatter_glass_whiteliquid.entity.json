@@ -1,72 +1,62 @@
 {
-  "tempHash": "00928BEBA1B1073F",
-  "tbluHash": "00F2AA808A455398",
-  "rootEntity": "1c23778cfaec722d",
-  "entities": {
-    "1c23778cfaec722d": {
-      "parent": null,
-      "name": "FX_E_Shatter_Glass_WhiteLiquid",
-      "factory": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entitytype",
-      "blueprint": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entityblueprint",
-      "properties": {
-        "m_mTransform": {
-          "type": "SMatrix43",
-          "value": {
-            "rotation": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            },
-            "position": {
-              "x": 0.18363599479198456,
-              "y": 0.08898399770259857,
-              "z": 0.17106999456882477
-            }
-          }
-        },
-        "LiquidColorStart": {
-          "type": "SColorRGB",
-          "value": "#ffffff"
-        },
-        "LiquidColorEnd": {
-          "type": "SColorRGB",
-          "value": "#d4d4d4"
-        },
-        "GlassColorStart": {
-          "type": "SColorRGB",
-          "value": "#363636"
-        },
-        "GlassColorEnd": {
-          "type": "SColorRGB",
-          "value": "#171717"
-        },
-        "SmokeColorStart": {
-          "type": "SColorRGB",
-          "value": "#707070"
-        },
-        "SmokeColorEnd": {
-          "type": "SColorRGB",
-          "value": "#363636"
-        },
-        "LiquidMinSize": {
-          "type": "float32",
-          "value": 100
-        },
-        "LiquidMaxSize": {
-          "type": "float32",
-          "value": 160
-        }
-      }
-    }
-  },
-  "propertyOverrides": [],
-  "overrideDeletes": [],
-  "pinConnectionOverrides": [],
-  "pinConnectionOverrideDeletes": [],
-  "externalScenes": [],
-  "subType": "template",
-  "quickEntityVersion": 3.1,
-  "extraFactoryDependencies": [],
-  "extraBlueprintDependencies": [],
-  "comments": []
+	"tempHash": "00928BEBA1B1073F",
+	"tbluHash": "00F2AA808A455398",
+	"rootEntity": "1c23778cfaec722d",
+	"entities": {
+		"1c23778cfaec722d": {
+			"parent": null,
+			"name": "FX_E_Shatter_Glass_WhiteLiquid",
+			"factory": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/effects/templates/shatter/fx_shatter_food.template?/fx_e_shatter_food_liquidandglass.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": {
+							"x": 0.18363599479198456,
+							"y": 0.08898399770259857,
+							"z": 0.17106999456882477
+						}
+					}
+				},
+				"LiquidColorStart": {
+					"type": "SColorRGB",
+					"value": "#ffffff"
+				},
+				"LiquidColorEnd": {
+					"type": "SColorRGB",
+					"value": "#d4d4d4"
+				},
+				"GlassColorStart": {
+					"type": "SColorRGB",
+					"value": "#363636"
+				},
+				"GlassColorEnd": {
+					"type": "SColorRGB",
+					"value": "#171717"
+				},
+				"SmokeColorStart": {
+					"type": "SColorRGB",
+					"value": "#707070"
+				},
+				"SmokeColorEnd": {
+					"type": "SColorRGB",
+					"value": "#363636"
+				},
+				"LiquidMinSize": { "type": "float32", "value": 100 },
+				"LiquidMaxSize": { "type": "float32", "value": 160 }
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
 }
