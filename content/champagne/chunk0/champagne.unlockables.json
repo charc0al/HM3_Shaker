@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "PROP_GLASS_CHAMPAGNE"
-      ]
-    }
-  },
   "PROP_GLASS_CHAMPAGNE": {
     "Id": "PROP_GLASS_CHAMPAGNE",
     "Guid": "84ec0fef-f030-4dc4-8e71-f94ba2c6a36e",

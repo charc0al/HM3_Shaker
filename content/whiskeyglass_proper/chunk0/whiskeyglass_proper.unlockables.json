@@ -1,11 +1,4 @@
 {
-  "PACKAGE_STARTING_PACKAGE": {
-    "Properties": {
-      "Unlocks": [
-        "PROP_MELEE_WHISKEY_GLASS"
-      ]
-    }
-  },
   "PROP_MELEE_WHISKEY_GLASS": {
     "Id": "PROP_MELEE_WHISKEY_GLASS",
     "Guid": "7cf7e29e-2204-45bf-b412-e4817d9ea3a7",
