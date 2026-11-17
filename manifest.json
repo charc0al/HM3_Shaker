@@ -7,7 +7,7 @@
   "authors": [
     "Charc0al"
   ],
-  "frameworkVersion": "2.33.45",
+  "frameworkVersion": "2.33.42",
   "updateCheck": "https://github.com/charc0al/HM3_Shaker/releases/latest/download/updates.json",
   "options": [
     {
